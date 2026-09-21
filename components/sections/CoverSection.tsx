@@ -47,7 +47,7 @@ export function CoverSection() {
         >
           <div className="lg:col-span-5">
             <p className="max-w-md text-lg leading-relaxed text-muted-foreground">
-              Creative studio tại {site.location} chuyên về branding, key
+              Creative team tại {site.location} chuyên về branding, key
               visual, social media, POSM và motion design.
             </p>
           </div>

@@ -1,11 +1,13 @@
 "use client";
 
+import * as React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 
 import { getTeam, getProjectsByDesigner } from "@/lib/projects";
+import { Lightbox, LightboxTrigger } from "@/components/lightbox";
 import type { Project, TeamMember } from "@/types";
 
 interface ProjectDetailSectionProps {
@@ -43,9 +45,19 @@ function DesignerCredit({ designerName }: { designerName: string }) {
           <div className="lg:col-span-3">
             <Link
               href={`/team/${designer.id}`}
-              className="flex aspect-square w-32 items-center justify-center bg-muted text-3xl font-medium tracking-tight text-muted-foreground transition-opacity hover:opacity-70"
+              className="relative flex aspect-square w-32 items-center justify-center overflow-hidden bg-muted text-3xl font-medium tracking-tight text-muted-foreground transition-opacity hover:opacity-70"
             >
-              {initials}
+              {designer.avatarUrl ? (
+                <Image
+                  src={designer.avatarUrl}
+                  alt={designer.name}
+                  fill
+                  className="object-cover"
+                  sizes="128px"
+                />
+              ) : (
+                initials
+              )}
             </Link>
           </div>
           <div className="lg:col-span-9">
@@ -90,6 +102,19 @@ export function ProjectDetailSection({
   prev,
   next,
 }: ProjectDetailSectionProps) {
+  const [lightboxOpen, setLightboxOpen] = React.useState(false);
+  const [lightboxIndex, setLightboxIndex] = React.useState(0);
+
+  const galleryImages = React.useMemo(
+    () => [project.heroImage, ...project.supportingImages],
+    [project.heroImage, project.supportingImages]
+  );
+
+  function openLightbox(index: number) {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  }
+
   return (
     <article>
       {/* Header */}
@@ -106,7 +131,6 @@ export function ProjectDetailSection({
               </span>
               <span>{project.category}</span>
               {project.client && <span>{project.client}</span>}
-              <span>{project.year}</span>
             </div>
             <h1 className="max-w-5xl font-serif text-4xl font-normal tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
               {project.title}
@@ -122,14 +146,19 @@ export function ProjectDetailSection({
         transition={{ duration: 0.8, delay: 0.2 }}
         className="relative aspect-video w-full bg-muted lg:aspect-21/9"
       >
-        <Image
-          src={project.heroImage.src}
-          alt={project.heroImage.alt}
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
+        <LightboxTrigger
+          onClick={() => openLightbox(0)}
+          className="block h-full w-full"
+        >
+          <Image
+            src={project.heroImage.src}
+            alt={project.heroImage.alt}
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+        </LightboxTrigger>
       </motion.section>
 
       {/* Content */}
@@ -239,18 +268,23 @@ export function ProjectDetailSection({
                       : "aspect-4/3"
                   } ${index === 0 && project.supportingImages.length % 2 !== 0 ? "md:col-span-2 lg:col-span-2" : ""}`}
                 >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                  {image.caption && (
-                    <p className="absolute bottom-0 left-0 right-0 bg-background/80 px-4 py-2 text-xs text-muted-foreground backdrop-blur-sm">
-                      {image.caption}
-                    </p>
-                  )}
+                  <LightboxTrigger
+                    onClick={() => openLightbox(index + 1)}
+                    className="block h-full w-full"
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    {image.caption && (
+                      <p className="absolute bottom-0 left-0 right-0 bg-background/80 px-4 py-2 text-xs text-muted-foreground backdrop-blur-sm">
+                        {image.caption}
+                      </p>
+                    )}
+                  </LightboxTrigger>
                 </motion.div>
               ))}
             </div>
@@ -301,6 +335,13 @@ export function ProjectDetailSection({
           )}
         </div>
       </nav>
+
+      <Lightbox
+        images={galleryImages}
+        initialIndex={lightboxIndex}
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+      />
     </article>
   );
 }

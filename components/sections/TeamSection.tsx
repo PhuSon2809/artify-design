@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 import type { TeamMember } from "@/types";
@@ -11,13 +12,27 @@ interface TeamSectionProps {
   members: TeamMember[];
 }
 
-function AvatarPlaceholder({ name }: { name: string }) {
-  const initials = name
+function MemberAvatar({ member }: { member: TeamMember }) {
+  const initials = member.name
     .split(" ")
     .map((n) => n[0])
     .join("")
     .slice(0, 2)
     .toUpperCase();
+
+  if (member.avatarUrl) {
+    return (
+      <div className="relative aspect-3/4 overflow-hidden bg-muted">
+        <Image
+          src={member.avatarUrl}
+          alt={member.name}
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          sizes="(max-width: 768px) 50vw, 25vw"
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="flex aspect-3/4 items-center justify-center bg-muted text-5xl font-medium tracking-tight text-muted-foreground transition-colors group-hover:bg-secondary">
@@ -53,7 +68,7 @@ export function TeamSection({ members }: TeamSectionProps) {
           </div>
         </motion.div>
 
-        <div className="grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid border-t border-l border-border sm:grid-cols-2 lg:grid-cols-4">
           {members.map((member, index) => {
             const projectCount = getAllProjectsByDesigner(member.name).length;
 
@@ -64,10 +79,10 @@ export function TeamSection({ members }: TeamSectionProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="group bg-background p-6 transition-colors hover:bg-secondary/30"
+                className="group flex flex-col border-b border-r border-border bg-background p-6 transition-colors hover:bg-secondary/30"
               >
                 <Link href={`/team/${member.id}`} className="block">
-                  <AvatarPlaceholder name={member.name} />
+                  <MemberAvatar member={member} />
                   <div className="mt-6">
                     <h3 className="font-serif text-2xl font-normal transition-colors group-hover:text-muted-foreground">
                       {member.name}

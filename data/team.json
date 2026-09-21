@@ -4,6 +4,7 @@
     "name": "Thang Mai",
     "role": "Brand Designer / Art Director",
     "behanceUrl": "https://www.behance.net/kirithangmai",
+    "avatarUrl": "https://pps.services.adobe.com/api/profile/41D7664A5C739F360A495E7C@AdobeID/image/2341e11e-a54d-4138-8d14-4c5a35c8eb19/230",
     "bio": "Thang Mai tập trung vào branding và art direction cho các thương hiệu văn hóa, F&B và corporate. Các dự án của anh thể hiện sự cân bằng giữa concept sâu sắc và execution chỉn chu.",
     "specialization": ["Branding", "Art Direction", "Key Visual", "POSM"]
   },
@@ -12,6 +13,7 @@
     "name": "Trần Bảo",
     "role": "Motion & Illustration Designer",
     "behanceUrl": "https://www.behance.net/ipad_19989bcd",
+    "avatarUrl": "https://pps.services.adobe.com/api/profile/3A91525A548346480A4C98C6@AdobeID/image/cba7d7a3-2a69-4680-921c-e2f955f3cf8a/230",
     "bio": "Trần Bảo mang đến góc nhìn sống động qua motion graphics và illustration. Phong cách của anh đa dạng từ watercolor nhẹ nhàng đến animation broadcast năng động.",
     "specialization": ["Motion", "Illustration", "Branding", "Packaging"]
   },
@@ -20,14 +22,20 @@
     "name": "Duy Phong",
     "role": "Graphic Designer",
     "behanceUrl": "https://www.behance.net/duyphong6",
+    "avatarUrl": "https://pps.services.adobe.com/api/profile/E163919A58D0F3F70A495C1E@AdobeID/image/ff329c16-a84e-4223-ba98-06a334fdd8b8/230",
     "bio": "Duy Phong có nền tảng vững chắc trong graphic design và visual composition. Anh đóng góp vào các dự án đòi hỏi sự tinh tế trong layout và typography.",
-    "specialization": ["Graphic Design", "Visual Composition", "Portfolio Design"]
+    "specialization": [
+      "Graphic Design",
+      "Visual Composition",
+      "Portfolio Design"
+    ]
   },
   {
     "id": "ploy-diep",
     "name": "Ploy Diep",
     "role": "Social Media & POSM Designer",
     "behanceUrl": "https://www.behance.net/vylan",
+    "avatarUrl": "https://pps.services.adobe.com/api/profile/6E3068795B5144DF0A495C8A@AdobeID/image/ddedcbba-abaf-4f2b-8180-6a1188a04eb5/230",
     "bio": "Ploy Diep chuyên về social media content và POSM/retail design. Các dự án của cô thể hiện khả năng duy trì nhận diện nhất quán trên nhiều điểm chạm.",
     "specialization": ["Social Media", "POSM", "Retail", "F&B Branding"]
   }

@@ -51,6 +51,7 @@ export interface TeamMember {
   name: string;
   role: string;
   behanceUrl?: string;
+  avatarUrl?: string;
   bio?: string;
   specialization?: string[];
 }

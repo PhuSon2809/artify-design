@@ -44,7 +44,6 @@ export default async function TeamMemberPage({
 
   const selectedProjects = getProjectsByDesigner(member.name);
   const allProjects = getAllProjectsByDesigner(member.name);
-  const otherProjects = allProjects.filter((p) => !p.isSelected);
 
   const initials = member.name
     .split(" ")
@@ -62,9 +61,22 @@ export default async function TeamMemberPage({
           <div className="mx-auto max-w-7xl">
             <div className="grid gap-12 lg:grid-cols-12">
               <div className="lg:col-span-4">
-                <div className="flex aspect-3/4 items-center justify-center bg-muted text-7xl font-medium tracking-tight text-muted-foreground">
-                  {initials}
-                </div>
+                {member.avatarUrl ? (
+                  <div className="relative aspect-3/4 overflow-hidden bg-muted">
+                    <Image
+                      src={member.avatarUrl}
+                      alt={member.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 33vw"
+                      priority
+                    />
+                  </div>
+                ) : (
+                  <div className="flex aspect-3/4 items-center justify-center bg-muted text-7xl font-medium tracking-tight text-muted-foreground">
+                    {initials}
+                  </div>
+                )}
               </div>
               <div className="flex flex-col justify-end lg:col-span-7 lg:col-start-6">
                 <p className="mb-4 text-sm uppercase tracking-widest text-muted-foreground">
@@ -159,35 +171,46 @@ export default async function TeamMemberPage({
               Toàn bộ dự án {member.name} đã đăng tải trên Behance.
             </p>
 
-            <div className="grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid border-t border-l border-border sm:grid-cols-2 lg:grid-cols-3">
               {allProjects.map((project) => (
                 <a
                   key={project.id}
                   href={project.projectUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative block bg-background p-6 transition-colors hover:bg-secondary/30"
+                  className="group relative flex flex-col border-b border-r border-border bg-background transition-colors hover:bg-secondary/30"
                 >
-                  <div className="mb-4 flex items-start justify-between gap-4">
-                    <span
-                      className={`text-xs uppercase tracking-widest ${
-                        project.isSelected
-                          ? "text-foreground"
-                          : "text-muted-foreground"
-                      }`}
-                    >
-                      {project.isSelected ? "Selected" : project.category}
-                    </span>
-                    <span className="text-xs text-muted-foreground">
-                      {project.year}
-                    </span>
+                  <div className="relative aspect-4/3 overflow-hidden bg-muted">
+                    <Image
+                      src={project.coverUrl}
+                      alt={project.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
                   </div>
-                  <h3 className="font-serif text-xl font-normal leading-snug transition-colors group-hover:text-muted-foreground">
-                    {project.title}
-                  </h3>
-                  <div className="mt-6 flex items-center gap-2 text-sm text-muted-foreground">
-                    <span>View on Behance</span>
-                    <ExternalLink className="h-3 w-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <div className="flex flex-1 flex-col p-6">
+                    <div className="mb-4 flex items-start justify-between gap-4">
+                      <span
+                        className={`text-xs uppercase tracking-widest ${
+                          project.isSelected
+                            ? "text-foreground"
+                            : "text-muted-foreground"
+                        }`}
+                      >
+                        {project.isSelected ? "Selected" : project.category}
+                      </span>
+                      <span className="text-xs text-muted-foreground">
+                        {project.year}
+                      </span>
+                    </div>
+                    <h3 className="font-serif text-xl font-normal leading-snug transition-colors group-hover:text-muted-foreground">
+                      {project.title}
+                    </h3>
+                    <div className="mt-auto flex items-center gap-2 pt-6 text-sm text-muted-foreground">
+                      <span>View on Behance</span>
+                      <ExternalLink className="h-3 w-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </div>
                   </div>
                 </a>
               ))}

@@ -1,59 +1,114 @@
 [
   {
-    "id": "rebranding-san-khau-kich-hoang-thai-thanh",
-    "title": "Sân Khấu Kịch Hoàng Thái Thanh",
-    "designer": "Thang Mai + Team",
-    "designerProfile": "https://www.behance.net/kirithangmai",
-    "projectUrl": "https://www.behance.net/gallery/120581809/REBRANDING-SAN-KHU-KCH-HOANG-THAI-THANH",
-    "category": "Branding / Rebranding",
-    "subcategory": "Cultural Identity",
-    "year": "2021",
-    "client": "Sân Khấu Kịch Hoàng Thái Thanh",
-    "role": "Branding & Identity System",
-    "capabilities": ["Branding", "Brand Identity", "Art Direction", "Motion"],
+    "id": "posm-mo-nuong",
+    "title": "POSM Mơ Nướng",
+    "designer": "Ploy Diep",
+    "designerProfile": "https://www.behance.net/vylan",
+    "projectUrl": "https://www.behance.net/gallery/250872779/POSM-MO-NUNG",
+    "category": "POSM / Retail",
+    "subcategory": "F&B",
+    "year": "2026",
+    "client": "Mơ Nướng",
+    "role": "POSM Design",
+    "capabilities": [
+      "POSM",
+      "Retail",
+      "Print Design"
+    ],
     "heroImage": {
-      "src": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-hero.png",
-      "alt": "Hoàng Thái Thanh theater rebranding hero",
-      "width": 4304,
-      "height": 3366,
+      "src": "/images/projects/posm-mo-nuong/posm-mo-nuong-hero.webp",
+      "alt": "Mơ Nướng POSM hero",
+      "width": 2250,
+      "height": 1759,
+      "aspectRatio": "portrait",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "/images/projects/posm-mo-nuong/posm-mo-nuong-01.jpg",
+        "alt": "Menu and POSM layout",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/posm-mo-nuong/posm-mo-nuong-02.png",
+        "alt": "Standee and poster",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0d4fe1250872779.6a293da3ac500.png",
+        "alt": "Project module 3",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Thiết kế ấn phẩm điểm bán cho thương hiệu Mơ Nướng với tông màu nóng, kích thích vị giác.",
+    "concept": "Truyền tải sự hấp dẫn của món nướng qua hình ảnh sống động và bố cục rõ ràng.",
+    "visualSystem": "Ảnh món ăn chất lượng cao, typography dễ đọc, bảng màu đỏ-cam nóng.",
+    "application": "Menu, standee, poster, wobbler, danglers.",
+    "order": 1
+  },
+  {
+    "id": "social-media-mo-nuong",
+    "title": "Social Media Mơ Nướng",
+    "designer": "Ploy Diep",
+    "designerProfile": "https://www.behance.net/vylan",
+    "projectUrl": "https://www.behance.net/gallery/250731191/SOCIAL-MEDIA-MO-NUNG",
+    "category": "Social Media",
+    "subcategory": "F&B Content",
+    "year": "2026",
+    "client": "Mơ Nướng",
+    "role": "Social Media Design",
+    "capabilities": [
+      "Social Media",
+      "Content Design",
+      "Digital Design"
+    ],
+    "heroImage": {
+      "src": "/images/projects/social-media-mo-nuong/social-mo-nuong-hero.webp",
+      "alt": "Mơ Nướng social media feed",
+      "width": 4085,
+      "height": 3195,
       "aspectRatio": "landscape",
       "quality": "high",
       "usage": "hero"
     },
     "supportingImages": [
       {
-        "src": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-01.png",
-        "alt": "Brand identity spread",
+        "src": "/images/projects/social-media-mo-nuong/social-mo-nuong-01.jpg",
+        "alt": "Social post design",
         "width": 1400,
-        "height": 1094,
+        "height": 1095,
         "aspectRatio": "landscape",
         "quality": "high",
         "usage": "supporting"
       },
       {
-        "src": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-02.png",
-        "alt": "Collateral application",
+        "src": "/images/projects/social-media-mo-nuong/social-mo-nuong-02.jpg",
+        "alt": "Social post design",
         "width": 1400,
-        "height": 1094,
-        "aspectRatio": "landscape",
-        "quality": "high",
-        "usage": "supporting"
-      },
-      {
-        "src": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-motion.gif",
-        "alt": "Motion asset",
-        "width": 1400,
-        "height": 1094,
+        "height": 1095,
         "aspectRatio": "landscape",
         "quality": "high",
         "usage": "supporting"
       }
     ],
-    "description": "Rebranding project cho Sân Khấu Kịch Hoàng Thái Thanh — một trong những nhà hát kịch nổi tiếng tại Việt Nam.",
-    "concept": "Hệ thống nhận diện kết hợp giữa di sản sân khấu truyền thống và ngôn ngữ thiết kế hiện đại, tạo sự kết nối cảm xúc với khán giả trẻ.",
-    "visualSystem": "Typography mạnh mẽ, bảng màu trầm ấm, pattern lấy cảm hứng từ không gian sân khấu.",
-    "application": "Logo, stationery, poster, backdrop, motion intro, ứng dụng trên các ấn phẩm truyền thông.",
-    "order": 1
+    "description": "Nội dung social media đồng bộ cho Mơ Nướng, duy trì nhận diện và tương tác.",
+    "concept": "Xây dựng feed ẩm thực hấp dẫn, nhất quán với hệ thống nhận diện tại chỗ.",
+    "visualSystem": "Template linh hoạt, màu sắc bắt mắt, hình ảnh món ăn trung tâm.",
+    "application": "Facebook/Instagram posts, stories, feed design.",
+    "order": 2
   },
   {
     "id": "cho-du-hi",
@@ -66,7 +121,12 @@
     "year": "2025",
     "client": null,
     "role": "Concept & Visual Design",
-    "capabilities": ["Branding", "Campaign", "Key Visual", "Art Direction"],
+    "capabilities": [
+      "Branding",
+      "Campaign",
+      "Key Visual",
+      "Art Direction"
+    ],
     "heroImage": {
       "src": "/images/projects/cho-du-hi/cho-du-hi-hero.png",
       "alt": "Chợ Du Hí campaign artwork",
@@ -100,7 +160,341 @@
     "concept": "Đưa không khí chợ truyền thống vào ngôn ngữ đồ họa đương đại, nhấn mạnh sự sôi động và cộng đồng.",
     "visualSystem": "Màu sắc tươi sáng, hình ảnh minh họa mang tính biểu tượng, layout campaign có nhịp điệu.",
     "application": "Key visual, poster, OOH, social assets, merchandise.",
-    "order": 2
+    "order": 3
+  },
+  {
+    "id": "takahiro-corporation",
+    "title": "Takahiro Corporation",
+    "designer": "Ploy Diep",
+    "designerProfile": "https://www.behance.net/vylan",
+    "projectUrl": "https://www.behance.net/gallery/236462703/TAKAHIRO-COPORATION-DESIGN",
+    "category": "Branding / Corporate",
+    "subcategory": "F&B Corporate",
+    "year": "2025",
+    "client": "Takahiro Corporation",
+    "role": "Brand Identity Design",
+    "capabilities": [
+      "Branding",
+      "Brand Identity",
+      "POSM",
+      "Art Direction"
+    ],
+    "heroImage": {
+      "src": "/images/projects/takahiro-corporation/takahiro-hero.jpg",
+      "alt": "Takahiro Corporation brand identity",
+      "width": 1400,
+      "height": 1095,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "/images/projects/takahiro-corporation/takahiro-01.gif",
+        "alt": "Brand motion application",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/takahiro-corporation/takahiro-02.jpg",
+        "alt": "Mockup application",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/takahiro-corporation/takahiro-03.jpg",
+        "alt": "Retail application",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/6c1ca3236462703.68ecc989c122a.gif",
+        "alt": "Project module 8",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0de2f9236462703.68ecc989c3711.jpg",
+        "alt": "Project module 9",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9207b5236462703.68ecc989c2a25.jpg",
+        "alt": "Project module 10",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/277b3c236462703.68ecc989c2f37.gif",
+        "alt": "Project module 11",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7a102c236462703.68ecc989c24df.jpg",
+        "alt": "Project module 12",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Hệ thống nhận diện thương hiệu cho Takahiro Corporation với ứng dụng rộng trên nhiều điểm chạm.",
+    "concept": "Xây dựng hình ảnh doanh nghiệp chuyên nghiệp, dễ nhận diện và thân thiện với khách hàng.",
+    "visualSystem": "Logo dứt khoát, màu sắc ấm, ứng dụng mockup rõ ràng trên POSM và digital.",
+    "application": "Logo, stationery, menu, signage, social content, motion.",
+    "order": 4
+  },
+  {
+    "id": "famiglia-pizza",
+    "title": "Famiglia Pizza",
+    "designer": "Ploy Diep",
+    "designerProfile": "https://www.behance.net/vylan",
+    "projectUrl": "https://www.behance.net/gallery/162463351/FAMIGLIA-PIZZA",
+    "category": "Branding / F&B",
+    "subcategory": "Restaurant Identity",
+    "year": "2023",
+    "client": "Famiglia Pizza",
+    "role": "Brand Identity Design",
+    "capabilities": [
+      "Branding",
+      "Brand Identity",
+      "Packaging"
+    ],
+    "heroImage": {
+      "src": "/images/projects/famiglia-pizza/famiglia-pizza-hero.png",
+      "alt": "Famiglia Pizza brand identity",
+      "width": 1400,
+      "height": 1095,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [],
+    "description": "Nhận diện thương hiệu cho nhà hàng pizza phong cách Ý ấm cúng.",
+    "concept": "Gợi cảm giác gia đình, thân thuộc qua logo và bảng màu ấm.",
+    "visualSystem": "Typography cổ điển, màu đỏ và vàng ấm, ứng dụng trên menu và packaging.",
+    "application": "Logo, menu, packaging, signage.",
+    "order": 5
+  },
+  {
+    "id": "rebranding-san-khau-kich-hoang-thai-thanh",
+    "title": "Sân Khấu Kịch Hoàng Thái Thanh",
+    "designer": "Thang Mai + Team",
+    "designerProfile": "https://www.behance.net/kirithangmai",
+    "projectUrl": "https://www.behance.net/gallery/120581809/REBRANDING-SAN-KHU-KCH-HOANG-THAI-THANH",
+    "category": "Branding / Rebranding",
+    "subcategory": "Cultural Identity",
+    "year": "2021",
+    "client": "Sân Khấu Kịch Hoàng Thái Thanh",
+    "role": "Branding & Identity System",
+    "capabilities": [
+      "Branding",
+      "Brand Identity",
+      "Art Direction",
+      "Motion"
+    ],
+    "heroImage": {
+      "src": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-hero.jpg",
+      "alt": "Hoàng Thái Thanh theater rebranding hero",
+      "width": 808,
+      "height": 632,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-01.png",
+        "alt": "Brand identity spread",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-02.png",
+        "alt": "Collateral application",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-motion.gif",
+        "alt": "Motion asset",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4b0c40120581809.60b4ded762eed.png",
+        "alt": "Project module 4",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ae41aa120581809.60b4dad30b67f.png",
+        "alt": "Project module 5",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/bb8af4120581809.60b4dad30b041.png",
+        "alt": "Project module 6",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/60845a120581809.60ba5c3a2ab52.png",
+        "alt": "Project module 7",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/d2cf12120581809.60ba5c3a2b083.gif",
+        "alt": "Project module 8",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b36868120581809.60b525ffbc5f4.png",
+        "alt": "Project module 9",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7e3e43120581809.60b4ded761623.png",
+        "alt": "Project module 10",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4ac064120581809.60b4dad308ddc.png",
+        "alt": "Project module 11",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8b73d1120581809.60b4e03bcd1f7.png",
+        "alt": "Project module 12",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/692c0d120581809.60b4dad30cbd8.png",
+        "alt": "Project module 13",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/6ac8b0120581809.62cbfcc46ca93.gif",
+        "alt": "Project module 14",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/7a5e34120581809.62cbf1b98b434.gif",
+        "alt": "Project module 15",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d5ccf0120581809.60b4dfe7a05c8.png",
+        "alt": "Project module 16",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f63aea120581809.60b4ded7626b5.png",
+        "alt": "Project module 17",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fad3b4120581809.60b4ded761f27.png",
+        "alt": "Project module 18",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Rebranding project cho Sân Khấu Kịch Hoàng Thái Thanh — một trong những nhà hát kịch nổi tiếng tại Việt Nam.",
+    "concept": "Hệ thống nhận diện kết hợp giữa di sản sân khấu truyền thống và ngôn ngữ thiết kế hiện đại, tạo sự kết nối cảm xúc với khán giả trẻ.",
+    "visualSystem": "Typography mạnh mẽ, bảng màu trầm ấm, pattern lấy cảm hứng từ không gian sân khấu.",
+    "application": "Logo, stationery, poster, backdrop, motion intro, ứng dụng trên các ấn phẩm truyền thông.",
+    "order": 6
   },
   {
     "id": "hue-cuisine",
@@ -113,12 +507,17 @@
     "year": "2018",
     "client": null,
     "role": "Illustration & Motion Design",
-    "capabilities": ["Illustration", "Motion", "Branding", "Art Direction"],
+    "capabilities": [
+      "Illustration",
+      "Motion",
+      "Branding",
+      "Art Direction"
+    ],
     "heroImage": {
-      "src": "/images/projects/hue-cuisine/hue-cuisine-hero.png",
+      "src": "/images/projects/hue-cuisine/hue-cuisine-hero.jpg",
       "alt": "Huế Cuisine watercolor illustration",
-      "width": 4304,
-      "height": 3366,
+      "width": 808,
+      "height": 634,
       "aspectRatio": "landscape",
       "quality": "high",
       "usage": "hero"
@@ -156,7 +555,7 @@
     "concept": "Tôn vinh tinh hoa ẩm thực cố đô qua từng nét vẽ tay, kết hợp chuyển động nhẹ nhàng.",
     "visualSystem": "Watercolor, palette ấm, typography thân thiện, motion loop mượt mà.",
     "application": "Social GIFs, menu illustration, poster, digital content.",
-    "order": 3
+    "order": 7
   },
   {
     "id": "meikos-cosmetics",
@@ -169,7 +568,11 @@
     "year": "2018",
     "client": "Meiko's Cosmetics",
     "role": "Branding & Packaging Design",
-    "capabilities": ["Branding", "Packaging", "Illustration"],
+    "capabilities": [
+      "Branding",
+      "Packaging",
+      "Illustration"
+    ],
     "heroImage": {
       "src": "/images/projects/meikos-cosmetics/meikos-cosmetics-hero.gif",
       "alt": "Meiko's Cosmetics brand system",
@@ -194,212 +597,146 @@
     "concept": "Tạo cảm giác vui tươi, trẻ trung cho dòng mỹ phẩm thông qua mascot và màu sắc pastel.",
     "visualSystem": "Pink & purple pastel, illustration dễ thương, typography mềm mại.",
     "application": "Logo, packaging, label, social template.",
-    "order": 4
-  },
-  {
-    "id": "takahiro-corporation",
-    "title": "Takahiro Corporation",
-    "designer": "Ploy Diep",
-    "designerProfile": "https://www.behance.net/vylan",
-    "projectUrl": "https://www.behance.net/gallery/236462703/TAKAHIRO-COPORATION-DESIGN",
-    "category": "Branding / Corporate",
-    "subcategory": "F&B Corporate",
-    "year": "2025",
-    "client": "Takahiro Corporation",
-    "role": "Brand Identity Design",
-    "capabilities": ["Branding", "Brand Identity", "POSM", "Art Direction"],
-    "heroImage": {
-      "src": "/images/projects/takahiro-corporation/takahiro-hero.jpg",
-      "alt": "Takahiro Corporation brand identity",
-      "width": 1400,
-      "height": 1095,
-      "aspectRatio": "landscape",
-      "quality": "high",
-      "usage": "hero"
-    },
-    "supportingImages": [
-      {
-        "src": "/images/projects/takahiro-corporation/takahiro-01.gif",
-        "alt": "Brand motion application",
-        "width": 1400,
-        "height": 1095,
-        "aspectRatio": "landscape",
-        "quality": "high",
-        "usage": "supporting"
-      },
-      {
-        "src": "/images/projects/takahiro-corporation/takahiro-02.jpg",
-        "alt": "Mockup application",
-        "width": 1400,
-        "height": 1095,
-        "aspectRatio": "landscape",
-        "quality": "high",
-        "usage": "supporting"
-      },
-      {
-        "src": "/images/projects/takahiro-corporation/takahiro-03.jpg",
-        "alt": "Retail application",
-        "width": 1400,
-        "height": 1095,
-        "aspectRatio": "landscape",
-        "quality": "high",
-        "usage": "supporting"
-      }
-    ],
-    "description": "Hệ thống nhận diện thương hiệu cho Takahiro Corporation với ứng dụng rộng trên nhiều điểm chạm.",
-    "concept": "Xây dựng hình ảnh doanh nghiệp chuyên nghiệp, dễ nhận diện và thân thiện với khách hàng.",
-    "visualSystem": "Logo dứt khoát, màu sắc ấm, ứng dụng mockup rõ ràng trên POSM và digital.",
-    "application": "Logo, stationery, menu, signage, social content, motion.",
-    "order": 5
-  },
-  {
-    "id": "posm-mo-nuong",
-    "title": "POSM Mơ Nướng",
-    "designer": "Ploy Diep",
-    "designerProfile": "https://www.behance.net/vylan",
-    "projectUrl": "https://www.behance.net/gallery/250872779/POSM-MO-NUNG",
-    "category": "POSM / Retail",
-    "subcategory": "F&B",
-    "year": "2026",
-    "client": "Mơ Nướng",
-    "role": "POSM Design",
-    "capabilities": ["POSM", "Retail", "Print Design"],
-    "heroImage": {
-      "src": "/images/projects/posm-mo-nuong/posm-mo-nuong-hero.png",
-      "alt": "Mơ Nướng POSM hero",
-      "width": 2250,
-      "height": 1759,
-      "aspectRatio": "portrait",
-      "quality": "medium",
-      "usage": "hero"
-    },
-    "supportingImages": [
-      {
-        "src": "/images/projects/posm-mo-nuong/posm-mo-nuong-01.jpg",
-        "alt": "Menu and POSM layout",
-        "width": 1400,
-        "height": 1095,
-        "aspectRatio": "landscape",
-        "quality": "high",
-        "usage": "supporting"
-      },
-      {
-        "src": "/images/projects/posm-mo-nuong/posm-mo-nuong-02.png",
-        "alt": "Standee and poster",
-        "width": 1400,
-        "height": 1095,
-        "aspectRatio": "landscape",
-        "quality": "high",
-        "usage": "supporting"
-      }
-    ],
-    "description": "Thiết kế ấn phẩm điểm bán cho thương hiệu Mơ Nướng với tông màu nóng, kích thích vị giác.",
-    "concept": "Truyền tải sự hấp dẫn của món nướng qua hình ảnh sống động và bố cục rõ ràng.",
-    "visualSystem": "Ảnh món ăn chất lượng cao, typography dễ đọc, bảng màu đỏ-cam nóng.",
-    "application": "Menu, standee, poster, wobbler, danglers.",
-    "order": 6
-  },
-  {
-    "id": "social-media-mo-nuong",
-    "title": "Social Media Mơ Nướng",
-    "designer": "Ploy Diep",
-    "designerProfile": "https://www.behance.net/vylan",
-    "projectUrl": "https://www.behance.net/gallery/250731191/SOCIAL-MEDIA-MO-NUNG",
-    "category": "Social Media",
-    "subcategory": "F&B Content",
-    "year": "2026",
-    "client": "Mơ Nướng",
-    "role": "Social Media Design",
-    "capabilities": ["Social Media", "Content Design", "Digital Design"],
-    "heroImage": {
-      "src": "/images/projects/social-media-mo-nuong/social-mo-nuong-hero.jpg",
-      "alt": "Mơ Nướng social media feed",
-      "width": 4085,
-      "height": 3195,
-      "aspectRatio": "landscape",
-      "quality": "medium",
-      "usage": "hero"
-    },
-    "supportingImages": [
-      {
-        "src": "/images/projects/social-media-mo-nuong/social-mo-nuong-01.jpg",
-        "alt": "Social post design",
-        "width": 1400,
-        "height": 1095,
-        "aspectRatio": "landscape",
-        "quality": "high",
-        "usage": "supporting"
-      },
-      {
-        "src": "/images/projects/social-media-mo-nuong/social-mo-nuong-02.jpg",
-        "alt": "Social post design",
-        "width": 1400,
-        "height": 1095,
-        "aspectRatio": "landscape",
-        "quality": "high",
-        "usage": "supporting"
-      }
-    ],
-    "description": "Nội dung social media đồng bộ cho Mơ Nướng, duy trì nhận diện và tương tác.",
-    "concept": "Xây dựng feed ẩm thực hấp dẫn, nhất quán với hệ thống nhận diện tại chỗ.",
-    "visualSystem": "Template linh hoạt, màu sắc bắt mắt, hình ảnh món ăn trung tâm.",
-    "application": "Facebook/Instagram posts, stories, feed design.",
-    "order": 7
-  },
-  {
-    "id": "famiglia-pizza",
-    "title": "Famiglia Pizza",
-    "designer": "Ploy Diep",
-    "designerProfile": "https://www.behance.net/vylan",
-    "projectUrl": "https://www.behance.net/gallery/162463351/FAMIGLIA-PIZZA",
-    "category": "Branding / F&B",
-    "subcategory": "Restaurant Identity",
-    "year": "2023",
-    "client": "Famiglia Pizza",
-    "role": "Brand Identity Design",
-    "capabilities": ["Branding", "Brand Identity", "Packaging"],
-    "heroImage": {
-      "src": "/images/projects/famiglia-pizza/famiglia-pizza-hero.png",
-      "alt": "Famiglia Pizza brand identity",
-      "width": 1400,
-      "height": 1095,
-      "aspectRatio": "landscape",
-      "quality": "high",
-      "usage": "hero"
-    },
-    "supportingImages": [],
-    "description": "Nhận diện thương hiệu cho nhà hàng pizza phong cách Ý ấm cúng.",
-    "concept": "Gợi cảm giác gia đình, thân thuộc qua logo và bảng màu ấm.",
-    "visualSystem": "Typography cổ điển, màu đỏ và vàng ấm, ứng dụng trên menu và packaging.",
-    "application": "Logo, menu, packaging, signage.",
     "order": 8
   },
   {
-    "id": "cartoon-network-intro",
-    "title": "Cartoon Network Intro 2021",
-    "designer": "Trần Bảo",
-    "designerProfile": "https://www.behance.net/ipad_19989bcd",
-    "projectUrl": "https://www.behance.net/gallery/124284951/CARTOON-NETWORK-INTRO-2021-(SUMMER-VERSION)",
-    "category": "Motion / Animation",
-    "subcategory": "Broadcast",
-    "year": "2021",
-    "client": "Cartoon Network",
-    "role": "Motion Design",
-    "capabilities": ["Motion", "Animation", "Broadcast"],
+    "id": "portfolio-graphic-design",
+    "title": "Portfolio Graphic Design",
+    "designer": "Duy Phong",
+    "designerProfile": "https://www.behance.net/duyphong6",
+    "projectUrl": "https://www.behance.net/gallery/139888111/Portfolio-Graphic-Design",
+    "category": "Graphic Design",
+    "subcategory": "Visual Composition & Typography",
+    "year": "2022",
+    "client": "Duy Phong",
+    "role": "Graphic Design & Visual Composition",
+    "capabilities": [
+      "Graphic Design",
+      "Visual Composition",
+      "Layout",
+      "Typography"
+    ],
     "heroImage": {
-      "src": "/images/projects/cartoon-network-intro/cartoon-network-hero.jpg",
-      "alt": "Cartoon Network intro summer version",
-      "width": 1825,
-      "height": 1428,
-      "aspectRatio": "landscape",
-      "quality": "medium",
+      "src": "/images/projects/portfolio-graphic-design/portfolio-graphic-design-hero.png",
+      "alt": "Portfolio Graphic Design - Duy Phong",
+      "width": 1246,
+      "height": 1342,
+      "aspectRatio": "square",
+      "quality": "high",
       "usage": "hero"
     },
-    "supportingImages": [],
-    "description": "Intro mùa hè cho Cartoon Network với phong cách hoạt hình sôi động.",
-    "concept": "Tạo điểm nhấn vui tươi, năng động cho mùa hè qua animation và âm thanh.",
-    "visualSystem": "Màu sắc rực rỡ, chuyển động nhanh, typography playfu.",
-    "application": "Broadcast intro, social cut, bumper.",
+    "supportingImages": [
+      {
+        "src": "/images/projects/portfolio-graphic-design/portfolio-graphic-design-01.webp",
+        "alt": "Graphic Design Selection 01",
+        "width": 662,
+        "height": 2048,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/portfolio-graphic-design/portfolio-graphic-design-02.webp",
+        "alt": "Graphic Design Selection 02",
+        "width": 662,
+        "height": 2048,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/portfolio-graphic-design/portfolio-graphic-design-03.webp",
+        "alt": "Graphic Design Selection 03",
+        "width": 662,
+        "height": 2048,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/portfolio-graphic-design/portfolio-graphic-design-04.webp",
+        "alt": "Graphic Design Selection 04",
+        "width": 662,
+        "height": 2047,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Tuyển tập các tác phẩm thiết kế đồ họa, typography và visual composition nổi bật của Duy Phong.",
+    "concept": "Khai thác sức mạnh của cấu trúc layout, phân tầng thị giác và tương phản typographic trong các ấn phẩm đồ họa đa dạng.",
+    "visualSystem": "Hệ thống bố cục dạng grid tinh gọn, xử lý phân tầng thông tin rõ nét cùng sự tương phản giữa hình ảnh và typography.",
+    "application": "Ấn phẩm in ấn, poster nghệ thuật, digital visual content và typography composition.",
     "order": 9
+  },
+  {
+    "id": "milo-design-collection",
+    "title": "MILO — Design Collection",
+    "designer": "Thang Mai",
+    "designerProfile": "https://www.behance.net/kirithangmai",
+    "projectUrl": "https://www.behance.net/gallery/218350483/MILO-DESIGN-COLLECTION",
+    "category": "Social Media / Digital",
+    "subcategory": "FMCG Campaign & Visuals",
+    "year": "2025",
+    "client": "Nestlé MILO",
+    "role": "Visual Design & Art Direction",
+    "capabilities": [
+      "Social Media",
+      "Key Visual",
+      "Digital Design",
+      "Art Direction"
+    ],
+    "heroImage": {
+      "src": "/images/projects/milo-design-collection/milo-hero.png",
+      "alt": "Nestlé MILO Design Collection",
+      "width": 1334,
+      "height": 1043,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "/images/projects/milo-design-collection/milo-01.jpg",
+        "alt": "MILO Visual Asset 01",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/milo-design-collection/milo-02.jpg",
+        "alt": "MILO Visual Asset 02",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/milo-design-collection/milo-03.jpg",
+        "alt": "MILO Visual Asset 03",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/milo-design-collection/milo-04.jpg",
+        "alt": "MILO Visual Asset 04",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Bộ sưu tập ấn phẩm truyền thông kỹ thuật số và key visual năng động cho thương hiệu thức uống dinh dưỡng Nestlé MILO.",
+    "concept": "Truyền tải nguồn năng lượng thể thao mạnh mẽ, tinh thần bền bỉ và lối sống năng động của thế hệ trẻ thông qua ngôn ngữ hình ảnh rực rỡ và sắc nét.",
+    "visualSystem": "Tone xanh lá biểu trưng của thương hiệu MILO kết hợp cùng các dải năng lượng sắc sảo, typography thể thao mạnh mẽ và hiệu ứng visual bắt mắt.",
+    "application": "Digital key visual, social media feed, banners và ấn phẩm quảng cáo.",
+    "order": 10
   }
 ]

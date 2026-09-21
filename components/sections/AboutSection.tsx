@@ -36,7 +36,7 @@ export function AboutSection() {
             className="lg:col-span-8"
           >
             <h2 className="font-serif text-3xl leading-snug tracking-tight sm:text-4xl lg:text-5xl">
-              Chúng tôi là một creative studio tin rằng thiết kế đẹp phải đi
+              Chúng tôi là một creative team tin rằng thiết kế đẹp phải đi
               cùng{" "}
               <span className="italic text-muted-foreground">ý nghĩa rõ ràng</span>.
             </h2>

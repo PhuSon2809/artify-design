@@ -1,6 +1,6 @@
 # Artify Design Portfolio
 
-Portfolio website cho Artify Design — một creative studio tại Ho Chi Minh City chuyên về branding, key visual, social media, POSM và motion design.
+Portfolio website cho Artify Design — một creative team tại Ho Chi Minh City chuyên về branding, key visual, social media, POSM và motion design.
 
 ## Tech Stack
 

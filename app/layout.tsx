@@ -18,9 +18,9 @@ const newsreader = Newsreader({
 });
 
 export const metadata: Metadata = {
-  title: "Artify Design — Creative Studio",
+  title: "Artify Design — Creative Team",
   description:
-    "Artify Design là một creative studio tại Ho Chi Minh City chuyên về branding, key visual, social media, POSM và motion design.",
+    "Artify Design là một creative team tại Ho Chi Minh City chuyên về branding, key visual, social media, POSM và motion design.",
 };
 
 export default function RootLayout({
