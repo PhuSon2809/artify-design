@@ -26,28 +26,64 @@
     },
     "supportingImages": [
       {
-        "src": "/images/projects/posm-mo-nuong/posm-mo-nuong-01.jpg",
-        "alt": "Menu and POSM layout",
-        "width": 1400,
-        "height": 1095,
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/1c4ad2250872779.6a293c5b8e66a.jpg",
+        "alt": "POSM Mơ Nướng visual 1",
+        "width": 600,
+        "height": 1200,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e86334250872779.6a293c5b8e9f8.png",
+        "alt": "POSM Mơ Nướng visual 2",
+        "width": 600,
+        "height": 1200,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/6d1ca7250872779.6a293c58a23a0.gif",
+        "alt": "POSM Mơ Nướng visual 3",
+        "width": 870,
+        "height": 651,
         "aspectRatio": "landscape",
         "quality": "high",
         "usage": "supporting"
       },
       {
-        "src": "/images/projects/posm-mo-nuong/posm-mo-nuong-02.png",
-        "alt": "Standee and poster",
-        "width": 1400,
-        "height": 1095,
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/bacd72250872779.6a293c58a273e.gif",
+        "alt": "POSM Mơ Nướng visual 4",
+        "width": 870,
+        "height": 651,
         "aspectRatio": "landscape",
         "quality": "high",
         "usage": "supporting"
       },
       {
-        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0d4fe1250872779.6a293da3ac500.png",
-        "alt": "Project module 3",
-        "width": 1400,
-        "height": 1095,
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/416211250872779.6a293c59dc36a.gif",
+        "alt": "POSM Mơ Nướng visual 5",
+        "width": 870,
+        "height": 651,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/d511ce250872779.6a293c59dc829.gif",
+        "alt": "POSM Mơ Nướng visual 6",
+        "width": 870,
+        "height": 651,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0d4fe1250872779.6a293da3ac500.png",
+        "alt": "POSM Mơ Nướng visual 7",
+        "width": 210,
+        "height": 105,
         "aspectRatio": "landscape",
         "quality": "high",
         "usage": "supporting"
@@ -86,20 +122,92 @@
     },
     "supportingImages": [
       {
-        "src": "/images/projects/social-media-mo-nuong/social-mo-nuong-01.jpg",
-        "alt": "Social post design",
-        "width": 1400,
-        "height": 1095,
-        "aspectRatio": "landscape",
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/beb219250731191.6a267c93716aa.gif",
+        "alt": "Social Media Mơ Nướng visual 1",
+        "width": 810,
+        "height": 1105,
+        "aspectRatio": "portrait",
         "quality": "high",
         "usage": "supporting"
       },
       {
-        "src": "/images/projects/social-media-mo-nuong/social-mo-nuong-02.jpg",
-        "alt": "Social post design",
-        "width": 1400,
-        "height": 1095,
-        "aspectRatio": "landscape",
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/f83c34250731191.6a267c9371aba.gif",
+        "alt": "Social Media Mơ Nướng visual 2",
+        "width": 810,
+        "height": 1000,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/fd23f1250731191.6a267d45f36ac.jpg",
+        "alt": "Social Media Mơ Nướng visual 3",
+        "width": 600,
+        "height": 1200,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/f6a606250731191.6a267b2fbf657.gif",
+        "alt": "Social Media Mơ Nướng visual 4",
+        "width": 648,
+        "height": 1152,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/ffb621250731191.6a267b2fbfe05.gif",
+        "alt": "Social Media Mơ Nướng visual 5",
+        "width": 648,
+        "height": 1152,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/cc4d67250731191.6a267b3487ae7.jpg",
+        "alt": "Social Media Mơ Nướng visual 6",
+        "width": 600,
+        "height": 1200,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/5f91b1250731191.6a267b31b3811.gif",
+        "alt": "Social Media Mơ Nướng visual 7",
+        "width": 648,
+        "height": 1152,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0ef06d250731191.6a267b31b34a3.gif",
+        "alt": "Social Media Mơ Nướng visual 8",
+        "width": 648,
+        "height": 1152,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/b82608250731191.6a267b3309879.jpg",
+        "alt": "Social Media Mơ Nướng visual 9",
+        "width": 4500,
+        "height": 8000,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/236402250731191.6a267b33094ad.gif",
+        "alt": "Social Media Mơ Nướng visual 10",
+        "width": 648,
+        "height": 1152,
+        "aspectRatio": "portrait",
         "quality": "high",
         "usage": "supporting"
       }
@@ -119,7 +227,7 @@
     "category": "Branding / Campaign",
     "subcategory": "Graduated Project",
     "year": "2025",
-    "client": null,
+    "client": "Dự án tốt nghiệp / Chợ Du Hí",
     "role": "Concept & Visual Design",
     "capabilities": [
       "Branding",
@@ -138,20 +246,92 @@
     },
     "supportingImages": [
       {
-        "src": "/images/projects/cho-du-hi/cho-du-hi-01.jpg",
-        "alt": "Campaign visual",
-        "width": 1400,
-        "height": 1095,
-        "aspectRatio": "landscape",
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0f18c2233123681.68a9981b72af8.jpg",
+        "alt": "Chợ Du Hí visual 1",
+        "width": 600,
+        "height": 1200,
+        "aspectRatio": "portrait",
         "quality": "high",
         "usage": "supporting"
       },
       {
-        "src": "/images/projects/cho-du-hi/cho-du-hi-02.png",
-        "alt": "Brand application",
-        "width": 1400,
-        "height": 1095,
-        "aspectRatio": "landscape",
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/16577a233123681.68a9981a7c563.jpg",
+        "alt": "Chợ Du Hí visual 2",
+        "width": 852,
+        "height": 1161,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/673177233123681.68a9981a7cc3f.jpg",
+        "alt": "Chợ Du Hí visual 3",
+        "width": 960,
+        "height": 1440,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/f94cac233123681.68a9981a7e474.jpg",
+        "alt": "Chợ Du Hí visual 4",
+        "width": 960,
+        "height": 1440,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/ba10c8233123681.68a9981a7d3c7.jpg",
+        "alt": "Chợ Du Hí visual 5",
+        "width": 960,
+        "height": 1440,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/dd79dd233123681.68a9981a7d938.jpg",
+        "alt": "Chợ Du Hí visual 6",
+        "width": 960,
+        "height": 1440,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/f59cbe233123681.68a9981a7ddf3.jpg",
+        "alt": "Chợ Du Hí visual 7",
+        "width": 914,
+        "height": 1348,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/60f396233123681.68a9981a7e8d4.jpg",
+        "alt": "Chợ Du Hí visual 8",
+        "width": 960,
+        "height": 1440,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/fcd554233123681.68a9981a7ef29.jpg",
+        "alt": "Chợ Du Hí visual 9",
+        "width": 960,
+        "height": 1440,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/be44f1233123681.68a998e826970.png",
+        "alt": "Chợ Du Hí visual 10",
+        "width": 600,
+        "height": 602,
+        "aspectRatio": "portrait",
         "quality": "high",
         "usage": "supporting"
       }
@@ -293,7 +473,17 @@
       "quality": "high",
       "usage": "hero"
     },
-    "supportingImages": [],
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b011d5162463351.63d671e33d8ba.png",
+        "alt": "Famiglia Pizza brand presentation",
+        "width": 1400,
+        "height": 8553,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
     "description": "Nhận diện thương hiệu cho nhà hàng pizza phong cách Ý ấm cúng.",
     "concept": "Gợi cảm giác gia đình, thân thuộc qua logo và bảng màu ấm.",
     "visualSystem": "Typography cổ điển, màu đỏ và vàng ấm, ứng dụng trên menu và packaging.",
@@ -505,7 +695,7 @@
     "category": "Branding + Motion",
     "subcategory": "Illustration / F&B",
     "year": "2018",
-    "client": null,
+    "client": "Ẩm thực Huế",
     "role": "Illustration & Motion Design",
     "capabilities": [
       "Illustration",
@@ -600,6 +790,95 @@
     "order": 8
   },
   {
+    "id": "fjallraven-kanken",
+    "title": "Fjällräven Kånken",
+    "designer": "Trần Bảo",
+    "designerProfile": "https://www.behance.net/ipad_19989bcd",
+    "projectUrl": "https://www.behance.net/gallery/132711379/FJALLRAVEN-KANKEN-(2019)",
+    "category": "Graphic Design / Illustration",
+    "subcategory": "Illustration & Poster",
+    "year": "2019",
+    "client": "Fjällräven Kånken (Concept)",
+    "role": "Graphic Design & Illustration",
+    "capabilities": [
+      "Graphic Design",
+      "Illustration",
+      "Key Visual",
+      "Art Direction",
+      "Campaign"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/61bf06132711379.Y3JvcCw4MzgsNjU1LDYxMiw0NQ.jpg",
+      "alt": "Fjällräven Kånken Illustration - Trần Bảo",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/5b5be3132711379.61aed30c6c60b.jpg",
+        "alt": "Fjällräven Kånken Visual 1",
+        "width": 1990,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/503cf8132711379.61aed30c6b0c3.jpg",
+        "alt": "Fjällräven Kånken Visual 2",
+        "width": 1990,
+        "height": 1142,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/83993b132711379.61aed30c6be14.jpg",
+        "alt": "Fjällräven Kånken Visual 3",
+        "width": 1990,
+        "height": 884,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/d10fc0132711379.61aed30c6b6df.jpg",
+        "alt": "Fjällräven Kånken Visual 4",
+        "width": 1990,
+        "height": 755,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/ff5307132711379.61aed30c6cce7.jpg",
+        "alt": "Fjällräven Kånken Visual 5",
+        "width": 1990,
+        "height": 761,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/d41725132711379.61aed30c6d3e2.jpg",
+        "alt": "Fjällräven Kånken Visual 6",
+        "width": 1990,
+        "height": 1186,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Bộ minh họa và thiết kế đồ họa lấy cảm hứng từ dòng balo biểu tượng Fjällräven Kånken, kết hợp phong cách vẽ sinh động và màu sắc thiên nhiên.",
+    "concept": "Tinh thần khám phá ngoài trời, năng động và gần gũi với thiên nhiên được chuyển hóa thành phong cách minh họa độc đáo.",
+    "visualSystem": "Đường nét vẽ tay cá tính kết hợp typography hiện đại, bảng màu đất và xanh tự nhiên tạo cảm giác phiêu lưu.",
+    "application": "Poster nghệ thuật, social visual, ấn phẩm quảng bá và merchandise campaign.",
+    "order": 9
+  },
+  {
     "id": "portfolio-graphic-design",
     "title": "Portfolio Graphic Design",
     "designer": "Duy Phong",
@@ -667,7 +946,7 @@
     "concept": "Khai thác sức mạnh của cấu trúc layout, phân tầng thị giác và tương phản typographic trong các ấn phẩm đồ họa đa dạng.",
     "visualSystem": "Hệ thống bố cục dạng grid tinh gọn, xử lý phân tầng thông tin rõ nét cùng sự tương phản giữa hình ảnh và typography.",
     "application": "Ấn phẩm in ấn, poster nghệ thuật, digital visual content và typography composition.",
-    "order": 9
+    "order": 0
   },
   {
     "id": "milo-design-collection",
@@ -697,37 +976,55 @@
     },
     "supportingImages": [
       {
-        "src": "/images/projects/milo-design-collection/milo-01.jpg",
-        "alt": "MILO Visual Asset 01",
-        "width": 1400,
-        "height": 1095,
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/9e6ec3218350483.67a07d13510ea.jpg",
+        "alt": "MILO — Design Collection visual 1",
+        "width": 600,
+        "height": 368,
         "aspectRatio": "landscape",
         "quality": "high",
         "usage": "supporting"
       },
       {
-        "src": "/images/projects/milo-design-collection/milo-02.jpg",
-        "alt": "MILO Visual Asset 02",
-        "width": 1400,
-        "height": 1095,
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/21f98a218350483.67a07d1350b7a.jpg",
+        "alt": "MILO — Design Collection visual 2",
+        "width": 496,
+        "height": 248,
         "aspectRatio": "landscape",
         "quality": "high",
         "usage": "supporting"
       },
       {
-        "src": "/images/projects/milo-design-collection/milo-03.jpg",
-        "alt": "MILO Visual Asset 03",
-        "width": 1400,
-        "height": 1095,
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/8b5d38218350483.67a07d1351da3.jpg",
+        "alt": "MILO — Design Collection visual 3",
+        "width": 452,
+        "height": 226,
         "aspectRatio": "landscape",
         "quality": "high",
         "usage": "supporting"
       },
       {
-        "src": "/images/projects/milo-design-collection/milo-04.jpg",
-        "alt": "MILO Visual Asset 04",
-        "width": 1400,
-        "height": 1095,
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e5801e218350483.67a07d1350572.jpg",
+        "alt": "MILO — Design Collection visual 4",
+        "width": 452,
+        "height": 226,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/da3bb2218350483.67a07d135236b.jpg",
+        "alt": "MILO — Design Collection visual 5",
+        "width": 600,
+        "height": 411,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e9d6a9218350483.67a07d1351652.jpg",
+        "alt": "MILO — Design Collection visual 6",
+        "width": 600,
+        "height": 391,
         "aspectRatio": "landscape",
         "quality": "high",
         "usage": "supporting"

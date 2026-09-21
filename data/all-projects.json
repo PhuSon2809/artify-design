@@ -1,256 +1,1783 @@
 [
   {
     "id": "posm-mo-nuong",
-    "title": "POSM MƠ NƯỚNG",
+    "title": "POSM Mơ Nướng",
     "designer": "Ploy Diep",
     "designerProfile": "https://www.behance.net/vylan",
     "projectUrl": "https://www.behance.net/gallery/250872779/POSM-MO-NUNG",
-    "category": "POSM / F&B",
+    "category": "POSM / Retail",
+    "subcategory": "F&B",
     "year": "2026",
-    "coverUrl": "/images/projects/posm-mo-nuong/posm-mo-nuong-hero.webp",
-    "isSelected": true
+    "client": "Mơ Nướng",
+    "role": "POSM Design",
+    "capabilities": [
+      "POSM",
+      "Retail",
+      "Print Design"
+    ],
+    "heroImage": {
+      "src": "/images/projects/posm-mo-nuong/posm-mo-nuong-hero.webp",
+      "alt": "Mơ Nướng POSM hero",
+      "width": 2250,
+      "height": 1759,
+      "aspectRatio": "portrait",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/1c4ad2250872779.6a293c5b8e66a.jpg",
+        "alt": "POSM Mơ Nướng visual 1",
+        "width": 600,
+        "height": 1200,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e86334250872779.6a293c5b8e9f8.png",
+        "alt": "POSM Mơ Nướng visual 2",
+        "width": 600,
+        "height": 1200,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/6d1ca7250872779.6a293c58a23a0.gif",
+        "alt": "POSM Mơ Nướng visual 3",
+        "width": 870,
+        "height": 651,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/bacd72250872779.6a293c58a273e.gif",
+        "alt": "POSM Mơ Nướng visual 4",
+        "width": 870,
+        "height": 651,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/416211250872779.6a293c59dc36a.gif",
+        "alt": "POSM Mơ Nướng visual 5",
+        "width": 870,
+        "height": 651,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/d511ce250872779.6a293c59dc829.gif",
+        "alt": "POSM Mơ Nướng visual 6",
+        "width": 870,
+        "height": 651,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0d4fe1250872779.6a293da3ac500.png",
+        "alt": "POSM Mơ Nướng visual 7",
+        "width": 210,
+        "height": 105,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Thiết kế ấn phẩm điểm bán cho thương hiệu Mơ Nướng với tông màu nóng, kích thích vị giác.",
+    "concept": "Truyền tải sự hấp dẫn của món nướng qua hình ảnh sống động và bố cục rõ ràng.",
+    "visualSystem": "Ảnh món ăn chất lượng cao, typography dễ đọc, bảng màu đỏ-cam nóng.",
+    "application": "Menu, standee, poster, wobbler, danglers.",
+    "order": 1,
+    "isSelected": true,
+    "coverUrl": "/images/projects/posm-mo-nuong/posm-mo-nuong-hero.webp"
   },
   {
     "id": "social-media-mo-nuong",
-    "title": "SOCIAL MEDIA MƠ NƯỚNG",
+    "title": "Social Media Mơ Nướng",
     "designer": "Ploy Diep",
     "designerProfile": "https://www.behance.net/vylan",
     "projectUrl": "https://www.behance.net/gallery/250731191/SOCIAL-MEDIA-MO-NUNG",
-    "category": "Social Media / F&B",
+    "category": "Social Media",
+    "subcategory": "F&B Content",
     "year": "2026",
-    "coverUrl": "/images/projects/social-media-mo-nuong/social-mo-nuong-hero.webp",
-    "isSelected": true
+    "client": "Mơ Nướng",
+    "role": "Social Media Design",
+    "capabilities": [
+      "Social Media",
+      "Content Design",
+      "Digital Design"
+    ],
+    "heroImage": {
+      "src": "/images/projects/social-media-mo-nuong/social-mo-nuong-hero.webp",
+      "alt": "Mơ Nướng social media feed",
+      "width": 4085,
+      "height": 3195,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/beb219250731191.6a267c93716aa.gif",
+        "alt": "Social Media Mơ Nướng visual 1",
+        "width": 810,
+        "height": 1105,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/f83c34250731191.6a267c9371aba.gif",
+        "alt": "Social Media Mơ Nướng visual 2",
+        "width": 810,
+        "height": 1000,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/fd23f1250731191.6a267d45f36ac.jpg",
+        "alt": "Social Media Mơ Nướng visual 3",
+        "width": 600,
+        "height": 1200,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/f6a606250731191.6a267b2fbf657.gif",
+        "alt": "Social Media Mơ Nướng visual 4",
+        "width": 648,
+        "height": 1152,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/ffb621250731191.6a267b2fbfe05.gif",
+        "alt": "Social Media Mơ Nướng visual 5",
+        "width": 648,
+        "height": 1152,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/cc4d67250731191.6a267b3487ae7.jpg",
+        "alt": "Social Media Mơ Nướng visual 6",
+        "width": 600,
+        "height": 1200,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/5f91b1250731191.6a267b31b3811.gif",
+        "alt": "Social Media Mơ Nướng visual 7",
+        "width": 648,
+        "height": 1152,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0ef06d250731191.6a267b31b34a3.gif",
+        "alt": "Social Media Mơ Nướng visual 8",
+        "width": 648,
+        "height": 1152,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/b82608250731191.6a267b3309879.jpg",
+        "alt": "Social Media Mơ Nướng visual 9",
+        "width": 4500,
+        "height": 8000,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/236402250731191.6a267b33094ad.gif",
+        "alt": "Social Media Mơ Nướng visual 10",
+        "width": 648,
+        "height": 1152,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Nội dung social media đồng bộ cho Mơ Nướng, duy trì nhận diện và tương tác.",
+    "concept": "Xây dựng feed ẩm thực hấp dẫn, nhất quán với hệ thống nhận diện tại chỗ.",
+    "visualSystem": "Template linh hoạt, màu sắc bắt mắt, hình ảnh món ăn trung tâm.",
+    "application": "Facebook/Instagram posts, stories, feed design.",
+    "order": 2,
+    "isSelected": true,
+    "coverUrl": "/images/projects/social-media-mo-nuong/social-mo-nuong-hero.webp"
   },
   {
     "id": "branding-long-hai-pate-cho-cho-meo",
     "title": "BRANDING | LONG HẢI - PATE CHO CHÓ MÈO",
     "designer": "Thang Mai",
-    "designerProfile": "https://www.behance.net/kirithangmai",
-    "projectUrl": "https://www.behance.net/gallery/222069141/BRANDING-LONG-HI-PATE-CHO-CHO-MEO",
     "category": "Branding / Packaging",
+    "subcategory": "Packaging",
     "year": "2025",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/1ae47c222069141.Y3JvcCwyODkzLDIyNjIsMCww.jpg",
-    "isSelected": false
+    "client": "LONG HẢI",
+    "role": "Branding / Packaging Design",
+    "capabilities": [
+      "Branding",
+      "Packaging",
+      "Logo",
+      "Photoshop",
+      "Illustrator"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/1ae47c222069141.Y3JvcCwyODkzLDIyNjIsMCww.jpg",
+      "alt": "BRANDING | LONG HẢI - PATE CHO CHÓ MÈO - Thang Mai",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/af79c6222069141.67df945a13de1.jpg",
+        "alt": "Image may contain: cartoon",
+        "width": 1240,
+        "height": 1200,
+        "aspectRatio": "square",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Pet food branding — distinct category + good client-fit",
+    "concept": "Warm / Approachable",
+    "visualSystem": "Logo / Packaging / Brand collateral",
+    "application": "Logo / Packaging / Brand collateral",
+    "order": 3,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/1ae47c222069141.Y3JvcCwyODkzLDIyNjIsMCww.jpg"
   },
   {
     "id": "digital-design-collection",
     "title": "DIGITAL | DESIGN COLLECTION",
     "designer": "Thang Mai",
-    "designerProfile": "https://www.behance.net/kirithangmai",
-    "projectUrl": "https://www.behance.net/gallery/218352905/DIGITAL-DESIGN-COLLECTION",
     "category": "Digital Design",
+    "subcategory": "Digital Design",
     "year": "2025",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/c383b8218352905.Y3JvcCwyODg2LDIyNTcsMCwxNA.jpg",
-    "isSelected": false
+    "client": "DESIGN COLLECTION",
+    "role": "Digital Design Design",
+    "capabilities": [
+      "Digital Design",
+      "Advertising",
+      "SocialPost",
+      "Photoshop",
+      "Illustrator"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c383b8218352905.Y3JvcCwyODg2LDIyNTcsMCwxNA.jpg",
+      "alt": "DIGITAL | DESIGN COLLECTION - Thang Mai",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/eebd2c218352905.67df9c6638000.jpg",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 2893,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/531780218352905.67df9c6638b01.jpg",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 1800,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/98d6e2218352905.67df9c673f824.jpg",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 2893,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/7635cd218352905.67df9c673f2e4.jpg",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 2893,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/a8acaf218352905.67df9c673e1a2.jpg",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 2000,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/2e4bd4218352905.67df9c673e947.jpg",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 3917,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/1f1d8c218352905.67a0863f75a7a.jpg",
+        "alt": "Image may contain: soft drink and drink",
+        "width": 1240,
+        "height": 338,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd_still/d97ef6218352905.67a0863d7ae76.jpg",
+        "alt": "Project visual",
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "square",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd_still/c09ee4218352905.67a0863d7b3b6.jpg",
+        "alt": "Project visual",
+        "width": 1080,
+        "height": 1080,
+        "aspectRatio": "square",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/5afa11218352905.67df8c1b14423.jpg",
+        "alt": "Image may contain: cartoon",
+        "width": 1240,
+        "height": 361,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/f585e6218352905.67a0863e2c0d2.jpg",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 2700,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/479020218352905.67a0863f7543d.jpg",
+        "alt": "Image may contain: outdoor and cartoon",
+        "width": 1801,
+        "height": 601,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/d40863218352905.67a0863ebb1c2.jpg",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 2400,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/e90e97218352905.67a0863ebb712.jpg",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 2000,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/c89673218352905.67a0863eba8d9.jpg",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 2447,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Generic collection — may duplicate Lavie/KitKat/Milo",
+    "concept": "Varied / Modern",
+    "visualSystem": "Digital banners / Social content / Online assets",
+    "application": "Digital banners / Social content / Online assets",
+    "order": 4,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c383b8218352905.Y3JvcCwyODg2LDIyNTcsMCwxNA.jpg"
   },
   {
     "id": "event-project-shiseido-retailer-meeting-2025",
-    "title": "EVENT PROJECT | SHISEIDO RETAILER MEETING 2025",
+    "title": "EVENT PROJECT | SHISEIDO RETAILER MEETING",
     "designer": "Thang Mai",
-    "designerProfile": "https://www.behance.net/kirithangmai",
-    "projectUrl": "https://www.behance.net/gallery/222068525/EVENT-PROJECT-SHISEIDO-RETAILER-MEETING-2025",
     "category": "Event / Key Visual",
+    "subcategory": "Key Visual",
     "year": "2025",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/fc8ad0222068525.67e0d651832be.jpg",
-    "isSelected": false
+    "client": "SHISEIDO RETAILER MEETING 2025",
+    "role": "Event / Key Visual Design",
+    "capabilities": [
+      "Event",
+      "Key Visual",
+      "Keyvisual",
+      "Posm",
+      "Photoshop"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/fc8ad0222068525.67e0d651832be.jpg",
+      "alt": "EVENT PROJECT | SHISEIDO RETAILER MEETING 2025 - Thang Mai",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/660d22222068525.67e76835496e8.jpg",
+        "alt": "Image may contain: screenshot",
+        "width": 1920,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Beauty/luxury client event — premium feel",
+    "concept": "Elegant / Premium",
+    "visualSystem": "Key visual / Backdrop / Event materials",
+    "application": "Key visual / Backdrop / Event materials",
+    "order": 5,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/fc8ad0222068525.67e0d651832be.jpg"
   },
   {
     "id": "key-visual-gladia-khang-dien",
     "title": "KEY VISUAL | GLADIA KHANG ĐIỀN",
     "designer": "Thang Mai",
-    "designerProfile": "https://www.behance.net/kirithangmai",
-    "projectUrl": "https://www.behance.net/gallery/222068381/KEY-VISUAL-GLADIA-KHANG-DIN",
     "category": "Key Visual / Real Estate",
+    "subcategory": "Real Estate",
     "year": "2025",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/5f6c54222068381.67e0d631a1c1d.jpg",
-    "isSelected": false
+    "client": "GLADIA KHANG ĐIỀN",
+    "role": "Key Visual / Real Estate Design",
+    "capabilities": [
+      "Key Visual",
+      "Real Estate",
+      "Key visual",
+      "Real estate",
+      "Event"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/5f6c54222068381.67e0d631a1c1d.jpg",
+      "alt": "KEY VISUAL | GLADIA KHANG ĐIỀN - Thang Mai",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/b41581222068381.67df8cbe9a4bb.jpg",
+        "alt": "Image may contain: poster, cartoon and screenshot",
+        "width": 1240,
+        "height": 338,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/f7b741222068381.67e9fa6c67efd.jpg",
+        "alt": "Image may contain: screenshot",
+        "width": 1240,
+        "height": 338,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Real estate KV — may overlap with other KV projects",
+    "concept": "Modern / Minimal",
+    "visualSystem": "Key visual / Poster / Digital banner",
+    "application": "Key visual / Poster / Digital banner",
+    "order": 6,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/5f6c54222068381.67e0d631a1c1d.jpg"
   },
   {
     "id": "keyvisual-ruby-beer",
     "title": "KEYVISUAL | RUBY BEER",
     "designer": "Thang Mai",
-    "designerProfile": "https://www.behance.net/kirithangmai",
-    "projectUrl": "https://www.behance.net/gallery/218350069/KEYVISUAL-RUBY-BEER",
     "category": "Key Visual / Beverage",
+    "subcategory": "Beverage",
     "year": "2025",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/cedab6218350069.Y3JvcCwxMzgwLDEwODAsMjc2LDA.jpg",
-    "isSelected": false
+    "client": "RUBY BEER",
+    "role": "Key Visual / Beverage Design",
+    "capabilities": [
+      "Key Visual",
+      "Beverage",
+      "Keyvisual",
+      "Beer",
+      "Product"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/cedab6218350069.Y3JvcCwxMzgwLDEwODAsMjc2LDA.jpg",
+      "alt": "KEYVISUAL | RUBY BEER - Thang Mai",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/0e37f5218350069.67dfa0b21e6a5.jpg",
+        "alt": "Image may contain: soft drink and food",
+        "width": 1920,
+        "height": 338,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/b0825e218350069.67a07b6c7b2a8.jpg",
+        "alt": "Image may contain: soft drink",
+        "width": 1920,
+        "height": 338,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "F&B beverage KV — visual could be strong",
+    "concept": "Bold / Vibrant",
+    "visualSystem": "Key visual / Packaging mockup / Social assets",
+    "application": "Key visual / Packaging mockup / Social assets",
+    "order": 7,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/cedab6218350069.Y3JvcCwxMzgwLDEwODAsMjc2LDA.jpg"
   },
   {
     "id": "kitkat-design-collection",
     "title": "KITKAT | DESIGN COLLECTION",
     "designer": "Thang Mai",
-    "designerProfile": "https://www.behance.net/kirithangmai",
-    "projectUrl": "https://www.behance.net/gallery/218351047/KITKAT-DESIGN-COLLECTION",
     "category": "Social Media / Digital Design",
+    "subcategory": "Digital Design",
     "year": "2025",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/964719218351047.Y3JvcCwxMDcyLDgzOCwwLDEzMg.png",
-    "isSelected": false
+    "client": "DESIGN COLLECTION",
+    "role": "Social Media / Digital Design Design",
+    "capabilities": [
+      "Social Media",
+      "Digital Design",
+      "Kitkat",
+      "Product",
+      "Advertising"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/964719218351047.Y3JvcCwxMDcyLDgzOCwwLDEzMg.png",
+      "alt": "KITKAT | DESIGN COLLECTION - Thang Mai",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/4f91b7218351047.67a07f4e3faa1.jpg",
+        "alt": "Image may contain: cartoon and poster",
+        "width": 1240,
+        "height": 368,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/max_316/92c372218351047.67a07f4e3ef53.jpg",
+        "alt": "Image may contain: cartoon, poster and screenshot",
+        "width": 1459,
+        "height": 130,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/max_632/962779218351047.67a07f4e3f536.jpg",
+        "alt": "Image may contain: cartoon",
+        "width": 1226,
+        "height": 309,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/c37120218351047.67a07f4e40356.jpg",
+        "alt": "Image may contain: screenshot, cartoon and indoor",
+        "width": 1240,
+        "height": 382,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/d6ee87218351047.67a07f4e3e532.jpg",
+        "alt": "Image may contain: screenshot and cartoon",
+        "width": 1240,
+        "height": 499,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Global FMCG client — excellent client credibility",
+    "concept": "Playful / Branded",
+    "visualSystem": "Social posts / Digital content / KV variations",
+    "application": "Social posts / Digital content / KV variations",
+    "order": 8,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/964719218351047.Y3JvcCwxMDcyLDgzOCwwLDEzMg.png"
   },
   {
     "id": "lavie-design-collection",
     "title": "LAVIE | DESIGN COLLECTION",
     "designer": "Thang Mai",
-    "designerProfile": "https://www.behance.net/kirithangmai",
-    "projectUrl": "https://www.behance.net/gallery/218351489/LAVIE-DESIGN-COLLECTION",
     "category": "Social Media / Digital Design",
+    "subcategory": "Digital Design",
     "year": "2025",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/0a119e218351489.Y3JvcCwxNjg4LDEzMjEsMTc1LDA.jpg",
-    "isSelected": false
+    "client": "DESIGN COLLECTION",
+    "role": "Social Media / Digital Design Design",
+    "capabilities": [
+      "Social Media",
+      "Digital Design",
+      "Lavie",
+      "Product",
+      "Advertising"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/0a119e218351489.Y3JvcCwxNjg4LDEzMjEsMTc1LDA.jpg",
+      "alt": "LAVIE | DESIGN COLLECTION - Thang Mai",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/509f0a218351489.67a080f090360.jpg",
+        "alt": "Image may contain: screenshot, template and internet",
+        "width": 1240,
+        "height": 338,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/e3f4ef218351489.67a080f090e01.jpg",
+        "alt": "Image may contain: screenshot, template and banner",
+        "width": 1240,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/max_316/58e464218351489.67a080f0908bf.jpg",
+        "alt": "Image may contain: typography",
+        "width": 2325,
+        "height": 82,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/f7817a218351489.67a080f08fc07.jpg",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 1240,
+        "height": 393,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/24b15e218351489.67a080f08f643.jpg",
+        "alt": "Image may contain: internet, template and cartoon",
+        "width": 1240,
+        "height": 361,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Big-name client (Lavie) — strong client-fit",
+    "concept": "Clean / Lifestyle",
+    "visualSystem": "Social posts / Digital ads / Mini-campaign",
+    "application": "Social posts / Digital ads / Mini-campaign",
+    "order": 9,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/0a119e218351489.Y3JvcCwxNjg4LDEzMjEsMTc1LDA.jpg"
   },
   {
     "id": "milo-design-collection",
-    "title": "MILO | DESIGN COLLECTION",
+    "title": "MILO — Design Collection",
     "designer": "Thang Mai",
     "designerProfile": "https://www.behance.net/kirithangmai",
     "projectUrl": "https://www.behance.net/gallery/218350483/MILO-DESIGN-COLLECTION",
-    "category": "Social Media / Digital Design",
+    "category": "Social Media / Digital",
+    "subcategory": "FMCG Campaign & Visuals",
     "year": "2025",
-    "coverUrl": "/images/projects/milo-design-collection/milo-hero.png",
-    "isSelected": true
+    "client": "Nestlé MILO",
+    "role": "Visual Design & Art Direction",
+    "capabilities": [
+      "Social Media",
+      "Key Visual",
+      "Digital Design",
+      "Art Direction"
+    ],
+    "heroImage": {
+      "src": "/images/projects/milo-design-collection/milo-hero.png",
+      "alt": "Nestlé MILO Design Collection",
+      "width": 1334,
+      "height": 1043,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/9e6ec3218350483.67a07d13510ea.jpg",
+        "alt": "MILO — Design Collection visual 1",
+        "width": 600,
+        "height": 368,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/21f98a218350483.67a07d1350b7a.jpg",
+        "alt": "MILO — Design Collection visual 2",
+        "width": 496,
+        "height": 248,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/8b5d38218350483.67a07d1351da3.jpg",
+        "alt": "MILO — Design Collection visual 3",
+        "width": 452,
+        "height": 226,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e5801e218350483.67a07d1350572.jpg",
+        "alt": "MILO — Design Collection visual 4",
+        "width": 452,
+        "height": 226,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/da3bb2218350483.67a07d135236b.jpg",
+        "alt": "MILO — Design Collection visual 5",
+        "width": 600,
+        "height": 411,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/e9d6a9218350483.67a07d1351652.jpg",
+        "alt": "MILO — Design Collection visual 6",
+        "width": 600,
+        "height": 391,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Bộ sưu tập ấn phẩm truyền thông kỹ thuật số và key visual năng động cho thương hiệu thức uống dinh dưỡng Nestlé MILO.",
+    "concept": "Truyền tải nguồn năng lượng thể thao mạnh mẽ, tinh thần bền bỉ và lối sống năng động của thế hệ trẻ thông qua ngôn ngữ hình ảnh rực rỡ và sắc nét.",
+    "visualSystem": "Tone xanh lá biểu trưng của thương hiệu MILO kết hợp cùng các dải năng lượng sắc sảo, typography thể thao mạnh mẽ và hiệu ứng visual bắt mắt.",
+    "application": "Digital key visual, social media feed, banners và ấn phẩm quảng cáo.",
+    "order": 10,
+    "isSelected": true,
+    "coverUrl": "/images/projects/milo-design-collection/milo-hero.png"
   },
   {
     "id": "posm-design-collection",
     "title": "POSM | DESIGN COLLECTION",
     "designer": "Thang Mai",
-    "designerProfile": "https://www.behance.net/kirithangmai",
-    "projectUrl": "https://www.behance.net/gallery/218352287/POSM-DESIGN-COLLECTION",
     "category": "POSM / Retail",
+    "subcategory": "Retail",
     "year": "2025",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/7885be218352287.Y3JvcCwyODg2LDIyNTcsMCwxNA.jpg",
-    "isSelected": false
+    "client": "DESIGN COLLECTION",
+    "role": "POSM / Retail Design",
+    "capabilities": [
+      "POSM",
+      "Retail",
+      "Posm",
+      "Marketing",
+      "Promotion"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/7885be218352287.Y3JvcCwyODg2LDIyNTcsMCwxNA.jpg",
+      "alt": "POSM | DESIGN COLLECTION - Thang Mai",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/428a97218352287.67a084033f046.jpg",
+        "alt": "Image may contain: screenshot, indoor and template",
+        "width": 1240,
+        "height": 728,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/max_632/d3f55e218352287.67a08403404ba.jpg",
+        "alt": "Image may contain: screenshot, internet and cartoon",
+        "width": 1582,
+        "height": 240,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/max_632/1e5f94218352287.67a084033f776.jpg",
+        "alt": "Image may contain: screenshot and template",
+        "width": 1508,
+        "height": 251,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/0d452d218352287.67a084033e760.jpg",
+        "alt": "Image may contain: screenshot and cartoon",
+        "width": 1240,
+        "height": 343,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/913ff4218352287.67a084033ff3a.jpg",
+        "alt": "Image may contain: cartoon",
+        "width": 1240,
+        "height": 365,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Generic POSM collection — overlap with specific POSM projects",
+    "concept": "Varied / Retail-focused",
+    "visualSystem": "Display / Standee / Shelf talker / Retail materials",
+    "application": "Display / Standee / Shelf talker / Retail materials",
+    "order": 11,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/7885be218352287.Y3JvcCwyODg2LDIyNTcsMCwxNA.jpg"
   },
   {
     "id": "takahiro-corporation-design",
-    "title": "TAKAHIRO COPORATION DESIGN",
+    "title": "Takahiro Corporation",
     "designer": "Ploy Diep",
     "designerProfile": "https://www.behance.net/vylan",
     "projectUrl": "https://www.behance.net/gallery/236462703/TAKAHIRO-COPORATION-DESIGN",
     "category": "Branding / Corporate",
+    "subcategory": "F&B Corporate",
     "year": "2025",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/cd4278236462703.Y3JvcCwzOTMyLDMwNzYsMjcyLDA.jpg",
-    "isSelected": true
+    "client": "Takahiro Corporation",
+    "role": "Brand Identity Design",
+    "capabilities": [
+      "Branding",
+      "Brand Identity",
+      "POSM",
+      "Art Direction"
+    ],
+    "heroImage": {
+      "src": "/images/projects/takahiro-corporation/takahiro-hero.jpg",
+      "alt": "Takahiro Corporation brand identity",
+      "width": 1400,
+      "height": 1095,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "/images/projects/takahiro-corporation/takahiro-01.gif",
+        "alt": "Brand motion application",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/takahiro-corporation/takahiro-02.jpg",
+        "alt": "Mockup application",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/takahiro-corporation/takahiro-03.jpg",
+        "alt": "Retail application",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/6c1ca3236462703.68ecc989c122a.gif",
+        "alt": "Project module 8",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/0de2f9236462703.68ecc989c3711.jpg",
+        "alt": "Project module 9",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/9207b5236462703.68ecc989c2a25.jpg",
+        "alt": "Project module 10",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/277b3c236462703.68ecc989c2f37.gif",
+        "alt": "Project module 11",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7a102c236462703.68ecc989c24df.jpg",
+        "alt": "Project module 12",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Hệ thống nhận diện thương hiệu cho Takahiro Corporation với ứng dụng rộng trên nhiều điểm chạm.",
+    "concept": "Xây dựng hình ảnh doanh nghiệp chuyên nghiệp, dễ nhận diện và thân thiện với khách hàng.",
+    "visualSystem": "Logo dứt khoát, màu sắc ấm, ứng dụng mockup rõ ràng trên POSM và digital.",
+    "application": "Logo, stationery, menu, signage, social content, motion.",
+    "order": 4,
+    "isSelected": true,
+    "coverUrl": "/images/projects/takahiro-corporation/takahiro-hero.jpg"
   },
   {
     "id": "graduated-project-cho-du-hi",
-    "title": "[GRADUATED PROJECT] - CHỢ DU HÍ",
+    "title": "Chợ Du Hí",
     "designer": "Thang Mai",
     "designerProfile": "https://www.behance.net/kirithangmai",
     "projectUrl": "https://www.behance.net/gallery/233123681/GRADUATED-PROJECT-CH-DU-HI",
-    "category": "Branding / Brand Identity",
+    "category": "Branding / Campaign",
+    "subcategory": "Graduated Project",
     "year": "2025",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/d6db84233123681.Y3JvcCw0MzIwLDMzNzksMCw0MTc.png",
-    "isSelected": true
+    "client": "Dự án tốt nghiệp / Chợ Du Hí",
+    "role": "Concept & Visual Design",
+    "capabilities": [
+      "Branding",
+      "Campaign",
+      "Key Visual",
+      "Art Direction"
+    ],
+    "heroImage": {
+      "src": "/images/projects/cho-du-hi/cho-du-hi-hero.png",
+      "alt": "Chợ Du Hí campaign artwork",
+      "width": 4320,
+      "height": 3379,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/0f18c2233123681.68a9981b72af8.jpg",
+        "alt": "Chợ Du Hí visual 1",
+        "width": 600,
+        "height": 1200,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/16577a233123681.68a9981a7c563.jpg",
+        "alt": "Chợ Du Hí visual 2",
+        "width": 852,
+        "height": 1161,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/673177233123681.68a9981a7cc3f.jpg",
+        "alt": "Chợ Du Hí visual 3",
+        "width": 960,
+        "height": 1440,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/f94cac233123681.68a9981a7e474.jpg",
+        "alt": "Chợ Du Hí visual 4",
+        "width": 960,
+        "height": 1440,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/ba10c8233123681.68a9981a7d3c7.jpg",
+        "alt": "Chợ Du Hí visual 5",
+        "width": 960,
+        "height": 1440,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/dd79dd233123681.68a9981a7d938.jpg",
+        "alt": "Chợ Du Hí visual 6",
+        "width": 960,
+        "height": 1440,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/f59cbe233123681.68a9981a7ddf3.jpg",
+        "alt": "Chợ Du Hí visual 7",
+        "width": 914,
+        "height": 1348,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/60f396233123681.68a9981a7e8d4.jpg",
+        "alt": "Chợ Du Hí visual 8",
+        "width": 960,
+        "height": 1440,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/fcd554233123681.68a9981a7ef29.jpg",
+        "alt": "Chợ Du Hí visual 9",
+        "width": 960,
+        "height": 1440,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/disp/be44f1233123681.68a998e826970.png",
+        "alt": "Chợ Du Hí visual 10",
+        "width": 600,
+        "height": 602,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Graduated project xây dựng chiến dịch thương hiệu lấy cảm hứng từ văn hóa chợ Sài Gòn.",
+    "concept": "Đưa không khí chợ truyền thống vào ngôn ngữ đồ họa đương đại, nhấn mạnh sự sôi động và cộng đồng.",
+    "visualSystem": "Màu sắc tươi sáng, hình ảnh minh họa mang tính biểu tượng, layout campaign có nhịp điệu.",
+    "application": "Key visual, poster, OOH, social assets, merchandise.",
+    "order": 3,
+    "isSelected": true,
+    "coverUrl": "/images/projects/cho-du-hi/cho-du-hi-hero.png"
   },
   {
     "id": "queen-ann-social-media",
     "title": "Queen Ann Social Media",
     "designer": "Ploy Diep",
-    "designerProfile": "https://www.behance.net/vylan",
-    "projectUrl": "https://www.behance.net/gallery/209637853/Queen-Ann-Social-Media",
     "category": "Social Media / Lifestyle",
+    "subcategory": "Lifestyle",
     "year": "2024",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/a21492209637853.Y3JvcCw3MDMwLDU0OTksMCww.png",
-    "isSelected": false
+    "client": "Queen Ann Social Media",
+    "role": "Social Media / Lifestyle Design",
+    "capabilities": [
+      "Social Media",
+      "Lifestyle"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/a21492209637853.Y3JvcCw3MDMwLDU0OTksMCww.png",
+      "alt": "Queen Ann Social Media - Ploy Diep",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/e44f36209637853.67038e17cfb26.png",
+        "alt": "Project visual",
+        "width": 1920,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Lifestyle/social work — decent but overlaps Mơ Nướng social",
+    "concept": "Elegant / Feminine",
+    "visualSystem": "Social posts / Feed design / Content calendar",
+    "application": "Social posts / Feed design / Content calendar",
+    "order": 14,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/a21492209637853.Y3JvcCw3MDMwLDU0OTksMCww.png"
   },
   {
     "id": "event-project-honda-unitour-2023",
-    "title": "EVENT PROJECT | Honda UNITOUR 2023",
+    "title": "EVENT PROJECT | Honda UNITOUR",
     "designer": "Thang Mai",
-    "designerProfile": "https://www.behance.net/kirithangmai",
-    "projectUrl": "https://www.behance.net/gallery/195111541/EVENT-PROJECT-Honda-UNITOUR-2023",
     "category": "Event / Key Visual",
+    "subcategory": "Key Visual",
     "year": "2023",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/3cfecb195111541.Y3JvcCwxMjc0LDk5NiwzNyww.jpg",
-    "isSelected": false
+    "client": "Honda UNITOUR 2023",
+    "role": "Event / Key Visual Design",
+    "capabilities": [
+      "Event",
+      "Key Visual",
+      "Honda",
+      "Keyvisual",
+      "Photoshop"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/3cfecb195111541.Y3JvcCwxMjc0LDk5NiwzNyww.jpg",
+      "alt": "EVENT PROJECT | Honda UNITOUR 2023 - Thang Mai",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/eed592195111541.6607c2b4b4596.jpg",
+        "alt": "Project visual",
+        "width": 1920,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Corporate event — good for B2B client showcase",
+    "concept": "Bold / Branded",
+    "visualSystem": "Key visual / Stage design / Event collaterals",
+    "application": "Key visual / Stage design / Event collaterals",
+    "order": 15,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/3cfecb195111541.Y3JvcCwxMjc0LDk5NiwzNyww.jpg"
   },
   {
     "id": "famiglia-pizza",
-    "title": "FAMIGLIA PIZZA",
+    "title": "Famiglia Pizza",
     "designer": "Ploy Diep",
     "designerProfile": "https://www.behance.net/vylan",
     "projectUrl": "https://www.behance.net/gallery/162463351/FAMIGLIA-PIZZA",
     "category": "Branding / F&B",
+    "subcategory": "Restaurant Identity",
     "year": "2023",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/23d150162463351.63d671e2d498e.jpg",
-    "isSelected": true
+    "client": "Famiglia Pizza",
+    "role": "Brand Identity Design",
+    "capabilities": [
+      "Branding",
+      "Brand Identity",
+      "Packaging"
+    ],
+    "heroImage": {
+      "src": "/images/projects/famiglia-pizza/famiglia-pizza-hero.png",
+      "alt": "Famiglia Pizza brand identity",
+      "width": 1400,
+      "height": 1095,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b011d5162463351.63d671e33d8ba.png",
+        "alt": "Famiglia Pizza brand presentation",
+        "width": 1400,
+        "height": 8553,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Nhận diện thương hiệu cho nhà hàng pizza phong cách Ý ấm cúng.",
+    "concept": "Gợi cảm giác gia đình, thân thuộc qua logo và bảng màu ấm.",
+    "visualSystem": "Typography cổ điển, màu đỏ và vàng ấm, ứng dụng trên menu và packaging.",
+    "application": "Logo, menu, packaging, signage.",
+    "order": 5,
+    "isSelected": true,
+    "coverUrl": "/images/projects/famiglia-pizza/famiglia-pizza-hero.png"
   },
   {
     "id": "media-post-kim-cuc-jewelry",
     "title": "Media Post - Kim Cúc Jewelry",
     "designer": "Ploy Diep",
-    "designerProfile": "https://www.behance.net/vylan",
-    "projectUrl": "https://www.behance.net/gallery/187914033/Media-Post-Kim-Cuc-Jewelry",
     "category": "Social Media / Jewelry",
+    "subcategory": "Jewelry",
     "year": "2023",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/85ed47187914033.Y3JvcCwyNTAwLDE5NTUsMCww.png",
-    "isSelected": false
+    "client": "Media Post",
+    "role": "Social Media / Jewelry Design",
+    "capabilities": [
+      "Social Media",
+      "Jewelry"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/85ed47187914033.Y3JvcCwyNTAwLDE5NTUsMCww.png",
+      "alt": "Media Post - Kim Cúc Jewelry - Ploy Diep",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/fc0a0b187914033.6593b62524963.png",
+        "alt": "Image may contain: fashion accessory and woman",
+        "width": 1920,
+        "height": 1146,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Luxury jewelry — adds category diversity",
+    "concept": "Elegant / Luxury",
+    "visualSystem": "Social posts / Jewelry layouts / Content",
+    "application": "Social posts / Jewelry layouts / Content",
+    "order": 17,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/85ed47187914033.Y3JvcCwyNTAwLDE5NTUsMCww.png"
   },
   {
     "id": "media-post-food",
     "title": "Media Post Food",
     "designer": "Ploy Diep",
-    "designerProfile": "https://www.behance.net/vylan",
-    "projectUrl": "https://www.behance.net/gallery/187510061/Media-Post-Food",
     "category": "Social Media / F&B",
+    "subcategory": "F&B",
     "year": "2023",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/b5622b187510061.Y3JvcCwxMzE1LDEwMjgsMCwxOQ.png",
-    "isSelected": false
+    "client": "Media Post Food",
+    "role": "Social Media / F&B Design",
+    "capabilities": [
+      "Social Media",
+      "F&B"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/b5622b187510061.Y3JvcCwxMzE1LDEwMjgsMCwxOQ.png",
+      "alt": "Media Post Food - Ploy Diep",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/943d7c187510061.658ab053da056.png",
+        "alt": "Image may contain: fast food, food and menu",
+        "width": 1920,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Generic food social — overlaps Mơ Nướng and Momiji",
+    "concept": "Varied / Appetizing",
+    "visualSystem": "Social media posts / Food photography layouts",
+    "application": "Social media posts / Food photography layouts",
+    "order": 18,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/b5622b187510061.Y3JvcCwxMzE1LDEwMjgsMCwxOQ.png"
   },
   {
     "id": "media-post-ovvani",
     "title": "Media Post Ovvani",
     "designer": "Ploy Diep",
-    "designerProfile": "https://www.behance.net/vylan",
-    "projectUrl": "https://www.behance.net/gallery/187511547/Media-Post-Ovvani",
     "category": "Social Media / Lifestyle",
+    "subcategory": "Lifestyle",
     "year": "2023",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/48619e187511547.Y3JvcCwxMjAwLDkzOCwwLDY1.png",
-    "isSelected": false
+    "client": "Media Post Ovvani",
+    "role": "Social Media / Lifestyle Design",
+    "capabilities": [
+      "Social Media",
+      "Lifestyle"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/48619e187511547.Y3JvcCwxMjAwLDkzOCwwLDY1.png",
+      "alt": "Media Post Ovvani - Ploy Diep",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/d7b924187511547.658ab63c45925.png",
+        "alt": "Image may contain: human face, woman and person",
+        "width": 1920,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Similar lifestyle social — not distinctive enough",
+    "concept": "Minimal / Lifestyle",
+    "visualSystem": "Social posts / Product layouts / Content",
+    "application": "Social posts / Product layouts / Content",
+    "order": 19,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/48619e187511547.Y3JvcCwxMjAwLDkzOCwwLDY1.png"
   },
   {
     "id": "momiji-restuarant-social-media-posm",
     "title": "Momiji Restuarant - Social Media - POSM",
     "designer": "Ploy Diep",
-    "designerProfile": "https://www.behance.net/vylan",
-    "projectUrl": "https://www.behance.net/gallery/187112943/Momiji-Restuarant-Social-Media-POSM",
     "category": "Social Media / POSM / F&B",
+    "subcategory": "POSM",
     "year": "2023",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/16912e187112943.Y3JvcCwyNjY3LDIwODYsMCww.png",
-    "isSelected": false
+    "client": "Momiji Restuarant",
+    "role": "Social Media / POSM / F&B Design",
+    "capabilities": [
+      "Social Media",
+      "POSM",
+      "F&B",
+      "Illustrator",
+      "Photoshop"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/16912e187112943.Y3JvcCwyNjY3LDIwODYsMCww.png",
+      "alt": "Momiji Restuarant - Social Media - POSM - Ploy Diep",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/a47122187112943.67038946297a0.png",
+        "alt": "Project visual",
+        "width": 1920,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Integrated social + POSM for F&B — strong commercial case",
+    "concept": "Japanese / Premium",
+    "visualSystem": "Social posts / Menu / POSM / Brand materials",
+    "application": "Social posts / Menu / POSM / Brand materials",
+    "order": 20,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/16912e187112943.Y3JvcCwyNjY3LDIwODYsMCww.png"
   },
   {
     "id": "portfolio-2023",
-    "title": "PORTFOLIO 2023",
+    "title": "PORTFOLIO",
     "designer": "Trần Bảo",
-    "designerProfile": "https://www.behance.net/ipad_19989bcd",
-    "projectUrl": "https://www.behance.net/gallery/184776251/PORTFOLIO-2023",
     "category": "Portfolio / Mixed",
+    "subcategory": "Mixed",
     "year": "2023",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/c9d2d4184776251.Y3JvcCwxMDQ3LDgxOSwwLDY3.jpg",
-    "isSelected": false
+    "client": "PORTFOLIO 2023",
+    "role": "Portfolio / Mixed Design",
+    "capabilities": [
+      "Portfolio",
+      "Mixed",
+      "2023 design",
+      "Cv design",
+      "Photoshop"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c9d2d4184776251.Y3JvcCwxMDQ3LDgxOSwwLDY3.jpg",
+      "alt": "PORTFOLIO 2023 - Trần Bảo",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/362ace184776251.6557b2f5437a9.gif",
+        "alt": "Project visual",
+        "width": 1486,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/916ef1184776251.660624b9e610b.png",
+        "alt": "Project visual",
+        "width": 1487,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/11631f184776251.6559c58bb96b5.gif",
+        "alt": "Project visual",
+        "width": 1486,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/90d941184776251.6557b2f54a58e.png",
+        "alt": "Project visual",
+        "width": 1487,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/ba549e184776251.6559c37735598.png",
+        "alt": "Project visual",
+        "width": 1487,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/1a30ac184776251.6557b2f54b177.png",
+        "alt": "Project visual",
+        "width": 1487,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/3533a5184776251.6557b2f54d9e1.gif",
+        "alt": "Project visual",
+        "width": 1486,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/7a0fb5184776251.6557b2f548d26.png",
+        "alt": "Project visual",
+        "width": 1487,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/40649a184776251.6557b2f5498f1.gif",
+        "alt": "Project visual",
+        "width": 1486,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/89f1fe184776251.6557b2f546b35.gif",
+        "alt": "Project visual",
+        "width": 1486,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/f3071a184776251.6559c37737556.png",
+        "alt": "Project visual",
+        "width": 1487,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/90ca39184776251.6557b2f547ed1.png",
+        "alt": "Project visual",
+        "width": 1487,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/20dae8184776251.6559c3773378f.gif",
+        "alt": "Project visual",
+        "width": 1486,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/5958fa184776251.6559c37734731.gif",
+        "alt": "Project visual",
+        "width": 1486,
+        "height": 375,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/2b8098184776251.6559c37736682.gif",
+        "alt": "Project visual",
+        "width": 1486,
+        "height": 199,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Portfolio-of-portfolios does not add client-facing value; overlaps individual projects",
+    "concept": "Varied",
+    "visualSystem": "Collection of best works across categories",
+    "application": "Collection of best works across categories",
+    "order": 21,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c9d2d4184776251.Y3JvcCwxMDQ3LDgxOSwwLDY3.jpg"
   },
   {
     "id": "social-media-posm-cong-ty-nyna",
     "title": "Social Media & POSM Công ty Nyna",
     "designer": "Ploy Diep",
-    "designerProfile": "https://www.behance.net/vylan",
-    "projectUrl": "https://www.behance.net/gallery/186937767/Social-Media-POSM-Cong-ty-Nyna",
     "category": "Social Media / POSM",
+    "subcategory": "POSM",
     "year": "2023",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/ee37c2186937767.Y3JvcCwyMTkwLDE3MTIsMCw0Mw.png",
-    "isSelected": false
+    "client": "Social Media & POSM Công ty Nyna",
+    "role": "Social Media / POSM Design",
+    "capabilities": [
+      "Social Media",
+      "POSM"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/ee37c2186937767.Y3JvcCwyMTkwLDE3MTIsMCw0Mw.png",
+      "alt": "Social Media & POSM Công ty Nyna - Ploy Diep",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/max_158/caf98b186937767.6589ab6146520.png",
+        "alt": "Project visual",
+        "width": 1461,
+        "height": 65,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/11c1b7186937767.6589ab6147eb6.gif",
+        "alt": "Project visual",
+        "width": 1920,
+        "height": 52,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/6e4703186937767.6589ab6148c0c.png",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 385,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/faa3ae186937767.6589ab6147101.gif",
+        "alt": "Project visual",
+        "width": 1920,
+        "height": 52,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/50f107186937767.6589ab6144931.gif",
+        "alt": "Project visual",
+        "width": 1440,
+        "height": 338,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/d148c6186937767.6589ab6143b37.gif",
+        "alt": "Project visual",
+        "width": 1920,
+        "height": 52,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/96254f186937767.6589ab6141a15.png",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 416,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/ec4c99186937767.6589ab6145514.gif",
+        "alt": "Project visual",
+        "width": 1920,
+        "height": 52,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/740ee8186937767.6589ab6142a24.png",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 803,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Corporate social + POSM — strong B2B fit",
+    "concept": "Corporate / Clean",
+    "visualSystem": "Social posts / POSM / Company profile materials",
+    "application": "Social posts / POSM / Company profile materials",
+    "order": 22,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/ee37c2186937767.Y3JvcCwyMTkwLDE3MTIsMCw0Mw.png"
   },
   {
     "id": "social-media-khalil-lounge",
     "title": "Social Media Khalil Lounge",
     "designer": "Ploy Diep",
-    "designerProfile": "https://www.behance.net/vylan",
-    "projectUrl": "https://www.behance.net/gallery/187478477/Social-Media-Khalil-Lounge",
     "category": "Social Media / F&B",
+    "subcategory": "F&B",
     "year": "2023",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/1b6486187478477.Y3JvcCwxMzE1LDEwMjgsMCw5.png",
-    "isSelected": false
+    "client": "Social Media Khalil Lounge",
+    "role": "Social Media / F&B Design",
+    "capabilities": [
+      "Social Media",
+      "F&B"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/1b6486187478477.Y3JvcCwxMzE1LDEwMjgsMCw5.png",
+      "alt": "Social Media Khalil Lounge - Ploy Diep",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/f668c0187478477.6589d96c3a7b8.gif",
+        "alt": "Project visual",
+        "width": 1121,
+        "height": 526,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/f9918a187478477.658ab018be671.png",
+        "alt": "Project visual",
+        "width": 1121,
+        "height": 1200,
+        "aspectRatio": "square",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Similar F&B social — choose strongest ones",
+    "concept": "Luxury / Lounge",
+    "visualSystem": "Social posts / Feed design / Content",
+    "application": "Social posts / Feed design / Content",
+    "order": 23,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/1b6486187478477.Y3JvcCwxMzE1LDEwMjgsMCw5.png"
   },
   {
     "id": "portfolio-graphic-design",
@@ -259,140 +1786,888 @@
     "designerProfile": "https://www.behance.net/duyphong6",
     "projectUrl": "https://www.behance.net/gallery/139888111/Portfolio-Graphic-Design",
     "category": "Graphic Design",
+    "subcategory": "Visual Composition & Typography",
     "year": "2022",
-    "coverUrl": "/images/projects/portfolio-graphic-design/portfolio-graphic-design-hero.png",
-    "isSelected": true
+    "client": "Duy Phong",
+    "role": "Graphic Design & Visual Composition",
+    "capabilities": [
+      "Graphic Design",
+      "Visual Composition",
+      "Layout",
+      "Typography"
+    ],
+    "heroImage": {
+      "src": "/images/projects/portfolio-graphic-design/portfolio-graphic-design-hero.png",
+      "alt": "Portfolio Graphic Design - Duy Phong",
+      "width": 1246,
+      "height": 1342,
+      "aspectRatio": "square",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "/images/projects/portfolio-graphic-design/portfolio-graphic-design-01.webp",
+        "alt": "Graphic Design Selection 01",
+        "width": 662,
+        "height": 2048,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/portfolio-graphic-design/portfolio-graphic-design-02.webp",
+        "alt": "Graphic Design Selection 02",
+        "width": 662,
+        "height": 2048,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/portfolio-graphic-design/portfolio-graphic-design-03.webp",
+        "alt": "Graphic Design Selection 03",
+        "width": 662,
+        "height": 2048,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/portfolio-graphic-design/portfolio-graphic-design-04.webp",
+        "alt": "Graphic Design Selection 04",
+        "width": 662,
+        "height": 2047,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Tuyển tập các tác phẩm thiết kế đồ họa, typography và visual composition nổi bật của Duy Phong.",
+    "concept": "Khai thác sức mạnh của cấu trúc layout, phân tầng thị giác và tương phản typographic trong các ấn phẩm đồ họa đa dạng.",
+    "visualSystem": "Hệ thống bố cục dạng grid tinh gọn, xử lý phân tầng thông tin rõ nét cùng sự tương phản giữa hình ảnh và typography.",
+    "application": "Ấn phẩm in ấn, poster nghệ thuật, digital visual content và typography composition.",
+    "order": 0,
+    "isSelected": false,
+    "coverUrl": "/images/projects/portfolio-graphic-design/portfolio-graphic-design-hero.png"
   },
   {
     "id": "singapore-travel",
     "title": "SINGAPORE TRAVEL",
     "designer": "Duy Phong",
-    "designerProfile": "https://www.behance.net/duyphong6",
-    "projectUrl": "https://www.behance.net/gallery/141879103/SINGAPORE-TRAVEL",
     "category": "Graphic Design / Travel",
+    "subcategory": "Travel",
     "year": "2022",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/original_webp/c08a08141879103.Y3JvcCwxMTc3LDkyMSwyMDksMA.png",
-    "isSelected": false
+    "client": "SINGAPORE TRAVEL",
+    "role": "Graphic Design / Travel Design",
+    "capabilities": [
+      "Graphic Design",
+      "Travel",
+      "Illustrator",
+      "Motion"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c08a08141879103.Y3JvcCwxMTc3LDkyMSwyMDksMA.png",
+      "alt": "SINGAPORE TRAVEL - Duy Phong",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c08a08141879103.Y3JvcCwxMTc3LDkyMSwyMDksMA.png",
+        "alt": "SINGAPORE TRAVEL visual",
+        "width": 808,
+        "height": 1050,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Graphic Design / Travel project thực hiện bởi Duy Phong cho SINGAPORE TRAVEL.",
+    "concept": "Định hướng thiết kế Graphic Design / Travel với phong cách hiện đại và nhận diện thương hiệu rõ nét.",
+    "visualSystem": "Hệ thống hình ảnh, typography và layout tối ưu cho Travel.",
+    "application": "Graphic Design / Travel deliverables, collateral và digital assets.",
+    "order": 25,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c08a08141879103.Y3JvcCwxMTc3LDkyMSwyMDksMA.png"
   },
   {
     "id": "social-media-for-on-digitals",
-    "title": "SOCIAL MEDIA FOR ON DIGITALS (2022)",
+    "title": "SOCIAL MEDIA FOR ON DIGITALS",
     "designer": "Trần Bảo",
-    "designerProfile": "https://www.behance.net/ipad_19989bcd",
-    "projectUrl": "https://www.behance.net/gallery/151605013/SOCIAL-MEDIA-FOR-ON-DIGITALS-(2022)",
     "category": "Social Media",
+    "subcategory": "Social Media",
     "year": "2022",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/af8810151605013.Y3JvcCwxMDYxLDgyOSwwLDA.jpg",
-    "isSelected": false
+    "client": "SOCIAL MEDIA FOR ON DIGITALS (2022)",
+    "role": "Social Media Design",
+    "capabilities": [
+      "Social Media",
+      "Ads",
+      "Advertising",
+      "Designer",
+      "Photoshop"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/af8810151605013.Y3JvcCwxMDYxLDgyOSwwLDA.jpg",
+      "alt": "SOCIAL MEDIA FOR ON DIGITALS (2022) - Trần Bảo",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/ef857c151605013.630f0d9128d09.jpg",
+        "alt": "Image may contain: monitor",
+        "width": 1556,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/6bce3e151605013.630f0d9129504.jpg",
+        "alt": "Image may contain: abstract",
+        "width": 1920,
+        "height": 338,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/1e3276151605013.630f118af2732.png",
+        "alt": "Project visual",
+        "width": 1936,
+        "height": 395,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/e3269a151605013.630f118af1a88.jpg",
+        "alt": "Project visual",
+        "width": 1556,
+        "height": 175,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Agency social work — decent but not outstanding",
+    "concept": "Clean / Tech",
+    "visualSystem": "Social media posts / Templates / Digital content",
+    "application": "Social media posts / Templates / Digital content",
+    "order": 26,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/af8810151605013.Y3JvcCwxMDYxLDgyOSwwLDA.jpg"
   },
   {
     "id": "rebranding-san-khau-kich-hoang-thai-thanh",
-    "title": "[REBRANDING] - SÂN KHẤU KỊCH HOÀNG THÁI THANH",
-    "designer": "Thang Mai",
+    "title": "Sân Khấu Kịch Hoàng Thái Thanh",
+    "designer": "Thang Mai + Team",
     "designerProfile": "https://www.behance.net/kirithangmai",
     "projectUrl": "https://www.behance.net/gallery/120581809/REBRANDING-SAN-KHU-KCH-HOANG-THAI-THANH",
     "category": "Branding / Rebranding",
+    "subcategory": "Cultural Identity",
     "year": "2021",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/776da4120581809.60ce3b4eaa9a3.jpg",
-    "isSelected": true
+    "client": "Sân Khấu Kịch Hoàng Thái Thanh",
+    "role": "Branding & Identity System",
+    "capabilities": [
+      "Branding",
+      "Brand Identity",
+      "Art Direction",
+      "Motion"
+    ],
+    "heroImage": {
+      "src": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-hero.jpg",
+      "alt": "Hoàng Thái Thanh theater rebranding hero",
+      "width": 808,
+      "height": 632,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-01.png",
+        "alt": "Brand identity spread",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-02.png",
+        "alt": "Collateral application",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-motion.gif",
+        "alt": "Motion asset",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4b0c40120581809.60b4ded762eed.png",
+        "alt": "Project module 4",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/ae41aa120581809.60b4dad30b67f.png",
+        "alt": "Project module 5",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/bb8af4120581809.60b4dad30b041.png",
+        "alt": "Project module 6",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/60845a120581809.60ba5c3a2ab52.png",
+        "alt": "Project module 7",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/d2cf12120581809.60ba5c3a2b083.gif",
+        "alt": "Project module 8",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/b36868120581809.60b525ffbc5f4.png",
+        "alt": "Project module 9",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/7e3e43120581809.60b4ded761623.png",
+        "alt": "Project module 10",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/4ac064120581809.60b4dad308ddc.png",
+        "alt": "Project module 11",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/8b73d1120581809.60b4e03bcd1f7.png",
+        "alt": "Project module 12",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/692c0d120581809.60b4dad30cbd8.png",
+        "alt": "Project module 13",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/6ac8b0120581809.62cbfcc46ca93.gif",
+        "alt": "Project module 14",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/7a5e34120581809.62cbf1b98b434.gif",
+        "alt": "Project module 15",
+        "width": 1400,
+        "height": 1094,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/d5ccf0120581809.60b4dfe7a05c8.png",
+        "alt": "Project module 16",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/f63aea120581809.60b4ded7626b5.png",
+        "alt": "Project module 17",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/fad3b4120581809.60b4ded761f27.png",
+        "alt": "Project module 18",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Rebranding project cho Sân Khấu Kịch Hoàng Thái Thanh — một trong những nhà hát kịch nổi tiếng tại Việt Nam.",
+    "concept": "Hệ thống nhận diện kết hợp giữa di sản sân khấu truyền thống và ngôn ngữ thiết kế hiện đại, tạo sự kết nối cảm xúc với khán giả trẻ.",
+    "visualSystem": "Typography mạnh mẽ, bảng màu trầm ấm, pattern lấy cảm hứng từ không gian sân khấu.",
+    "application": "Logo, stationery, poster, backdrop, motion intro, ứng dụng trên các ấn phẩm truyền thông.",
+    "order": 6,
+    "isSelected": true,
+    "coverUrl": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-hero.jpg"
   },
   {
     "id": "mv-vay-hoa-nhi",
-    "title": "MV VÁY HOA NHÍ (2020)",
+    "title": "MV VÁY HOA NHÍ",
     "designer": "Trần Bảo",
-    "designerProfile": "https://www.behance.net/ipad_19989bcd",
-    "projectUrl": "https://www.behance.net/gallery/147869697/MV-VAY-HOA-NHI-(2020)",
     "category": "Motion / Music Video",
+    "subcategory": "Music Video",
     "year": "2020",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/df1f8c147869697.Y3JvcCw4MDgsNjMyLDAsMA.jpg",
-    "isSelected": false
+    "client": "MV VÁY HOA NHÍ (2020)",
+    "role": "Motion / Music Video Design",
+    "capabilities": [
+      "Motion",
+      "Music Video",
+      "Âm nhạc",
+      "Music",
+      "MV"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/df1f8c147869697.Y3JvcCw4MDgsNjMyLDAsMA.jpg",
+      "alt": "MV VÁY HOA NHÍ (2020) - Trần Bảo",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/06398d147869697.62cb1627490db.jpg",
+        "alt": "Project visual",
+        "width": 1556,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Entertainment project — less aligned with corporate client portfolio",
+    "concept": "Stylized / Narrative",
+    "visualSystem": "Motion graphics / Lyric video / Visual effects",
+    "application": "Motion graphics / Lyric video / Visual effects",
+    "order": 28,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/df1f8c147869697.Y3JvcCw4MDgsNjMyLDAsMA.jpg"
   },
   {
     "id": "fjallraven-kanken",
-    "title": "FJALLRAVEN KANKEN (2019)",
+    "title": "Fjällräven Kånken",
     "designer": "Trần Bảo",
-    "designerProfile": "https://www.behance.net/ipad_19989bcd",
-    "projectUrl": "https://www.behance.net/gallery/132711379/FJALLRAVEN-KANKEN-(2019)",
     "category": "Graphic Design / Illustration",
+    "subcategory": "Illustration & Poster",
     "year": "2019",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/61bf06132711379.Y3JvcCw4MzgsNjU1LDYxMiw0NQ.jpg",
-    "isSelected": false
+    "client": "Fjällräven Kånken (Concept)",
+    "role": "Graphic Design & Illustration",
+    "capabilities": [
+      "Graphic Design",
+      "Illustration",
+      "Key Visual",
+      "Art Direction",
+      "Campaign"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/61bf06132711379.Y3JvcCw4MzgsNjU1LDYxMiw0NQ.jpg",
+      "alt": "Fjällräven Kånken Illustration - Trần Bảo",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/5b5be3132711379.61aed30c6c60b.jpg",
+        "alt": "Fjällräven Kånken Visual 1",
+        "width": 1990,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/503cf8132711379.61aed30c6b0c3.jpg",
+        "alt": "Fjällräven Kånken Visual 2",
+        "width": 1990,
+        "height": 1142,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/83993b132711379.61aed30c6be14.jpg",
+        "alt": "Fjällräven Kånken Visual 3",
+        "width": 1990,
+        "height": 884,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/d10fc0132711379.61aed30c6b6df.jpg",
+        "alt": "Fjällräven Kånken Visual 4",
+        "width": 1990,
+        "height": 755,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/ff5307132711379.61aed30c6cce7.jpg",
+        "alt": "Fjällräven Kånken Visual 5",
+        "width": 1990,
+        "height": 761,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/d41725132711379.61aed30c6d3e2.jpg",
+        "alt": "Fjällräven Kånken Visual 6",
+        "width": 1990,
+        "height": 1186,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Bộ minh họa và thiết kế đồ họa lấy cảm hứng từ dòng balo biểu tượng Fjällräven Kånken, kết hợp phong cách vẽ sinh động và màu sắc thiên nhiên.",
+    "concept": "Tinh thần khám phá ngoài trời, năng động và gần gũi với thiên nhiên được chuyển hóa thành phong cách minh họa độc đáo.",
+    "visualSystem": "Đường nét vẽ tay cá tính kết hợp typography hiện đại, bảng màu đất và xanh tự nhiên tạo cảm giác phiêu lưu.",
+    "application": "Poster nghệ thuật, social visual, ấn phẩm quảng bá và merchandise campaign.",
+    "order": 9,
+    "isSelected": true,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/61bf06132711379.Y3JvcCw4MzgsNjU1LDYxMiw0NQ.jpg",
+    "designerProfile": "https://www.behance.net/ipad_19989bcd",
+    "projectUrl": "https://www.behance.net/gallery/132711379/FJALLRAVEN-KANKEN-(2019)"
   },
   {
     "id": "hobgoblin",
     "title": "HOBGOBLIN",
     "designer": "Trần Bảo",
-    "designerProfile": "https://www.behance.net/ipad_19989bcd",
-    "projectUrl": "https://www.behance.net/gallery/129417345/HOBGOBLIN",
     "category": "Graphic Design / Illustration",
+    "subcategory": "Illustration",
     "year": "2019",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/c05d86129417345.Y3JvcCwzMDA5LDIzNTMsMTY5OCw1OTU.jpg",
-    "isSelected": false
+    "client": "HOBGOBLIN",
+    "role": "Graphic Design / Illustration Design",
+    "capabilities": [
+      "Graphic Design",
+      "Illustration",
+      "Artwork",
+      "Digital Art",
+      "Drawing"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c05d86129417345.Y3JvcCwzMDA5LDIzNTMsMTY5OCw1OTU.jpg",
+      "alt": "HOBGOBLIN - Trần Bảo",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/42929f129417345.616a7c4da5e0b.gif",
+        "alt": "Image may contain: drawing, sketch and cartoon",
+        "width": 882,
+        "height": 363,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/6c2211129417345.616a7c4da5275.jpg",
+        "alt": "Image may contain: cartoon, drawing and sketch",
+        "width": 1240,
+        "height": 400,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/ded1dd129417345.616a7c4da5805.jpg",
+        "alt": "Image may contain: human face, cartoon and woman",
+        "width": 2241,
+        "height": 366,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Entertainment/character style — not aligned with commercial client portfolio",
+    "concept": "Dark / Character",
+    "visualSystem": "Poster / Illustration / Character design",
+    "application": "Poster / Illustration / Character design",
+    "order": 30,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c05d86129417345.Y3JvcCwzMDA5LDIzNTMsMTY5OCw1OTU.jpg"
   },
   {
     "id": "huxley-new-balance",
-    "title": "HUXLEY & NEW BALANCE (2019)",
+    "title": "HUXLEY & NEW BALANCE",
     "designer": "Trần Bảo",
-    "designerProfile": "https://www.behance.net/ipad_19989bcd",
-    "projectUrl": "https://www.behance.net/gallery/133136257/HUXLEY-NEW-BALANCE-(2019)",
     "category": "Graphic Design / Illustration",
+    "subcategory": "Illustration",
     "year": "2019",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/8d4467133136257.Y3JvcCw3NjksNjAxLDcsMTc.jpg",
-    "isSelected": false
+    "client": "HUXLEY & NEW BALANCE (2019)",
+    "role": "Graphic Design / Illustration Design",
+    "capabilities": [
+      "Graphic Design",
+      "Illustration",
+      "Dàn trang",
+      "Design",
+      "Thiet ke web"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/8d4467133136257.Y3JvcCw3NjksNjAxLDcsMTc.jpg",
+      "alt": "HUXLEY & NEW BALANCE (2019) - Trần Bảo",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/57e625133136257.61b766af40cba.jpg",
+        "alt": "Image may contain: screenshot and abstract",
+        "width": 2290,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/c4a2a2133136257.61b766af41455.jpg",
+        "alt": "Image may contain: footwear",
+        "width": 1990,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Fashion/illustration project — not core to team positioning",
+    "concept": "Editorial / Lifestyle",
+    "visualSystem": "Poster / Illustration / Brand collaboration",
+    "application": "Poster / Illustration / Brand collaboration",
+    "order": 31,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/8d4467133136257.Y3JvcCw3NjksNjAxLDcsMTc.jpg"
   },
   {
     "id": "illustration-for-hello-stranger-coffee",
-    "title": "ILLUSTRATION FOR HELLO STRANGER COFFEE (2019)",
+    "title": "ILLUSTRATION FOR HELLO STRANGER COFFEE",
     "designer": "Trần Bảo",
-    "designerProfile": "https://www.behance.net/ipad_19989bcd",
-    "projectUrl": "https://www.behance.net/gallery/125534977/ILLUSTRATION-FOR-HELLO-STRANGER-COFFEE-(2019)",
     "category": "Illustration / Branding",
+    "subcategory": "Branding",
     "year": "2019",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/57a133125534977.Y3JvcCwxMDYxLDgyOSwwLDA.jpg",
-    "isSelected": false
+    "client": "ILLUSTRATION FOR HELLO STRANGER COFFEE (2019)",
+    "role": "Illustration / Branding Design",
+    "capabilities": [
+      "Illustration",
+      "Branding",
+      "Cà phê Việt",
+      "Coffee",
+      "Coffee shop"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/57a133125534977.Y3JvcCwxMDYxLDgyOSwwLDA.jpg",
+      "alt": "ILLUSTRATION FOR HELLO STRANGER COFFEE (2019) - Trần Bảo",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/b264d4125534977.611b7db642204.jpg",
+        "alt": "Image may contain: table, cup and soft drink",
+        "width": 1556,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/ab2974125534977.611b7db642902.jpg",
+        "alt": "Image may contain: food and dish",
+        "width": 2241,
+        "height": 282,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Coffee/F&B illustration — could support brand storytelling",
+    "concept": "Artisan / Hand-drawn",
+    "visualSystem": "Illustration / Packaging / Mural / Coffee branding",
+    "application": "Illustration / Packaging / Mural / Coffee branding",
+    "order": 32,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/57a133125534977.Y3JvcCwxMDYxLDgyOSwwLDA.jpg"
   },
   {
     "id": "mtv-intro-2019",
-    "title": "MTV INTRO (2019)",
+    "title": "MTV INTRO",
     "designer": "Trần Bảo",
-    "designerProfile": "https://www.behance.net/ipad_19989bcd",
-    "projectUrl": "https://www.behance.net/gallery/124094707/MTV-INTRO-(2019)",
     "category": "Motion / Animation",
+    "subcategory": "Animation",
     "year": "2019",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/90a502124094707.Y3JvcCw4ODAsNjg4LDY5MCwyNzI.jpg",
-    "isSelected": false
+    "client": "MTV INTRO (2019)",
+    "role": "Motion / Animation Design",
+    "capabilities": [
+      "Motion",
+      "Animation",
+      "2D Animation",
+      "Cartoon",
+      "Photoshop"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/90a502124094707.Y3JvcCw4ODAsNjg4LDY5MCwyNzI.jpg",
+      "alt": "MTV INTRO (2019) - Trần Bảo",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/e27afa124094707.60fd20768374f.jpg",
+        "alt": "Image may contain: cartoon and illustration",
+        "width": 2241,
+        "height": 1200,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/a18761124094707.60fd207683eac.jpg",
+        "alt": "Image may contain: cartoon, child art and drawing",
+        "width": 2241,
+        "height": 213,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Similar capability to Cartoon Network intro; choose the stronger one",
+    "concept": "Bold / Broadcast",
+    "visualSystem": "Channel intro / Motion graphics / Sound-driven visuals",
+    "application": "Channel intro / Motion graphics / Sound-driven visuals",
+    "order": 33,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/90a502124094707.Y3JvcCw4ODAsNjg4LDY5MCwyNzI.jpg"
   },
   {
     "id": "pnk",
     "title": "P!NK",
     "designer": "Trần Bảo",
-    "designerProfile": "https://www.behance.net/ipad_19989bcd",
-    "projectUrl": "https://www.behance.net/gallery/131639673/PNK",
     "category": "Graphic Design / Illustration",
+    "subcategory": "Illustration",
     "year": "2019",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/f0d5c6131639673.Y3JvcCwyMjQwLDE3NTIsMTAzNywxOTQ.jpg",
-    "isSelected": false
+    "client": "P!NK",
+    "role": "Graphic Design / Illustration Design",
+    "capabilities": [
+      "Graphic Design",
+      "Illustration",
+      "Artwork",
+      "Character design",
+      "Digitalpainting"
+    ],
+    "heroImage": {
+      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/f0d5c6131639673.Y3JvcCwyMjQwLDE3NTIsMTAzNywxOTQ.jpg",
+      "alt": "P!NK - Trần Bảo",
+      "width": 808,
+      "height": 1050,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/2c1d57131639673.6198fbb17a515.jpg",
+        "alt": "Image may contain: cartoon, woman and person",
+        "width": 1240,
+        "height": 400,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Music/entertainment focus — less client-facing",
+    "concept": "Edgy / Music",
+    "visualSystem": "Poster / Illustration / Typography",
+    "application": "Poster / Illustration / Typography",
+    "order": 34,
+    "isSelected": false,
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/f0d5c6131639673.Y3JvcCwyMjQwLDE3NTIsMTAzNywxOTQ.jpg"
   },
   {
     "id": "hue-cuisine",
-    "title": "HUÉ CUISINE (2018)",
+    "title": "Huế Cuisine",
     "designer": "Trần Bảo",
     "designerProfile": "https://www.behance.net/ipad_19989bcd",
     "projectUrl": "https://www.behance.net/gallery/128929041/HUE-CUISINE-(2018)",
-    "category": "Branding / Packaging / F&B",
+    "category": "Branding + Motion",
+    "subcategory": "Illustration / F&B",
     "year": "2018",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/758788128929041.Y3JvcCw4MDgsNjMyLDAsMA.jpg",
-    "isSelected": true
+    "client": "Ẩm thực Huế",
+    "role": "Illustration & Motion Design",
+    "capabilities": [
+      "Illustration",
+      "Motion",
+      "Branding",
+      "Art Direction"
+    ],
+    "heroImage": {
+      "src": "/images/projects/hue-cuisine/hue-cuisine-hero.jpg",
+      "alt": "Huế Cuisine watercolor illustration",
+      "width": 808,
+      "height": 634,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "/images/projects/hue-cuisine/hue-cuisine-motion.gif",
+        "alt": "Animated Huế cuisine motion graphic",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "hero-alt"
+      },
+      {
+        "src": "/images/projects/hue-cuisine/hue-cuisine-01.jpg",
+        "alt": "Bún bò Huế illustration",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      },
+      {
+        "src": "/images/projects/hue-cuisine/hue-cuisine-02.jpg",
+        "alt": "Bánh khoái Huế illustration",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Dự án minh họa và motion graphic về ẩm thực Huế với phong cách màu nước.",
+    "concept": "Tôn vinh tinh hoa ẩm thực cố đô qua từng nét vẽ tay, kết hợp chuyển động nhẹ nhàng.",
+    "visualSystem": "Watercolor, palette ấm, typography thân thiện, motion loop mượt mà.",
+    "application": "Social GIFs, menu illustration, poster, digital content.",
+    "order": 7,
+    "isSelected": true,
+    "coverUrl": "/images/projects/hue-cuisine/hue-cuisine-hero.jpg"
   },
   {
     "id": "meikos-cosmetics",
-    "title": "MEIKO'S COSMETICS (2018)",
+    "title": "Meiko's Cosmetics",
     "designer": "Trần Bảo",
     "designerProfile": "https://www.behance.net/ipad_19989bcd",
     "projectUrl": "https://www.behance.net/gallery/129210387/MEIKOS-COSMETICS-(2018)",
     "category": "Branding / Packaging",
+    "subcategory": "Beauty",
     "year": "2018",
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/404/58bdcf129210387.Y3JvcCwxMTQ1LDg5NiwxMTYsMA.jpg",
-    "isSelected": true
+    "client": "Meiko's Cosmetics",
+    "role": "Branding & Packaging Design",
+    "capabilities": [
+      "Branding",
+      "Packaging",
+      "Illustration"
+    ],
+    "heroImage": {
+      "src": "/images/projects/meikos-cosmetics/meikos-cosmetics-hero.gif",
+      "alt": "Meiko's Cosmetics brand system",
+      "width": 1400,
+      "height": 1095,
+      "aspectRatio": "landscape",
+      "quality": "high",
+      "usage": "hero"
+    },
+    "supportingImages": [
+      {
+        "src": "/images/projects/meikos-cosmetics/meikos-cosmetics-01.jpg",
+        "alt": "Packaging application",
+        "width": 1400,
+        "height": 1095,
+        "aspectRatio": "landscape",
+        "quality": "high",
+        "usage": "supporting"
+      }
+    ],
+    "description": "Thương hiệu mỹ phẩm với hệ thống minh họa dễ thương và bao bì nữ tính.",
+    "concept": "Tạo cảm giác vui tươi, trẻ trung cho dòng mỹ phẩm thông qua mascot và màu sắc pastel.",
+    "visualSystem": "Pink & purple pastel, illustration dễ thương, typography mềm mại.",
+    "application": "Logo, packaging, label, social template.",
+    "order": 8,
+    "isSelected": true,
+    "coverUrl": "/images/projects/meikos-cosmetics/meikos-cosmetics-hero.gif"
   }
 ]

@@ -38,12 +38,23 @@ export interface AllProject {
   id: string;
   title: string;
   designer: string;
-  designerProfile: string;
-  projectUrl: string;
+  designerProfile?: string;
+  projectUrl?: string;
   category: string;
+  subcategory?: string;
   year: string;
   coverUrl: string;
   isSelected: boolean;
+  client?: string | null;
+  role?: string;
+  capabilities?: string[];
+  heroImage?: ImageAsset;
+  supportingImages?: ImageAsset[];
+  description?: string;
+  concept?: string;
+  visualSystem?: string;
+  application?: string;
+  order?: number;
 }
 
 export interface TeamMember {

@@ -1,15 +1,16 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { ExternalLink } from "lucide-react";
 
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
+import { TeamProjectsGrid } from "@/components/sections/TeamProjectsGrid";
 import {
   getTeam,
   getTeamMemberById,
   getProjectsByDesigner,
   getAllProjectsByDesigner,
+  getInternalSlugMap,
 } from "@/lib/projects";
 
 interface TeamMemberPageProps {
@@ -44,6 +45,7 @@ export default async function TeamMemberPage({
 
   const selectedProjects = getProjectsByDesigner(member.name);
   const allProjects = getAllProjectsByDesigner(member.name);
+  const internalSlugMap = getInternalSlugMap();
 
   const initials = member.name
     .split(" ")
@@ -102,19 +104,8 @@ export default async function TeamMemberPage({
                 )}
                 <div className="mt-10 flex flex-wrap items-center gap-8">
                   <span className="text-sm uppercase tracking-widest text-muted-foreground">
-                    {allProjects.length} projects on Behance
+                    {allProjects.length} dự án hoàn thành
                   </span>
-                  {member.behanceUrl && (
-                    <a
-                      href={member.behanceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group inline-flex items-center gap-2 text-sm uppercase tracking-widest transition-opacity hover:opacity-70"
-                    >
-                      Xem Behance
-                      <ExternalLink className="h-4 w-4" />
-                    </a>
-                  )}
                 </div>
               </div>
             </div>
@@ -161,60 +152,21 @@ export default async function TeamMemberPage({
           </section>
         )}
 
-        {/* All Behance Projects */}
+        {/* All Projects */}
         <section className="border-t border-border px-6 py-24 lg:px-8 lg:py-32">
           <div className="mx-auto max-w-7xl">
             <h2 className="mb-4 font-serif text-3xl tracking-tight sm:text-4xl">
-              All Behance Projects
+              Tất cả dự án
             </h2>
             <p className="mb-16 max-w-2xl text-muted-foreground">
-              Toàn bộ dự án {member.name} đã đăng tải trên Behance.
+              Toàn bộ các dự án thiết kế thực hiện bởi {member.name} tại Artify Design.
             </p>
 
-            <div className="grid border-t border-l border-border sm:grid-cols-2 lg:grid-cols-3">
-              {allProjects.map((project) => (
-                <a
-                  key={project.id}
-                  href={project.projectUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative flex flex-col border-b border-r border-border bg-background transition-colors hover:bg-secondary/30"
-                >
-                  <div className="relative aspect-4/3 overflow-hidden bg-muted">
-                    <Image
-                      src={project.coverUrl}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    />
-                  </div>
-                  <div className="flex flex-1 flex-col p-6">
-                    <div className="mb-4 flex items-start justify-between gap-4">
-                      <span
-                        className={`text-xs uppercase tracking-widest ${
-                          project.isSelected
-                            ? "text-foreground"
-                            : "text-muted-foreground"
-                        }`}
-                      >
-                        {project.isSelected ? "Selected" : project.category}
-                      </span>
-                      <span className="text-xs text-muted-foreground">
-                        {project.year}
-                      </span>
-                    </div>
-                    <h3 className="font-serif text-xl font-normal leading-snug transition-colors group-hover:text-muted-foreground">
-                      {project.title}
-                    </h3>
-                    <div className="mt-auto flex items-center gap-2 pt-6 text-sm text-muted-foreground">
-                      <span>View on Behance</span>
-                      <ExternalLink className="h-3 w-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                    </div>
-                  </div>
-                </a>
-              ))}
-            </div>
+            <TeamProjectsGrid
+              projects={allProjects}
+              member={member}
+              internalSlugMap={internalSlugMap}
+            />
           </div>
         </section>
       </main>
