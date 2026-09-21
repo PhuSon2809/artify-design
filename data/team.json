@@ -1,0 +1,34 @@
+[
+  {
+    "id": "thang-mai",
+    "name": "Thang Mai",
+    "role": "Brand Designer / Art Director",
+    "behanceUrl": "https://www.behance.net/kirithangmai",
+    "bio": "Thang Mai tập trung vào branding và art direction cho các thương hiệu văn hóa, F&B và corporate. Các dự án của anh thể hiện sự cân bằng giữa concept sâu sắc và execution chỉn chu.",
+    "specialization": ["Branding", "Art Direction", "Key Visual", "POSM"]
+  },
+  {
+    "id": "tran-bao",
+    "name": "Trần Bảo",
+    "role": "Motion & Illustration Designer",
+    "behanceUrl": "https://www.behance.net/ipad_19989bcd",
+    "bio": "Trần Bảo mang đến góc nhìn sống động qua motion graphics và illustration. Phong cách của anh đa dạng từ watercolor nhẹ nhàng đến animation broadcast năng động.",
+    "specialization": ["Motion", "Illustration", "Branding", "Packaging"]
+  },
+  {
+    "id": "duy-phong",
+    "name": "Duy Phong",
+    "role": "Graphic Designer",
+    "behanceUrl": "https://www.behance.net/duyphong6",
+    "bio": "Duy Phong có nền tảng vững chắc trong graphic design và visual composition. Anh đóng góp vào các dự án đòi hỏi sự tinh tế trong layout và typography.",
+    "specialization": ["Graphic Design", "Visual Composition", "Portfolio Design"]
+  },
+  {
+    "id": "ploy-diep",
+    "name": "Ploy Diep",
+    "role": "Social Media & POSM Designer",
+    "behanceUrl": "https://www.behance.net/vylan",
+    "bio": "Ploy Diep chuyên về social media content và POSM/retail design. Các dự án của cô thể hiện khả năng duy trì nhận diện nhất quán trên nhiều điểm chạm.",
+    "specialization": ["Social Media", "POSM", "Retail", "F&B Branding"]
+  }
+]

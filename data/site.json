@@ -1,0 +1,16 @@
+{
+  "name": "Artify Design",
+  "tagline": "Creative Studio",
+  "location": "Ho Chi Minh City, Vietnam",
+  "language": "vi",
+  "contactEmail": "hello@artifydesign.vn",
+  "socialUrls": {
+    "behance": "https://www.behance.net/"
+  },
+  "navigation": [
+    { "label": "About", "href": "/about" },
+    { "label": "Work", "href": "/work" },
+    { "label": "Team", "href": "/team" },
+    { "label": "Contact", "href": "/contact" }
+  ]
+}
