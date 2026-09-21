@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="artifyA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ededed"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="#09090b"/>
+  <rect x="8" y="8" width="496" height="496" rx="104" fill="none" stroke="#27272a" stroke-width="10"/>
+
+  <!-- Serif Letter A -->
+  <path d="
+    M 236 112
+    C 236 104 242 98 252 98
+    H 260
+    C 270 98 276 104 278 112
+    L 392 384
+    C 395 391 402 394 414 394
+    V 408
+    H 318
+    V 394
+    C 330 394 336 390 333 382
+    L 311 324
+    H 193
+    L 171 382
+    C 168 390 174 394 186 394
+    V 408
+    H 98
+    V 394
+    C 110 394 117 391 120 384
+    L 236 112
+    Z
+    M 252 152
+    L 201 298
+    H 301
+    L 258 152
+    Z
+  " fill="url(#artifyA)"/>
+</svg>

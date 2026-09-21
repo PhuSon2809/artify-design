@@ -21,6 +21,13 @@ export const metadata: Metadata = {
   title: "Artify Design — Creative Team",
   description:
     "Artify Design là một creative team tại Ho Chi Minh City chuyên về branding, key visual, social media, POSM và motion design.",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
