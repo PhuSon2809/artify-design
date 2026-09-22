@@ -4,7 +4,7 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, LayoutGrid, Rows } from "lucide-react";
 
 import { getTeam, getProjectsByDesigner, cleanTitle } from "@/lib/projects";
 import { Lightbox, LightboxTrigger } from "@/components/lightbox";
@@ -93,6 +93,23 @@ export function ProjectDetailSection({
 }: ProjectDetailSectionProps) {
   const [lightboxOpen, setLightboxOpen] = React.useState(false);
   const [lightboxIndex, setLightboxIndex] = React.useState(0);
+  const [layoutMode, setLayoutMode] = React.useState<"grid" | "column">("grid");
+
+  React.useEffect(() => {
+    try {
+      const saved = localStorage.getItem("project-gallery-layout");
+      if (saved === "grid" || saved === "column") {
+        setLayoutMode(saved);
+      }
+    } catch {}
+  }, []);
+
+  const handleLayoutChange = (mode: "grid" | "column") => {
+    setLayoutMode(mode);
+    try {
+      localStorage.setItem("project-gallery-layout", mode);
+    } catch {}
+  };
 
   const galleryImages = React.useMemo(() => {
     const list: typeof project.heroImage[] = [];
@@ -147,42 +164,118 @@ export function ProjectDetailSection({
         </div>
       </section>
 
-      {/* Project Visuals Showcase: 2 Columns Grid */}
+      {/* Project Visuals Showcase: Switchable between Grid and Continuous Column */}
       <section className="px-6 py-8 sm:py-12 lg:px-8 bg-background">
-        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 border-t border-l border-border">
-          {galleryImages.map((image, index) => (
-            <motion.figure
-              key={`${image.src}-${index}`}
-              initial={{ opacity: 0, y: 16 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-20px" }}
-              transition={{ duration: 0.5, delay: (index % 2) * 0.05 }}
-              className="relative flex flex-col w-full h-full overflow-hidden border-r border-b border-border p-4 sm:p-6 lg:p-8"
+        <div className="mx-auto max-w-7xl mb-6 flex items-center justify-between">
+          <p className="text-xs uppercase tracking-widest text-muted-foreground">
+            Visuals ({galleryImages.length})
+          </p>
+
+          <div
+            className="inline-flex items-center rounded-sm border border-border bg-muted/40 p-1 text-xs"
+            role="group"
+            aria-label="Layout view mode"
+          >
+            <button
+              type="button"
+              onClick={() => handleLayoutChange("grid")}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xs transition-all ${
+                layoutMode === "grid"
+                  ? "bg-background text-foreground shadow-xs font-medium"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+              aria-pressed={layoutMode === "grid"}
+              title="Grid layout (2 columns)"
             >
-              <LightboxTrigger
-                onClick={() => openLightbox(index)}
-                className="group flex flex-col flex-1 w-full h-full cursor-zoom-in text-center items-center justify-center"
+              <LayoutGrid className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">Grid</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => handleLayoutChange("column")}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xs transition-all ${
+                layoutMode === "column"
+                  ? "bg-background text-foreground shadow-xs font-medium"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+              aria-pressed={layoutMode === "column"}
+              title="Continuous column layout (no gap)"
+            >
+              <Rows className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">Column</span>
+            </button>
+          </div>
+        </div>
+
+        {layoutMode === "grid" ? (
+          <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 border-t border-l border-border">
+            {galleryImages.map((image, index) => (
+              <motion.figure
+                key={`${image.src}-${index}`}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-20px" }}
+                transition={{ duration: 0.5, delay: (index % 2) * 0.05 }}
+                className="relative flex flex-col w-full h-full overflow-hidden border-r border-b border-border p-4 sm:p-6 lg:p-8"
               >
-                <div className="relative flex flex-1 w-full h-full min-h-[350px] sm:min-h-[450px] items-center justify-center overflow-hidden">
+                <LightboxTrigger
+                  onClick={() => openLightbox(index)}
+                  className="group flex flex-col flex-1 w-full h-full cursor-zoom-in text-center items-center justify-center"
+                >
+                  <div className="relative flex flex-1 w-full h-full min-h-[350px] sm:min-h-[450px] items-center justify-center overflow-hidden">
+                    <Image
+                      src={image.src}
+                      alt={image.alt || `${cleanTitle(project.title)} visual ${index + 1}`}
+                      width={image.width || 1400}
+                      height={image.height || 1000}
+                      className="h-full w-auto max-w-full max-h-[75vh] mx-auto object-contain block transition-transform duration-500 ease-out group-hover:scale-105 will-change-transform"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 640px"
+                      priority={index < 2}
+                    />
+                  </div>
+                  {image.caption && (
+                    <figcaption className="mt-3 text-center text-xs text-muted-foreground">
+                      {image.caption}
+                    </figcaption>
+                  )}
+                </LightboxTrigger>
+              </motion.figure>
+            ))}
+          </div>
+        ) : (
+          <div className="mx-auto max-w-7xl flex flex-col gap-0 border border-border overflow-hidden">
+            {galleryImages.map((image, index) => (
+              <motion.figure
+                key={`${image.src}-${index}`}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-20px" }}
+                transition={{ duration: 0.5 }}
+                className="relative w-full block m-0 p-0 overflow-hidden leading-none"
+              >
+                <LightboxTrigger
+                  onClick={() => openLightbox(index)}
+                  className="group relative block w-full p-0 m-0 border-0 bg-transparent text-left cursor-zoom-in overflow-hidden"
+                >
                   <Image
                     src={image.src}
                     alt={image.alt || `${cleanTitle(project.title)} visual ${index + 1}`}
-                    width={image.width || 1400}
-                    height={image.height || 1000}
-                    className="h-full w-auto max-w-full max-h-[75vh] mx-auto object-contain block transition-transform duration-500 ease-out group-hover:scale-105 will-change-transform"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 640px"
+                    width={image.width || 1920}
+                    height={image.height || 1080}
+                    className="w-full h-auto block transition-opacity duration-300 group-hover:opacity-95"
+                    sizes="(max-width: 1280px) 100vw, 1280px"
                     priority={index < 2}
                   />
-                </div>
-                {image.caption && (
-                  <figcaption className="mt-3 text-center text-xs text-muted-foreground">
-                    {image.caption}
-                  </figcaption>
-                )}
-              </LightboxTrigger>
-            </motion.figure>
-          ))}
-        </div>
+                  {image.caption && (
+                    <figcaption className="p-3 text-center text-xs text-muted-foreground bg-background/90 border-b border-border">
+                      {image.caption}
+                    </figcaption>
+                  )}
+                </LightboxTrigger>
+              </motion.figure>
+            ))}
+          </div>
+        )}
       </section>
 
       {/* Project Overview & Story */}
