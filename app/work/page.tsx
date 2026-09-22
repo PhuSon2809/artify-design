@@ -1,10 +1,10 @@
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 import { WorksGridSection } from "@/components/sections/WorksGridSection";
-import { getSelectedProjects } from "@/lib/projects";
+import { getAllProjects } from "@/lib/projects";
 
 export default function WorkPage() {
-  const projects = getSelectedProjects();
+  const projects = getAllProjects();
 
   return (
     <>

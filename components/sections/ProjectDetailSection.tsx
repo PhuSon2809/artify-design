@@ -1,44 +1,44 @@
-"use client";
+"use client"
 
-import * as React from "react";
-import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import { ArrowLeft, ArrowRight, LayoutGrid, Rows } from "lucide-react";
+import * as React from "react"
+import { motion } from "framer-motion"
+import Image from "next/image"
+import Link from "next/link"
+import { ArrowLeft, ArrowRight, LayoutGrid, Rows } from "lucide-react"
 
-import { getTeam, getProjectsByDesigner, cleanTitle } from "@/lib/projects";
-import { Lightbox, LightboxTrigger } from "@/components/lightbox";
-import type { Project, TeamMember } from "@/types";
+import { getTeam, getProjectsByDesigner, cleanTitle } from "@/lib/projects"
+import { Lightbox, LightboxTrigger } from "@/components/lightbox"
+import type { Project, TeamMember } from "@/types"
 
 interface ProjectDetailSectionProps {
-  project: Project;
-  prev: Project | null;
-  next: Project | null;
+  project: Project
+  prev: Project | null
+  next: Project | null
 }
 
 function findDesigner(designerName: string): TeamMember | undefined {
-  const team = getTeam();
+  const team = getTeam()
   return team.find((member) =>
     designerName.toLowerCase().includes(member.name.toLowerCase())
-  );
+  )
 }
 
 function DesignerCredit({ designerName }: { designerName: string }) {
-  const designer = findDesigner(designerName);
-  if (!designer) return null;
+  const designer = findDesigner(designerName)
+  if (!designer) return null
 
-  const projects = getProjectsByDesigner(designer.name);
+  const projects = getProjectsByDesigner(designer.name)
   const initials = designer.name
     .split(" ")
     .map((n) => n[0])
     .join("")
     .slice(0, 2)
-    .toUpperCase();
+    .toUpperCase()
 
   return (
     <section className="border-t border-border px-6 py-24 lg:px-8 lg:py-32">
       <div className="mx-auto max-w-7xl">
-        <p className="mb-12 text-sm uppercase tracking-widest text-muted-foreground">
+        <p className="mb-12 text-sm tracking-widest text-muted-foreground uppercase">
           Behind the work
         </p>
         <div className="grid gap-12 lg:grid-cols-12">
@@ -73,7 +73,7 @@ function DesignerCredit({ designerName }: { designerName: string }) {
             <div className="mt-8 flex flex-wrap items-center gap-8">
               <Link
                 href={`/team/${designer.id}`}
-                className="text-sm font-medium uppercase tracking-widest transition-opacity hover:opacity-70"
+                className="text-sm font-medium tracking-widest uppercase transition-opacity hover:opacity-70"
               >
                 View profile · {projects.length} work
                 {projects.length !== 1 ? "s" : ""}
@@ -83,7 +83,7 @@ function DesignerCredit({ designerName }: { designerName: string }) {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 export function ProjectDetailSection({
@@ -91,45 +91,40 @@ export function ProjectDetailSection({
   prev,
   next,
 }: ProjectDetailSectionProps) {
-  const [lightboxOpen, setLightboxOpen] = React.useState(false);
-  const [lightboxIndex, setLightboxIndex] = React.useState(0);
-  const [layoutMode, setLayoutMode] = React.useState<"grid" | "column">("grid");
+  const [lightboxOpen, setLightboxOpen] = React.useState(false)
+  const [lightboxIndex, setLightboxIndex] = React.useState(0)
+  const [layoutMode, setLayoutMode] = React.useState<"grid" | "column">(
+    "column"
+  )
 
+  // Default view mode to column whenever entering or switching projects
   React.useEffect(() => {
-    try {
-      const saved = localStorage.getItem("project-gallery-layout");
-      if (saved === "grid" || saved === "column") {
-        setLayoutMode(saved);
-      }
-    } catch {}
-  }, []);
+    setLayoutMode("column")
+  }, [project.id])
 
   const handleLayoutChange = (mode: "grid" | "column") => {
-    setLayoutMode(mode);
-    try {
-      localStorage.setItem("project-gallery-layout", mode);
-    } catch {}
-  };
+    setLayoutMode(mode)
+  }
 
   const galleryImages = React.useMemo(() => {
-    const list: typeof project.heroImage[] = [];
-    const seen = new Set<string>();
+    const list: (typeof project.heroImage)[] = []
+    const seen = new Set<string>()
     if (project.heroImage?.src) {
-      list.push(project.heroImage);
-      seen.add(project.heroImage.src);
+      list.push(project.heroImage)
+      seen.add(project.heroImage.src)
     }
     for (const img of project.supportingImages || []) {
       if (img.src && !seen.has(img.src)) {
-        list.push(img);
-        seen.add(img.src);
+        list.push(img)
+        seen.add(img.src)
       }
     }
-    return list;
-  }, [project.heroImage, project.supportingImages]);
+    return list
+  }, [project.heroImage, project.supportingImages])
 
   function openLightbox(index: number) {
-    setLightboxIndex(index);
-    setLightboxOpen(true);
+    setLightboxIndex(index)
+    setLightboxOpen(true)
   }
 
   return (
@@ -144,8 +139,8 @@ export function ProjectDetailSection({
             className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between"
           >
             <div>
-              <div className="mb-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs uppercase tracking-widest text-muted-foreground">
-                <span className="font-serif text-lg italic text-foreground">
+              <div className="mb-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs tracking-widest text-muted-foreground uppercase">
+                <span className="font-serif text-lg text-foreground italic">
                   {String(project.order).padStart(2, "0")}
                 </span>
                 <span>{project.category}</span>
@@ -157,17 +152,21 @@ export function ProjectDetailSection({
             </div>
 
             <div className="text-left sm:text-right">
-              <p className="text-xs uppercase tracking-widest text-muted-foreground">Designer</p>
-              <p className="font-serif text-lg text-foreground">{project.designer}</p>
+              <p className="text-xs tracking-widest text-muted-foreground uppercase">
+                Designer
+              </p>
+              <p className="font-serif text-lg text-foreground">
+                {project.designer}
+              </p>
             </div>
           </motion.div>
         </div>
       </section>
 
       {/* Project Visuals Showcase: Switchable between Grid and Continuous Column */}
-      <section className="px-6 py-8 sm:py-12 lg:px-8 bg-background">
-        <div className="mx-auto max-w-7xl mb-6 flex items-center justify-between">
-          <p className="text-xs uppercase tracking-widest text-muted-foreground">
+      <section className="bg-background px-6 py-8 sm:py-12 lg:px-8">
+        <div className="mx-auto mb-6 flex max-w-7xl items-center justify-between">
+          <p className="text-xs tracking-widest text-muted-foreground uppercase">
             Visuals ({galleryImages.length})
           </p>
 
@@ -179,9 +178,9 @@ export function ProjectDetailSection({
             <button
               type="button"
               onClick={() => handleLayoutChange("grid")}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xs transition-all ${
+              className={`flex items-center gap-1.5 rounded-xs px-3 py-1.5 transition-all ${
                 layoutMode === "grid"
-                  ? "bg-background text-foreground shadow-xs font-medium"
+                  ? "bg-background font-medium text-foreground shadow-xs"
                   : "text-muted-foreground hover:text-foreground"
               }`}
               aria-pressed={layoutMode === "grid"}
@@ -193,9 +192,9 @@ export function ProjectDetailSection({
             <button
               type="button"
               onClick={() => handleLayoutChange("column")}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xs transition-all ${
+              className={`flex items-center gap-1.5 rounded-xs px-3 py-1.5 transition-all ${
                 layoutMode === "column"
-                  ? "bg-background text-foreground shadow-xs font-medium"
+                  ? "bg-background font-medium text-foreground shadow-xs"
                   : "text-muted-foreground hover:text-foreground"
               }`}
               aria-pressed={layoutMode === "column"}
@@ -208,7 +207,7 @@ export function ProjectDetailSection({
         </div>
 
         {layoutMode === "grid" ? (
-          <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 border-t border-l border-border">
+          <div className="mx-auto grid max-w-7xl grid-cols-1 border-t border-l border-border md:grid-cols-2">
             {galleryImages.map((image, index) => (
               <motion.figure
                 key={`${image.src}-${index}`}
@@ -216,19 +215,22 @@ export function ProjectDetailSection({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-20px" }}
                 transition={{ duration: 0.5, delay: (index % 2) * 0.05 }}
-                className="relative flex flex-col w-full h-full overflow-hidden border-r border-b border-border p-4 sm:p-6 lg:p-8"
+                className="relative flex h-full w-full flex-col overflow-hidden border-r border-b border-border p-4 sm:p-6 lg:p-8"
               >
                 <LightboxTrigger
                   onClick={() => openLightbox(index)}
-                  className="group flex flex-col flex-1 w-full h-full cursor-zoom-in text-center items-center justify-center"
+                  className="group flex h-full w-full flex-1 cursor-zoom-in flex-col items-center justify-center text-center"
                 >
-                  <div className="relative flex flex-1 w-full h-full min-h-[350px] sm:min-h-[450px] items-center justify-center overflow-hidden">
+                  <div className="relative flex h-full min-h-[350px] w-full flex-1 items-center justify-center overflow-hidden sm:min-h-[450px]">
                     <Image
                       src={image.src}
-                      alt={image.alt || `${cleanTitle(project.title)} visual ${index + 1}`}
+                      alt={
+                        image.alt ||
+                        `${cleanTitle(project.title)} visual ${index + 1}`
+                      }
                       width={image.width || 1400}
                       height={image.height || 1000}
-                      className="h-full w-auto max-w-full max-h-[75vh] mx-auto object-contain block transition-transform duration-500 ease-out group-hover:scale-105 will-change-transform"
+                      className="mx-auto block h-full max-h-[75vh] w-auto max-w-full object-contain transition-transform duration-500 ease-out will-change-transform group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 640px"
                       priority={index < 2}
                     />
@@ -243,7 +245,7 @@ export function ProjectDetailSection({
             ))}
           </div>
         ) : (
-          <div className="mx-auto max-w-7xl flex flex-col gap-0 border border-border overflow-hidden">
+          <div className="mx-auto flex max-w-7xl flex-col gap-0 overflow-hidden border border-border">
             {galleryImages.map((image, index) => (
               <motion.figure
                 key={`${image.src}-${index}`}
@@ -251,23 +253,26 @@ export function ProjectDetailSection({
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-20px" }}
                 transition={{ duration: 0.5 }}
-                className="relative w-full block m-0 p-0 overflow-hidden leading-none"
+                className="relative m-0 block w-full overflow-hidden p-0 leading-none"
               >
                 <LightboxTrigger
                   onClick={() => openLightbox(index)}
-                  className="group relative block w-full p-0 m-0 border-0 bg-transparent text-left cursor-zoom-in overflow-hidden"
+                  className="group relative m-0 block w-full cursor-zoom-in overflow-hidden border-0 bg-transparent p-0 text-left"
                 >
                   <Image
                     src={image.src}
-                    alt={image.alt || `${cleanTitle(project.title)} visual ${index + 1}`}
+                    alt={
+                      image.alt ||
+                      `${cleanTitle(project.title)} visual ${index + 1}`
+                    }
                     width={image.width || 1920}
                     height={image.height || 1080}
-                    className="w-full h-auto block transition-opacity duration-300 group-hover:opacity-95"
+                    className="block h-auto w-full transition-opacity duration-300 group-hover:opacity-95"
                     sizes="(max-width: 1280px) 100vw, 1280px"
                     priority={index < 2}
                   />
                   {image.caption && (
-                    <figcaption className="p-3 text-center text-xs text-muted-foreground bg-background/90 border-b border-border">
+                    <figcaption className="border-b border-border bg-background/90 p-3 text-center text-xs text-muted-foreground">
                       {image.caption}
                     </figcaption>
                   )}
@@ -285,7 +290,7 @@ export function ProjectDetailSection({
             <div className="lg:col-span-4">
               <div className="space-y-6">
                 <div>
-                  <h2 className="mb-2 text-xs uppercase tracking-widest text-muted-foreground">
+                  <h2 className="mb-2 text-xs tracking-widest text-muted-foreground uppercase">
                     Capabilities
                   </h2>
                   <p className="text-sm leading-relaxed text-muted-foreground">
@@ -294,28 +299,31 @@ export function ProjectDetailSection({
                 </div>
                 {project.role && (
                   <div>
-                    <h2 className="mb-2 text-xs uppercase tracking-widest text-muted-foreground">
+                    <h2 className="mb-2 text-xs tracking-widest text-muted-foreground uppercase">
                       Role
                     </h2>
-                    <p className="text-sm text-muted-foreground">{project.role}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {project.role}
+                    </p>
                   </div>
                 )}
-
               </div>
             </div>
 
             <div className="lg:col-span-8">
               {project.description && (
-                <p className="font-serif text-2xl font-normal leading-relaxed text-foreground sm:text-3xl">
+                <p className="font-serif text-2xl leading-relaxed font-normal text-foreground sm:text-3xl">
                   {project.description}
                 </p>
               )}
 
-              {(project.concept || project.visualSystem || project.application) && (
+              {(project.concept ||
+                project.visualSystem ||
+                project.application) && (
                 <div className="mt-8 grid gap-6 border-t border-border pt-6 sm:grid-cols-3">
                   {project.concept && (
                     <div>
-                      <h3 className="mb-2 text-xs uppercase tracking-widest text-muted-foreground">
+                      <h3 className="mb-2 text-xs tracking-widest text-muted-foreground uppercase">
                         Concept
                       </h3>
                       <p className="text-sm leading-relaxed text-muted-foreground">
@@ -325,7 +333,7 @@ export function ProjectDetailSection({
                   )}
                   {project.visualSystem && (
                     <div>
-                      <h3 className="mb-2 text-xs uppercase tracking-widest text-muted-foreground">
+                      <h3 className="mb-2 text-xs tracking-widest text-muted-foreground uppercase">
                         Visual System
                       </h3>
                       <p className="text-sm leading-relaxed text-muted-foreground">
@@ -335,7 +343,7 @@ export function ProjectDetailSection({
                   )}
                   {project.application && (
                     <div>
-                      <h3 className="mb-2 text-xs uppercase tracking-widest text-muted-foreground">
+                      <h3 className="mb-2 text-xs tracking-widest text-muted-foreground uppercase">
                         Application
                       </h3>
                       <p className="text-sm leading-relaxed text-muted-foreground">
@@ -363,7 +371,9 @@ export function ProjectDetailSection({
               <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
               <div className="text-left">
                 <span className="block text-muted-foreground">Previous</span>
-                <span className="font-serif text-lg">{cleanTitle(prev.title)}</span>
+                <span className="font-serif text-lg">
+                  {cleanTitle(prev.title)}
+                </span>
               </div>
             </Link>
           ) : (
@@ -372,7 +382,7 @@ export function ProjectDetailSection({
 
           <Link
             href="/work"
-            className="hidden text-sm uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground md:block"
+            className="hidden text-sm tracking-widest text-muted-foreground uppercase transition-colors hover:text-foreground md:block"
           >
             All Works
           </Link>
@@ -384,7 +394,9 @@ export function ProjectDetailSection({
             >
               <div className="text-right">
                 <span className="block text-muted-foreground">Next</span>
-                <span className="font-serif text-lg">{cleanTitle(next.title)}</span>
+                <span className="font-serif text-lg">
+                  {cleanTitle(next.title)}
+                </span>
               </div>
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
@@ -399,7 +411,10 @@ export function ProjectDetailSection({
         initialIndex={lightboxIndex}
         isOpen={lightboxOpen}
         onClose={() => setLightboxOpen(false)}
+        title={cleanTitle(project.title)}
+        designer={project.designer}
+        category={project.category}
       />
     </article>
-  );
+  )
 }

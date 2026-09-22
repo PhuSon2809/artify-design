@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import * as React from "react";
-import Image from "next/image";
-import { motion, AnimatePresence, useMotionValue, animate } from "framer-motion";
+import * as React from "react"
+import Image from "next/image"
+import { motion, AnimatePresence, useMotionValue, animate } from "framer-motion"
 import {
   X,
   ChevronLeft,
@@ -10,16 +10,19 @@ import {
   ZoomIn,
   ZoomOut,
   RotateCcw,
-} from "lucide-react";
+} from "lucide-react"
 
-import { cn } from "@/lib/utils";
-import type { ImageAsset } from "@/types";
+import { cn } from "@/lib/utils"
+import type { ImageAsset } from "@/types"
 
 interface LightboxProps {
-  images: ImageAsset[];
-  initialIndex?: number;
-  isOpen: boolean;
-  onClose: () => void;
+  images: ImageAsset[]
+  initialIndex?: number
+  isOpen: boolean
+  onClose: () => void
+  title?: string
+  designer?: string
+  category?: string
 }
 
 export function Lightbox({
@@ -27,173 +30,165 @@ export function Lightbox({
   initialIndex = 0,
   isOpen,
   onClose,
+  title,
+  designer,
+  category,
 }: LightboxProps) {
-  const [index, setIndex] = React.useState(initialIndex);
-  const [zoom, setZoom] = React.useState(1);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const containerRef = React.useRef<HTMLDivElement>(null);
-  const stageRef = React.useRef<HTMLDivElement>(null);
+  const [activeImageIndex, setActiveImageIndex] = React.useState(initialIndex)
+  const [zoom, setZoom] = React.useState(1)
+  const x = useMotionValue(0)
+  const y = useMotionValue(0)
+  const stageRef = React.useRef<HTMLDivElement>(null)
 
-  const [stageSize, setStageSize] = React.useState({ width: 1200, height: 800 });
-
-  React.useEffect(() => {
-    function updateStageSize() {
-      if (typeof window !== "undefined") {
-        const w = stageRef.current?.offsetWidth || Math.min(window.innerWidth * 0.92, 1280);
-        const h = stageRef.current?.offsetHeight || window.innerHeight * 0.82;
-        setStageSize({ width: w, height: h });
-      }
-    }
-
-    updateStageSize();
-    window.addEventListener("resize", updateStageSize);
-    return () => window.removeEventListener("resize", updateStageSize);
-  }, [isOpen, index]);
-
-  const maxDragX = React.useMemo(() => {
-    if (zoom <= 1) return 0;
-    // Half of zoomed width allows pulling any edge past the center of the viewport
-    return Math.round((stageSize.width * zoom) / 2);
-  }, [stageSize.width, zoom]);
-
-  const maxDragY = React.useMemo(() => {
-    if (zoom <= 1) return 0;
-    // Half of zoomed height allows pulling any edge past the center of the viewport
-    return Math.round((stageSize.height * zoom) / 2);
-  }, [stageSize.height, zoom]);
-
+  // Sync index when lightbox opens
   React.useEffect(() => {
     if (isOpen) {
-      setIndex(initialIndex);
-      setZoom(1);
-      x.set(0);
-      y.set(0);
+      setActiveImageIndex(initialIndex)
+      setZoom(1)
+      x.set(0)
+      y.set(0)
     }
-  }, [isOpen, initialIndex, x, y]);
+  }, [isOpen, initialIndex, x, y])
 
-  // Reset zoom & pan whenever switching images
+  // Reset zoom & pan when switching images
   React.useEffect(() => {
-    setZoom(1);
-    x.set(0);
-    y.set(0);
-  }, [index, x, y]);
+    setZoom(1)
+    x.set(0)
+    y.set(0)
+  }, [activeImageIndex, x, y])
 
-  function handleZoomIn() {
-    setZoom((prev) => Math.min(Number((prev + 0.5).toFixed(2)), 4));
+  // Preload adjacent images in browser cache to make fast-switching instantaneous
+  React.useEffect(() => {
+    if (!isOpen || !images.length) return
+
+    const nextIdx1 = (activeImageIndex + 1) % images.length
+    const nextIdx2 = (activeImageIndex + 2) % images.length
+    const prevIdx1 = (activeImageIndex - 1 + images.length) % images.length
+
+    const toPreload = [
+      images[nextIdx1]?.src,
+      images[nextIdx2]?.src,
+      images[prevIdx1]?.src,
+    ]
+
+    toPreload.forEach((src) => {
+      if (src && typeof window !== "undefined") {
+        const img = new window.Image()
+        img.src = src
+      }
+    })
+  }, [isOpen, activeImageIndex, images])
+
+  const handleZoomIn = () => {
+    setZoom((prev) => Math.min(Number((prev + 0.5).toFixed(2)), 4))
   }
 
-  function handleZoomOut() {
+  const handleZoomOut = () => {
     setZoom((prev) => {
-      const next = Math.max(Number((prev - 0.5).toFixed(2)), 1);
+      const next = Math.max(Number((prev - 0.5).toFixed(2)), 1)
       if (next === 1) {
-        animate(x, 0, { duration: 0.2, ease: "easeOut" });
-        animate(y, 0, { duration: 0.2, ease: "easeOut" });
+        animate(x, 0, { duration: 0.2, ease: "easeOut" })
+        animate(y, 0, { duration: 0.2, ease: "easeOut" })
       }
-      return next;
-    });
+      return next
+    })
   }
 
-  function handleResetZoom() {
-    setZoom(1);
-    animate(x, 0, { duration: 0.2, ease: "easeOut" });
-    animate(y, 0, { duration: 0.2, ease: "easeOut" });
+  const handleResetZoom = () => {
+    setZoom(1)
+    animate(x, 0, { duration: 0.2, ease: "easeOut" })
+    animate(y, 0, { duration: 0.2, ease: "easeOut" })
   }
 
-  // Keep pan within valid constraints when zoom level changes
-  React.useEffect(() => {
-    if (zoom === 1) {
-      animate(x, 0, { duration: 0.2, ease: "easeOut" });
-      animate(y, 0, { duration: 0.2, ease: "easeOut" });
+  const handleDoubleClick = () => {
+    if (zoom > 1) {
+      handleResetZoom()
     } else {
-      const currentX = x.get();
-      const currentY = y.get();
-      if (Math.abs(currentX) > maxDragX) {
-        x.set(Math.sign(currentX) * maxDragX);
-      }
-      if (Math.abs(currentY) > maxDragY) {
-        y.set(Math.sign(currentY) * maxDragY);
+      setZoom(2)
+    }
+  }
+
+  const handleWheel = (e: React.WheelEvent) => {
+    if (e.ctrlKey || Math.abs(e.deltaY) > 0) {
+      if (e.deltaY < 0) {
+        setZoom((prev) => Math.min(Number((prev + 0.25).toFixed(2)), 4))
+      } else {
+        setZoom((prev) => {
+          const next = Math.max(Number((prev - 0.25).toFixed(2)), 1)
+          if (next === 1) {
+            x.set(0)
+            y.set(0)
+          }
+          return next
+        })
       }
     }
-  }, [zoom, maxDragX, maxDragY, x, y]);
+  }
 
+  const handlePrev = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation()
+    handleResetZoom()
+    setActiveImageIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1))
+  }
+
+  const handleNext = (e?: React.MouseEvent) => {
+    if (e) e.stopPropagation()
+    handleResetZoom()
+    setActiveImageIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0))
+  }
+
+  const handleSelectThumbnail = (idx: number) => {
+    if (idx !== activeImageIndex) {
+      handleResetZoom()
+      setActiveImageIndex(idx)
+    }
+  }
+
+  // Keyboard navigation
   React.useEffect(() => {
-    if (!isOpen) return;
+    if (!isOpen) return
 
-    function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") {
-        if (zoom > 1) {
-          handleResetZoom();
-        } else {
-          onClose();
-        }
-      } else if (event.key === "+" || event.key === "=") {
-        event.preventDefault();
-        handleZoomIn();
-      } else if (event.key === "-" || event.key === "_") {
-        event.preventDefault();
-        handleZoomOut();
-      } else if (event.key === "0") {
-        event.preventDefault();
-        handleResetZoom();
-      } else if (event.key === "ArrowLeft") {
-        if (zoom === 1) {
-          setIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1));
-        } else {
-          x.set(Math.min(maxDragX, x.get() + 60));
-        }
-      } else if (event.key === "ArrowRight") {
-        if (zoom === 1) {
-          setIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
-        } else {
-          x.set(Math.max(-maxDragX, x.get() - 60));
-        }
-      } else if (event.key === "ArrowUp") {
-        if (zoom > 1) {
-          event.preventDefault();
-          y.set(Math.min(maxDragY, y.get() + 60));
-        }
-      } else if (event.key === "ArrowDown") {
-        if (zoom > 1) {
-          event.preventDefault();
-          y.set(Math.max(-maxDragY, y.get() - 60));
-        }
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Escape") {
+        onClose()
+      } else if (e.key === "ArrowLeft") {
+        handlePrev()
+      } else if (e.key === "ArrowRight") {
+        handleNext()
+      } else if (e.key === "+" || e.key === "=") {
+        handleZoomIn()
+      } else if (e.key === "-") {
+        handleZoomOut()
+      } else if (e.key === "0") {
+        handleResetZoom()
       }
     }
 
-    document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, images.length, onClose, zoom, maxDragX, maxDragY, x, y]);
+    window.addEventListener("keydown", handleKeyDown)
+    return () => window.removeEventListener("keydown", handleKeyDown)
+  }, [isOpen, images.length, onClose, zoom])
 
+  // Lock body scroll
   React.useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = "hidden"
     } else {
-      document.body.style.overflow = "";
+      document.body.style.overflow = ""
     }
     return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isOpen]);
+      document.body.style.overflow = ""
+    }
+  }, [isOpen])
 
-  const currentImage = images[index];
-  if (!currentImage) return null;
+  if (!isOpen || images.length === 0) return null
 
-  function goToPrev(event?: React.MouseEvent) {
-    event?.stopPropagation();
-    setZoom(1);
-    x.set(0);
-    y.set(0);
-    setIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1));
-  }
+  const currentImage = images[activeImageIndex] || images[0]
 
-  function goToNext(event?: React.MouseEvent) {
-    event?.stopPropagation();
-    setZoom(1);
-    x.set(0);
-    y.set(0);
-    setIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
-  }
+  // Calculate drag boundaries based on stage width/height
+  const stageWidth = stageRef.current?.offsetWidth || 1000
+  const stageHeight = stageRef.current?.offsetHeight || 600
+  const maxDragX = Math.round((stageWidth * (zoom - 1)) / 2 + 100)
+  const maxDragY = Math.round((stageHeight * (zoom - 1)) / 2 + 100)
 
   return (
     <AnimatePresence>
@@ -203,202 +198,229 @@ export function Lightbox({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 select-none overflow-hidden"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4 sm:p-6 md:p-10"
           onClick={onClose}
           role="dialog"
           aria-modal="true"
         >
-          {/* Top Bar: Counter */}
-          <div className="absolute top-4 left-4 z-10 text-sm font-mono text-white/70">
-            {String(index + 1).padStart(2, "0")} /{" "}
-            {String(images.length).padStart(2, "0")}
-          </div>
-
-          {/* Zoom Controls Toolbar */}
-          <div
-            className="absolute top-4 right-18 z-20 flex items-center gap-1 rounded-full bg-white/10 p-1 text-white backdrop-blur-md transition-colors hover:bg-white/15"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              type="button"
-              onClick={handleZoomOut}
-              disabled={zoom <= 1}
-              className="flex h-8 w-8 items-center justify-center rounded-full transition-colors hover:bg-white/20 disabled:opacity-30 disabled:hover:bg-transparent"
-              aria-label="Zoom out"
-              title="Thu nhỏ (-)"
-            >
-              <ZoomOut className="h-4 w-4" />
-            </button>
-            <button
-              type="button"
-              onClick={handleResetZoom}
-              className="min-w-[48px] px-1 text-center font-mono text-xs font-medium tracking-wider text-white/90 hover:text-white"
-              aria-label="Reset zoom"
-              title="Đặt lại (0)"
-            >
-              {Math.round(zoom * 100)}%
-            </button>
-            <button
-              type="button"
-              onClick={handleZoomIn}
-              disabled={zoom >= 4}
-              className="flex h-8 w-8 items-center justify-center rounded-full transition-colors hover:bg-white/20 disabled:opacity-30 disabled:hover:bg-transparent"
-              aria-label="Zoom in"
-              title="Phóng to (+)"
-            >
-              <ZoomIn className="h-4 w-4" />
-            </button>
-            {zoom > 1 && (
-              <button
-                type="button"
-                onClick={handleResetZoom}
-                className="flex h-8 w-8 items-center justify-center rounded-full transition-colors hover:bg-white/20"
-                aria-label="Reset zoom"
-                title="Khôi phục kích thước ban đầu"
-              >
-                <RotateCcw className="h-3.5 w-3.5" />
-              </button>
-            )}
-          </div>
-
           {/* Close Button */}
           <button
             type="button"
             onClick={onClose}
-            className="absolute top-4 right-4 z-20 flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20"
-            aria-label="Close lightbox"
-            title="Đóng (Esc)"
+            className="absolute top-5 right-5 z-20 flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 focus:outline-none"
+            aria-label="Đóng"
           >
             <X className="h-5 w-5" />
           </button>
 
-          {/* Navigation Prev Button */}
+          {/* Step Counter */}
+          <div className="absolute top-6 left-6 z-20 text-xs tracking-widest text-white/70 uppercase">
+            {String(activeImageIndex + 1).padStart(2, "0")} /{" "}
+            {String(images.length).padStart(2, "0")}
+          </div>
+
+          {/* Prev/Next outer arrows if multiple images */}
           {images.length > 1 && (
-            <button
-              type="button"
-              onClick={goToPrev}
-              className="absolute left-4 z-20 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 sm:left-6"
-              aria-label="Previous image"
-              title="Ảnh trước (←)"
-            >
-              <ChevronLeft className="h-5 w-5" />
-            </button>
+            <>
+              <button
+                type="button"
+                onClick={handlePrev}
+                className="absolute left-4 z-20 hidden h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 focus:outline-none sm:left-6 sm:flex"
+                aria-label="Hình trước"
+              >
+                <ChevronLeft className="h-6 w-6" />
+              </button>
+              <button
+                type="button"
+                onClick={handleNext}
+                className="absolute right-4 z-20 hidden h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 focus:outline-none sm:right-6 sm:flex"
+                aria-label="Hình tiếp theo"
+              >
+                <ChevronRight className="h-6 w-6" />
+              </button>
+            </>
           )}
 
-          {/* Image Stage */}
+          {/* Modal Container */}
           <div
-            ref={containerRef}
-            className={cn(
-              "relative flex flex-col items-center justify-center w-full h-full transition-all duration-200",
-              zoom > 1
-                ? "max-w-none max-h-none p-0 overflow-visible"
-                : "max-w-[92vw] max-h-screen px-4 sm:px-16 overflow-hidden"
-            )}
+            className="relative flex max-h-[94vh] w-[95vw] max-w-5xl shrink-0 flex-col items-center overflow-y-auto rounded-3xl border border-white/10 bg-neutral-950/90 p-4 backdrop-blur-md sm:p-6"
             onClick={(e) => e.stopPropagation()}
-            onWheel={(e) => {
-              if (e.ctrlKey || e.metaKey) {
-                // Trackpad pinch gesture or Ctrl+wheel -> Zoom
-                if (e.deltaY < 0) {
-                  handleZoomIn();
-                } else if (e.deltaY > 0) {
-                  handleZoomOut();
-                }
-              } else if (zoom > 1) {
-                // Trackpad scroll / mouse wheel -> Pan
-                const currentY = y.get();
-                const currentX = x.get();
-                const newY = currentY - e.deltaY;
-                const newX = currentX - e.deltaX;
-                y.set(Math.max(-maxDragY, Math.min(maxDragY, newY)));
-                x.set(Math.max(-maxDragX, Math.min(maxDragX, newX)));
-              }
-            }}
           >
-            <AnimatePresence mode="wait">
+            {/* Main Image Stage */}
+            <div
+              ref={stageRef}
+              onWheel={handleWheel}
+              className="relative h-[48vh] w-full shrink-0 overflow-hidden rounded-sm bg-black/60 sm:h-[56vh] md:h-[62vh]"
+            >
+              {/* Zoom Controls Toolbar */}
+              <div
+                className="absolute top-3 right-3 z-30 flex items-center gap-1 rounded-full border border-white/15 bg-black/80 px-2 py-1 text-white shadow-lg backdrop-blur-md"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <button
+                  type="button"
+                  onClick={handleZoomOut}
+                  disabled={zoom <= 1}
+                  className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-full text-white/80 transition-colors hover:bg-white/20 hover:text-white disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:bg-transparent"
+                  title="Thu nhỏ (-)"
+                  aria-label="Thu nhỏ"
+                >
+                  <ZoomOut className="h-3.5 w-3.5" />
+                </button>
+
+                <span className="min-w-[42px] select-none text-center text-[11px] font-medium tracking-wider text-white/90">
+                  {Math.round(zoom * 100)}%
+                </span>
+
+                <button
+                  type="button"
+                  onClick={handleZoomIn}
+                  disabled={zoom >= 4}
+                  className="flex h-7 w-7 cursor-pointer items-center justify-center rounded-full text-white/80 transition-colors hover:bg-white/20 hover:text-white disabled:cursor-not-allowed disabled:opacity-30 disabled:hover:bg-transparent"
+                  title="Phóng to (+)"
+                  aria-label="Phóng to"
+                >
+                  <ZoomIn className="h-3.5 w-3.5" />
+                </button>
+
+                {zoom > 1 && (
+                  <button
+                    type="button"
+                    onClick={handleResetZoom}
+                    className="ml-0.5 flex h-7 w-7 cursor-pointer items-center justify-center rounded-full border-l border-white/20 pl-0.5 text-white/80 transition-colors hover:bg-white/20 hover:text-white"
+                    title="Đặt lại kích thước (0)"
+                    aria-label="Đặt lại kích thước"
+                  >
+                    <RotateCcw className="h-3 w-3" />
+                  </button>
+                )}
+              </div>
+
+              {/* Pan & Zoom Motion Container */}
               <motion.div
-                key={currentImage.src}
-                ref={stageRef}
-                style={{ x, y }}
-                initial={{ opacity: 0, scale: 0.98 }}
-                animate={{
-                  opacity: 1,
-                  scale: zoom,
-                }}
-                exit={{ opacity: 0, scale: 0.98 }}
-                transition={{ duration: 0.25, ease: "easeOut" }}
                 drag={zoom > 1}
                 dragConstraints={{
-                  top: -maxDragY,
-                  bottom: maxDragY,
                   left: -maxDragX,
                   right: maxDragX,
+                  top: -maxDragY,
+                  bottom: maxDragY,
                 }}
-                dragElastic={0.1}
-                className={cn(
-                  "relative flex h-[78vh] sm:h-[82vh] w-full max-w-7xl items-center justify-center touch-none",
+                dragElastic={0.08}
+                style={{ x, y, scale: zoom }}
+                onDoubleClick={handleDoubleClick}
+                className={`relative flex h-full w-full items-center justify-center ${
                   zoom > 1
                     ? "cursor-grab active:cursor-grabbing"
                     : "cursor-zoom-in"
-                )}
-                onClick={() => {
-                  if (zoom === 1) {
-                    setZoom(2);
-                  }
-                }}
-                onDoubleClick={() => {
-                  if (zoom > 1) {
-                    handleResetZoom();
-                  } else {
-                    setZoom(2);
-                  }
-                }}
+                }`}
+                title={
+                  zoom > 1
+                    ? "Kéo để di chuyển, nhấp đúp để đặt lại"
+                    : "Nhấp đúp hoặc cuộn chuột để phóng to"
+                }
               >
                 <Image
+                  key={currentImage.src}
                   src={currentImage.src}
-                  alt={currentImage.alt || ""}
+                  alt={currentImage.alt || title || "Visual"}
                   fill
-                  className="object-contain select-none pointer-events-none"
-                  sizes="(max-width: 1280px) 92vw, 1400px"
+                  unoptimized
+                  draggable={false}
+                  className="pointer-events-none select-none object-contain"
+                  sizes="(max-width: 1280px) 95vw, 1200px"
                   priority
                 />
               </motion.div>
-            </AnimatePresence>
-            {currentImage.caption && (
-              <p
-                className={cn(
-                  "text-center text-sm text-white/80 pointer-events-none transition-all duration-200",
-                  zoom > 1
-                    ? "absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/75 backdrop-blur-md px-4 py-1.5 rounded-full z-20 max-w-[90vw] truncate border border-white/10 shadow-lg"
-                    : "mt-3"
+
+              {/* In-gallery Image Prev/Next Overlay Buttons */}
+              {images.length > 1 && (
+                <>
+                  <button
+                    type="button"
+                    onClick={handlePrev}
+                    className="absolute top-1/2 left-3 z-20 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-black/70 text-white backdrop-blur-sm transition-colors hover:bg-black/95 focus:outline-none"
+                    aria-label="Hình trước"
+                  >
+                    <ChevronLeft className="h-6 w-6" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleNext}
+                    className="absolute top-1/2 right-3 z-20 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-black/70 text-white backdrop-blur-sm transition-colors hover:bg-black/95 focus:outline-none"
+                    aria-label="Hình tiếp theo"
+                  >
+                    <ChevronRight className="h-6 w-6" />
+                  </button>
+
+                  {/* Image Counter Badge */}
+                  <div className="absolute right-3 bottom-3 z-20 rounded-full bg-black/80 px-3 py-1 text-[11px] font-medium tracking-wider text-white/90 backdrop-blur-sm">
+                    Ảnh {activeImageIndex + 1} / {images.length}
+                  </div>
+                </>
+              )}
+            </div>
+
+            {/* Thumbnails Strip with fixed height and smooth scroll */}
+            {images.length > 1 && (
+              <div className="mt-4 flex h-16 w-full shrink-0 items-center justify-center gap-2 overflow-x-auto px-1 pb-1 sm:h-20">
+                {images.map((img, idx) => (
+                  <button
+                    key={img.src + idx}
+                    type="button"
+                    onClick={() => handleSelectThumbnail(idx)}
+                    className={`relative h-14 w-14 shrink-0 cursor-pointer overflow-hidden rounded border transition-all sm:h-16 sm:w-16 ${
+                      idx === activeImageIndex
+                        ? "scale-105 border-white shadow-md shadow-black/50"
+                        : "border-white/20 opacity-60 hover:border-white/50 hover:opacity-100"
+                    }`}
+                  >
+                    <Image
+                      src={img.src}
+                      alt={`Thumbnail ${idx + 1}`}
+                      fill
+                      unoptimized
+                      className="object-cover"
+                      sizes="64px"
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {/* Project Details Footer */}
+            {(title || designer) && (
+              <div className="mt-4 flex w-full flex-col items-center justify-between gap-4 border-t border-white/10 pt-4 text-white sm:flex-row">
+                <div className="text-center sm:text-left">
+                  {designer && (
+                    <p className="text-xs tracking-widest text-white/60 uppercase">
+                      Designer: {designer}
+                    </p>
+                  )}
+                  {title && (
+                    <h2 className="mt-0.5 font-serif text-xl font-normal text-white sm:text-2xl">
+                      {title}
+                    </h2>
+                  )}
+                </div>
+
+                {category && (
+                  <div className="text-xs tracking-widest text-white/60 uppercase">
+                    {category}
+                  </div>
                 )}
-              >
-                {currentImage.caption}
-              </p>
+              </div>
             )}
           </div>
-
-          {/* Navigation Next Button */}
-          {images.length > 1 && (
-            <button
-              type="button"
-              onClick={goToNext}
-              className="absolute right-4 z-20 flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white transition-colors hover:bg-white/20 sm:right-6"
-              aria-label="Next image"
-              title="Ảnh tiếp theo (→)"
-            >
-              <ChevronRight className="h-5 w-5" />
-            </button>
-          )}
         </motion.div>
       )}
     </AnimatePresence>
-  );
+  )
 }
 
 interface LightboxTriggerProps {
-  children: React.ReactNode;
-  className?: string;
-  onClick?: () => void;
+  children: React.ReactNode
+  className?: string
+  onClick?: () => void
 }
 
 export function LightboxTrigger({
@@ -414,5 +436,5 @@ export function LightboxTrigger({
     >
       {children}
     </button>
-  );
+  )
 }

@@ -80,24 +80,27 @@ export function getAllProjectSlugs(): string[] {
   return Array.from(slugs);
 }
 
+export function getAllProjects(): Project[] {
+  const selected = getSelectedProjects();
+  const selectedIds = new Set(selected.map((p) => p.id));
+
+  const others = allProjects
+    .map((ap) => getProjectBySlug(ap.id))
+    .filter((p): p is Project => p !== undefined && !selectedIds.has(p.id));
+
+  return [...selected, ...others];
+}
+
 export function getAdjacentProjects(
   slug: string
 ): { prev: Project | null; next: Project | null } {
-  const selected = getSelectedProjects();
-  const selectedIdx = selected.findIndex((p) => p.id === slug);
-  if (selectedIdx !== -1) {
-    return {
-      prev: selected[selectedIdx - 1] || null,
-      next: selected[selectedIdx + 1] || null,
-    };
-  }
-
-  const allSlugs = getAllProjectSlugs();
-  const index = allSlugs.indexOf(slug);
+  const all = getAllProjects();
+  const mappedSlug = ALL_PROJECT_TO_SELECTED_MAP[slug] || slug;
+  const index = all.findIndex((p) => p.id === mappedSlug || p.id === slug);
   if (index === -1) return { prev: null, next: null };
   return {
-    prev: index > 0 ? getProjectBySlug(allSlugs[index - 1]) || null : null,
-    next: index < allSlugs.length - 1 ? getProjectBySlug(allSlugs[index + 1]) || null : null,
+    prev: index > 0 ? all[index - 1] : null,
+    next: index < all.length - 1 ? all[index + 1] : null,
   };
 }
 

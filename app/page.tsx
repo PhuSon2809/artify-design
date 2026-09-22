@@ -4,10 +4,10 @@ import { CoverSection } from "@/components/sections/CoverSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { WorksGridSection } from "@/components/sections/WorksGridSection";
 import { ContactSection } from "@/components/sections/ContactSection";
-import { getSelectedProjects } from "@/lib/projects";
+import { getAllProjects } from "@/lib/projects";
 
 export default function HomePage() {
-  const projects = getSelectedProjects();
+  const projects = getAllProjects();
 
   return (
     <>

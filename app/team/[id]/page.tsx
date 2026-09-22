@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowDown } from "lucide-react";
 
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
@@ -114,9 +115,9 @@ export default async function TeamMemberPage({
 
         {/* Selected Works */}
         {selectedProjects.length > 0 && (
-          <section className="border-t border-border px-6 py-24 lg:px-8 lg:py-32">
+          <section className="border-t border-border px-6 pt-16 pb-12 lg:px-8 lg:pt-20 lg:pb-14">
             <div className="mx-auto max-w-7xl">
-              <h2 className="mb-16 font-serif text-3xl tracking-tight sm:text-4xl">
+              <h2 className="mb-8 font-serif text-3xl tracking-tight sm:text-4xl lg:mb-10">
                 Selected Works on Artify
               </h2>
 
@@ -148,17 +149,34 @@ export default async function TeamMemberPage({
                   </article>
                 ))}
               </div>
+
+              {/* Continuation hint linking to All Projects */}
+              <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-border/40 pt-6">
+                <span className="text-xs uppercase tracking-widest text-muted-foreground">
+                  {selectedProjects.length} dự án tiêu biểu được chọn lọc
+                </span>
+                <a
+                  href="#all-projects"
+                  className="group inline-flex items-center gap-2 text-xs font-medium uppercase tracking-widest text-foreground transition-opacity hover:opacity-70"
+                >
+                  <span>Xem toàn bộ {allProjects.length} dự án bên dưới</span>
+                  <ArrowDown className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-y-0.5" />
+                </a>
+              </div>
             </div>
           </section>
         )}
 
         {/* All Projects */}
-        <section className="border-t border-border px-6 py-24 lg:px-8 lg:py-32">
+        <section
+          id="all-projects"
+          className="border-t border-border px-6 pt-12 pb-24 lg:px-8 lg:pt-16 lg:pb-32 scroll-mt-20"
+        >
           <div className="mx-auto max-w-7xl">
-            <h2 className="mb-4 font-serif text-3xl tracking-tight sm:text-4xl">
+            <h2 className="mb-3 font-serif text-3xl tracking-tight sm:text-4xl">
               Tất cả dự án
             </h2>
-            <p className="mb-16 max-w-2xl text-muted-foreground">
+            <p className="mb-8 max-w-2xl text-muted-foreground sm:mb-10">
               Toàn bộ các dự án thiết kế thực hiện bởi {member.name} tại Artify Design.
             </p>
 
