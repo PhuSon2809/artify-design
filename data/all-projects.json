@@ -818,10 +818,10 @@
     "role": "POSM / Retail Design",
     "capabilities": ["POSM", "Retail", "Posm", "Marketing", "Promotion"],
     "heroImage": {
-      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/7885be218352287.Y3JvcCwyODg2LDIyNTcsMCwxNA.jpg",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/0d452d218352287.67a084033e760.jpg",
       "alt": "POSM | DESIGN COLLECTION - Thang Mai",
-      "width": 808,
-      "height": 1050,
+      "width": 1240,
+      "height": 343,
       "aspectRatio": "landscape",
       "quality": "high",
       "usage": "hero"
@@ -855,15 +855,6 @@
         "usage": "supporting"
       },
       {
-        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/0d452d218352287.67a084033e760.jpg",
-        "alt": "Image may contain: screenshot and cartoon",
-        "width": 1240,
-        "height": 343,
-        "aspectRatio": "landscape",
-        "quality": "high",
-        "usage": "supporting"
-      },
-      {
         "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/913ff4218352287.67a084033ff3a.jpg",
         "alt": "Image may contain: cartoon",
         "width": 1240,
@@ -879,7 +870,7 @@
     "application": "Display / Standee / Shelf talker / Retail materials",
     "order": 11,
     "isSelected": false,
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/7885be218352287.Y3JvcCwyODg2LDIyNTcsMCwxNA.jpg"
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/0d452d218352287.67a084033e760.jpg"
   },
   {
     "id": "takahiro-corporation-design",
