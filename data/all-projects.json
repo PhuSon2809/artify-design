@@ -10,11 +10,7 @@
     "year": "2026",
     "client": "Mơ Nướng",
     "role": "POSM Design",
-    "capabilities": [
-      "POSM",
-      "Retail",
-      "Print Design"
-    ],
+    "capabilities": ["POSM", "Retail", "Print Design"],
     "heroImage": {
       "src": "/images/projects/posm-mo-nuong/posm-mo-nuong-hero.webp",
       "alt": "Mơ Nướng POSM hero",
@@ -108,11 +104,7 @@
     "year": "2026",
     "client": "Mơ Nướng",
     "role": "Social Media Design",
-    "capabilities": [
-      "Social Media",
-      "Content Design",
-      "Digital Design"
-    ],
+    "capabilities": ["Social Media", "Content Design", "Digital Design"],
     "heroImage": {
       "src": "/images/projects/social-media-mo-nuong/social-mo-nuong-hero.webp",
       "alt": "Mơ Nướng social media feed",
@@ -283,11 +275,11 @@
       "Illustrator"
     ],
     "heroImage": {
-      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c383b8218352905.Y3JvcCwyODg2LDIyNTcsMCwxNA.jpg",
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/a8acaf218352905.67df9c673e1a2.jpg",
       "alt": "DIGITAL | DESIGN COLLECTION - Thang Mai",
-      "width": 808,
-      "height": 1050,
-      "aspectRatio": "landscape",
+      "width": 1240,
+      "height": 2000,
+      "aspectRatio": "portrait",
       "quality": "high",
       "usage": "hero"
     },
@@ -324,15 +316,6 @@
         "alt": "Project visual",
         "width": 1240,
         "height": 2893,
-        "aspectRatio": "portrait",
-        "quality": "high",
-        "usage": "supporting"
-      },
-      {
-        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/a8acaf218352905.67df9c673e1a2.jpg",
-        "alt": "Project visual",
-        "width": 1240,
-        "height": 2000,
         "aspectRatio": "portrait",
         "quality": "high",
         "usage": "supporting"
@@ -383,15 +366,6 @@
         "usage": "supporting"
       },
       {
-        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/f585e6218352905.67a0863e2c0d2.jpg",
-        "alt": "Project visual",
-        "width": 1240,
-        "height": 2700,
-        "aspectRatio": "portrait",
-        "quality": "high",
-        "usage": "supporting"
-      },
-      {
         "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/479020218352905.67a0863f7543d.jpg",
         "alt": "Image may contain: outdoor and cartoon",
         "width": 1801,
@@ -426,6 +400,15 @@
         "aspectRatio": "portrait",
         "quality": "high",
         "usage": "supporting"
+      },
+      {
+        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/f585e6218352905.67a0863e2c0d2.jpg",
+        "alt": "Project visual",
+        "width": 1240,
+        "height": 2700,
+        "aspectRatio": "portrait",
+        "quality": "high",
+        "usage": "supporting"
       }
     ],
     "description": "Generic collection — may duplicate Lavie/KitKat/Milo",
@@ -434,7 +417,7 @@
     "application": "Digital banners / Social content / Online assets",
     "order": 4,
     "isSelected": false,
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c383b8218352905.Y3JvcCwyODg2LDIyNTcsMCwxNA.jpg"
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/project_modules/hd/a8acaf218352905.67df9c673e1a2.jpg"
   },
   {
     "id": "event-project-shiseido-retailer-meeting-2025",
@@ -445,13 +428,7 @@
     "year": "2025",
     "client": "SHISEIDO RETAILER MEETING 2025",
     "role": "Event / Key Visual Design",
-    "capabilities": [
-      "Event",
-      "Key Visual",
-      "Keyvisual",
-      "Posm",
-      "Photoshop"
-    ],
+    "capabilities": ["Event", "Key Visual", "Keyvisual", "Posm", "Photoshop"],
     "heroImage": {
       "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/fc8ad0222068525.67e0d651832be.jpg",
       "alt": "EVENT PROJECT | SHISEIDO RETAILER MEETING 2025 - Thang Mai",
@@ -542,13 +519,7 @@
     "year": "2025",
     "client": "RUBY BEER",
     "role": "Key Visual / Beverage Design",
-    "capabilities": [
-      "Key Visual",
-      "Beverage",
-      "Keyvisual",
-      "Beer",
-      "Product"
-    ],
+    "capabilities": ["Key Visual", "Beverage", "Keyvisual", "Beer", "Product"],
     "heroImage": {
       "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/cedab6218350069.Y3JvcCwxMzgwLDEwODAsMjc2LDA.jpg",
       "alt": "KEYVISUAL | RUBY BEER - Thang Mai",
@@ -845,13 +816,7 @@
     "year": "2025",
     "client": "DESIGN COLLECTION",
     "role": "POSM / Retail Design",
-    "capabilities": [
-      "POSM",
-      "Retail",
-      "Posm",
-      "Marketing",
-      "Promotion"
-    ],
+    "capabilities": ["POSM", "Retail", "Posm", "Marketing", "Promotion"],
     "heroImage": {
       "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/7885be218352287.Y3JvcCwyODg2LDIyNTcsMCwxNA.jpg",
       "alt": "POSM | DESIGN COLLECTION - Thang Mai",
@@ -927,12 +892,7 @@
     "year": "2025",
     "client": "Takahiro Corporation",
     "role": "Brand Identity Design",
-    "capabilities": [
-      "Branding",
-      "Brand Identity",
-      "POSM",
-      "Art Direction"
-    ],
+    "capabilities": ["Branding", "Brand Identity", "POSM", "Art Direction"],
     "heroImage": {
       "src": "/images/projects/takahiro-corporation/takahiro-hero.jpg",
       "alt": "Takahiro Corporation brand identity",
@@ -1035,12 +995,7 @@
     "year": "2025",
     "client": "Dự án tốt nghiệp / Chợ Du Hí",
     "role": "Concept & Visual Design",
-    "capabilities": [
-      "Branding",
-      "Campaign",
-      "Key Visual",
-      "Art Direction"
-    ],
+    "capabilities": ["Branding", "Campaign", "Key Visual", "Art Direction"],
     "heroImage": {
       "src": "/images/projects/cho-du-hi/cho-du-hi-hero.png",
       "alt": "Chợ Du Hí campaign artwork",
@@ -1159,10 +1114,7 @@
     "year": "2024",
     "client": "Queen Ann Social Media",
     "role": "Social Media / Lifestyle Design",
-    "capabilities": [
-      "Social Media",
-      "Lifestyle"
-    ],
+    "capabilities": ["Social Media", "Lifestyle"],
     "heroImage": {
       "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/a21492209637853.Y3JvcCw3MDMwLDU0OTksMCww.png",
       "alt": "Queen Ann Social Media - Ploy Diep",
@@ -1200,13 +1152,7 @@
     "year": "2023",
     "client": "Honda UNITOUR 2023",
     "role": "Event / Key Visual Design",
-    "capabilities": [
-      "Event",
-      "Key Visual",
-      "Honda",
-      "Keyvisual",
-      "Photoshop"
-    ],
+    "capabilities": ["Event", "Key Visual", "Honda", "Keyvisual", "Photoshop"],
     "heroImage": {
       "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/3cfecb195111541.Y3JvcCwxMjc0LDk5NiwzNyww.jpg",
       "alt": "EVENT PROJECT | Honda UNITOUR 2023 - Thang Mai",
@@ -1246,11 +1192,7 @@
     "year": "2023",
     "client": "Famiglia Pizza",
     "role": "Brand Identity Design",
-    "capabilities": [
-      "Branding",
-      "Brand Identity",
-      "Packaging"
-    ],
+    "capabilities": ["Branding", "Brand Identity", "Packaging"],
     "heroImage": {
       "src": "/images/projects/famiglia-pizza/famiglia-pizza-hero.png",
       "alt": "Famiglia Pizza brand identity",
@@ -1288,10 +1230,7 @@
     "year": "2023",
     "client": "Media Post",
     "role": "Social Media / Jewelry Design",
-    "capabilities": [
-      "Social Media",
-      "Jewelry"
-    ],
+    "capabilities": ["Social Media", "Jewelry"],
     "heroImage": {
       "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/85ed47187914033.Y3JvcCwyNTAwLDE5NTUsMCww.png",
       "alt": "Media Post - Kim Cúc Jewelry - Ploy Diep",
@@ -1329,10 +1268,7 @@
     "year": "2023",
     "client": "Media Post Food",
     "role": "Social Media / F&B Design",
-    "capabilities": [
-      "Social Media",
-      "F&B"
-    ],
+    "capabilities": ["Social Media", "F&B"],
     "heroImage": {
       "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/b5622b187510061.Y3JvcCwxMzE1LDEwMjgsMCwxOQ.png",
       "alt": "Media Post Food - Ploy Diep",
@@ -1370,10 +1306,7 @@
     "year": "2023",
     "client": "Media Post Ovvani",
     "role": "Social Media / Lifestyle Design",
-    "capabilities": [
-      "Social Media",
-      "Lifestyle"
-    ],
+    "capabilities": ["Social Media", "Lifestyle"],
     "heroImage": {
       "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/48619e187511547.Y3JvcCwxMjAwLDkzOCwwLDY1.png",
       "alt": "Media Post Ovvani - Ploy Diep",
@@ -1411,13 +1344,7 @@
     "year": "2023",
     "client": "Momiji Restuarant",
     "role": "Social Media / POSM / F&B Design",
-    "capabilities": [
-      "Social Media",
-      "POSM",
-      "F&B",
-      "Illustrator",
-      "Photoshop"
-    ],
+    "capabilities": ["Social Media", "POSM", "F&B", "Illustrator", "Photoshop"],
     "heroImage": {
       "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/16912e187112943.Y3JvcCwyNjY3LDIwODYsMCww.png",
       "alt": "Momiji Restuarant - Social Media - POSM - Ploy Diep",
@@ -1448,57 +1375,30 @@
   },
   {
     "id": "portfolio-2023",
-    "title": "PORTFOLIO",
+    "title": "Brand & Motion Design Collection",
     "designer": "Trần Bảo",
-    "category": "Portfolio / Mixed",
-    "subcategory": "Mixed",
+    "category": "Branding / Motion",
+    "subcategory": "Brand & Motion",
     "year": "2023",
-    "client": "PORTFOLIO 2023",
-    "role": "Portfolio / Mixed Design",
+    "client": "Design Collection",
+    "role": "Brand & Motion Design",
     "capabilities": [
-      "Portfolio",
-      "Mixed",
-      "2023 design",
-      "Cv design",
-      "Photoshop"
+      "Branding",
+      "Motion",
+      "Visual Design",
+      "Photoshop",
+      "Illustrator"
     ],
     "heroImage": {
-      "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c9d2d4184776251.Y3JvcCwxMDQ3LDgxOSwwLDY3.jpg",
-      "alt": "PORTFOLIO 2023 - Trần Bảo",
-      "width": 808,
-      "height": 1050,
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/11631f184776251.6559c58bb96b5.gif",
+      "alt": "Brand & Motion Design Collection - Trần Bảo",
+      "width": 1486,
+      "height": 375,
       "aspectRatio": "landscape",
       "quality": "high",
       "usage": "hero"
     },
     "supportingImages": [
-      {
-        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/362ace184776251.6557b2f5437a9.gif",
-        "alt": "Project visual",
-        "width": 1486,
-        "height": 375,
-        "aspectRatio": "landscape",
-        "quality": "high",
-        "usage": "supporting"
-      },
-      {
-        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/916ef1184776251.660624b9e610b.png",
-        "alt": "Project visual",
-        "width": 1487,
-        "height": 375,
-        "aspectRatio": "landscape",
-        "quality": "high",
-        "usage": "supporting"
-      },
-      {
-        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/11631f184776251.6559c58bb96b5.gif",
-        "alt": "Project visual",
-        "width": 1486,
-        "height": 375,
-        "aspectRatio": "landscape",
-        "quality": "high",
-        "usage": "supporting"
-      },
       {
         "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/90d941184776251.6557b2f54a58e.png",
         "alt": "Project visual",
@@ -1597,24 +1497,15 @@
         "aspectRatio": "landscape",
         "quality": "high",
         "usage": "supporting"
-      },
-      {
-        "src": "https://mir-s3-cdn-cf.behance.net/project_modules/source/2b8098184776251.6559c37736682.gif",
-        "alt": "Project visual",
-        "width": 1486,
-        "height": 199,
-        "aspectRatio": "landscape",
-        "quality": "high",
-        "usage": "supporting"
       }
     ],
-    "description": "Portfolio-of-portfolios does not add client-facing value; overlaps individual projects",
-    "concept": "Varied",
-    "visualSystem": "Collection of best works across categories",
-    "application": "Collection of best works across categories",
+    "description": "Bộ sưu tập các thiết kế nhận diện thương hiệu, ấn phẩm thị giác và motion đồ họa của Trần Bảo.",
+    "concept": "Brand Identity & Motion",
+    "visualSystem": "Hệ thống nhận diện thương hiệu, animation loop và visual content.",
+    "application": "Brand identity, motion graphics, social visuals và commercial artwork.",
     "order": 21,
     "isSelected": false,
-    "coverUrl": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c9d2d4184776251.Y3JvcCwxMDQ3LDgxOSwwLDY3.jpg"
+    "coverUrl": "https://mir-s3-cdn-cf.behance.net/project_modules/source/11631f184776251.6559c58bb96b5.gif"
   },
   {
     "id": "social-media-posm-cong-ty-nyna",
@@ -1625,10 +1516,7 @@
     "year": "2023",
     "client": "Social Media & POSM Công ty Nyna",
     "role": "Social Media / POSM Design",
-    "capabilities": [
-      "Social Media",
-      "POSM"
-    ],
+    "capabilities": ["Social Media", "POSM"],
     "heroImage": {
       "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/ee37c2186937767.Y3JvcCwyMTkwLDE3MTIsMCw0Mw.png",
       "alt": "Social Media & POSM Công ty Nyna - Ploy Diep",
@@ -1731,6 +1619,7 @@
   },
   {
     "id": "social-media-khalil-lounge",
+    "hidden": true,
     "title": "Social Media Khalil Lounge",
     "designer": "Ploy Diep",
     "category": "Social Media / F&B",
@@ -1738,10 +1627,7 @@
     "year": "2023",
     "client": "Social Media Khalil Lounge",
     "role": "Social Media / F&B Design",
-    "capabilities": [
-      "Social Media",
-      "F&B"
-    ],
+    "capabilities": ["Social Media", "F&B"],
     "heroImage": {
       "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/1b6486187478477.Y3JvcCwxMzE1LDEwMjgsMCw5.png",
       "alt": "Social Media Khalil Lounge - Ploy Diep",
@@ -1781,6 +1667,7 @@
   },
   {
     "id": "portfolio-graphic-design",
+    "hidden": true,
     "title": "Portfolio Graphic Design",
     "designer": "Duy Phong",
     "designerProfile": "https://www.behance.net/duyphong6",
@@ -1853,6 +1740,7 @@
   },
   {
     "id": "singapore-travel",
+    "hidden": true,
     "title": "SINGAPORE TRAVEL",
     "designer": "Duy Phong",
     "category": "Graphic Design / Travel",
@@ -1860,12 +1748,7 @@
     "year": "2022",
     "client": "SINGAPORE TRAVEL",
     "role": "Graphic Design / Travel Design",
-    "capabilities": [
-      "Graphic Design",
-      "Travel",
-      "Illustrator",
-      "Motion"
-    ],
+    "capabilities": ["Graphic Design", "Travel", "Illustrator", "Motion"],
     "heroImage": {
       "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/c08a08141879103.Y3JvcCwxMTc3LDkyMSwyMDksMA.png",
       "alt": "SINGAPORE TRAVEL - Duy Phong",
@@ -1896,6 +1779,7 @@
   },
   {
     "id": "social-media-for-on-digitals",
+    "hidden": true,
     "title": "SOCIAL MEDIA FOR ON DIGITALS",
     "designer": "Trần Bảo",
     "category": "Social Media",
@@ -1976,12 +1860,7 @@
     "year": "2021",
     "client": "Sân Khấu Kịch Hoàng Thái Thanh",
     "role": "Branding & Identity System",
-    "capabilities": [
-      "Branding",
-      "Brand Identity",
-      "Art Direction",
-      "Motion"
-    ],
+    "capabilities": ["Branding", "Brand Identity", "Art Direction", "Motion"],
     "heroImage": {
       "src": "/images/projects/rebranding-san-khau-kich-hoang-thai-thanh/hoang-thai-thanh-hero.jpg",
       "alt": "Hoàng Thái Thanh theater rebranding hero",
@@ -2172,13 +2051,7 @@
     "year": "2020",
     "client": "MV VÁY HOA NHÍ (2020)",
     "role": "Motion / Music Video Design",
-    "capabilities": [
-      "Motion",
-      "Music Video",
-      "Âm nhạc",
-      "Music",
-      "MV"
-    ],
+    "capabilities": ["Motion", "Music Video", "Âm nhạc", "Music", "MV"],
     "heroImage": {
       "src": "https://mir-s3-cdn-cf.behance.net/projects/max_808/df1f8c147869697.Y3JvcCw4MDgsNjMyLDAsMA.jpg",
       "alt": "MV VÁY HOA NHÍ (2020) - Trần Bảo",
@@ -2468,6 +2341,7 @@
   },
   {
     "id": "mtv-intro-2019",
+    "hidden": true,
     "title": "MTV INTRO",
     "designer": "Trần Bảo",
     "category": "Motion / Animation",
@@ -2574,12 +2448,7 @@
     "year": "2018",
     "client": "Ẩm thực Huế",
     "role": "Illustration & Motion Design",
-    "capabilities": [
-      "Illustration",
-      "Motion",
-      "Branding",
-      "Art Direction"
-    ],
+    "capabilities": ["Illustration", "Motion", "Branding", "Art Direction"],
     "heroImage": {
       "src": "/images/projects/hue-cuisine/hue-cuisine-hero.jpg",
       "alt": "Huế Cuisine watercolor illustration",
@@ -2628,6 +2497,7 @@
   },
   {
     "id": "meikos-cosmetics",
+    "hidden": true,
     "title": "Meiko's Cosmetics",
     "designer": "Trần Bảo",
     "designerProfile": "https://www.behance.net/ipad_19989bcd",
@@ -2637,11 +2507,7 @@
     "year": "2018",
     "client": "Meiko's Cosmetics",
     "role": "Branding & Packaging Design",
-    "capabilities": [
-      "Branding",
-      "Packaging",
-      "Illustration"
-    ],
+    "capabilities": ["Branding", "Packaging", "Illustration"],
     "heroImage": {
       "src": "/images/projects/meikos-cosmetics/meikos-cosmetics-hero.gif",
       "alt": "Meiko's Cosmetics brand system",

@@ -12,8 +12,8 @@ export default function HomePage() {
   return (
     <>
       <Navigation />
-      <main>
-        <CoverSection />
+      <main className="flex-1">
+        <CoverSection projects={projects} />
         <AboutSection />
         <WorksGridSection projects={projects} />
         <ContactSection />

@@ -268,7 +268,7 @@ export function Lightbox({
                   <ZoomOut className="h-3.5 w-3.5" />
                 </button>
 
-                <span className="min-w-[42px] select-none text-center text-[11px] font-medium tracking-wider text-white/90">
+                <span className="min-w-[42px] text-center text-[11px] font-medium tracking-wider text-white/90 select-none">
                   {Math.round(zoom * 100)}%
                 </span>
 
@@ -326,7 +326,7 @@ export function Lightbox({
                   fill
                   unoptimized
                   draggable={false}
-                  className="pointer-events-none select-none object-contain"
+                  className="pointer-events-none object-contain select-none"
                   sizes="(max-width: 1280px) 95vw, 1200px"
                   priority
                 />

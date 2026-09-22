@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <>
       <Navigation />
-      <main>
+      <main className="flex-1">
         <AboutSection />
       </main>
       <Footer />

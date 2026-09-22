@@ -42,7 +42,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   return (
     <>
       <Navigation />
-      <main>
+      <main className="flex-1">
         <ProjectDetailSection project={project} prev={prev} next={next} />
       </main>
       <Footer />

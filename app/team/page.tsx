@@ -9,7 +9,7 @@ export default function TeamPage() {
   return (
     <>
       <Navigation />
-      <main>
+      <main className="flex-1">
         <TeamSection members={members} />
       </main>
       <Footer />

@@ -749,6 +749,7 @@
   },
   {
     "id": "meikos-cosmetics",
+    "hidden": true,
     "title": "Meiko's Cosmetics",
     "designer": "Trần Bảo",
     "designerProfile": "https://www.behance.net/ipad_19989bcd",
@@ -880,6 +881,7 @@
   },
   {
     "id": "portfolio-graphic-design",
+    "hidden": true,
     "title": "Portfolio Graphic Design",
     "designer": "Duy Phong",
     "designerProfile": "https://www.behance.net/duyphong6",

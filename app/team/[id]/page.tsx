@@ -58,7 +58,7 @@ export default async function TeamMemberPage({
   return (
     <>
       <Navigation />
-      <main>
+      <main className="flex-1">
         {/* Header */}
         <section className="px-6 pb-16 pt-36 lg:px-8 lg:pb-24 lg:pt-44">
           <div className="mx-auto max-w-7xl">

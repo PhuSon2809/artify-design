@@ -6,7 +6,7 @@ export default function ContactPage() {
   return (
     <>
       <Navigation />
-      <main>
+      <main className="flex-1">
         <ContactSection />
       </main>
       <Footer />

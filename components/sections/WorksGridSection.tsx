@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import Link from "next/link"
@@ -17,16 +17,87 @@ const PAGE_SIZE = 10
 
 export function WorksGridSection({ projects }: WorksGridSectionProps) {
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE)
+  const [highlightedId, setHighlightedId] = useState<string | null>(null)
+
+  // Restore pagination & scroll to last viewed project on back navigation
+  useEffect(() => {
+    try {
+      const savedCount = sessionStorage.getItem("portfolio_works_visible_count")
+      const lastClickedId = sessionStorage.getItem("portfolio_last_clicked_id")
+      const savedScrollY = sessionStorage.getItem("portfolio_works_scroll_y")
+
+      let countToSet = PAGE_SIZE
+      if (savedCount) {
+        const parsed = parseInt(savedCount, 10)
+        if (!isNaN(parsed) && parsed > countToSet) {
+          countToSet = Math.min(parsed, projects.length)
+        }
+      }
+
+      // If a specific project was clicked, ensure visibleCount is large enough to include it
+      if (lastClickedId) {
+        const targetIndex = projects.findIndex((p) => p.id === lastClickedId)
+        if (targetIndex >= 0) {
+          const neededCount =
+            Math.ceil((targetIndex + 1) / PAGE_SIZE) * PAGE_SIZE
+          if (neededCount > countToSet) {
+            countToSet = Math.min(neededCount, projects.length)
+          }
+        }
+      }
+
+      if (countToSet > visibleCount) {
+        setVisibleCount(countToSet)
+      }
+
+      // Scroll to project card if returning from detail page
+      if (lastClickedId) {
+        setHighlightedId(lastClickedId)
+
+        const timer = setTimeout(() => {
+          const el = document.getElementById(`work-${lastClickedId}`)
+          if (el) {
+            el.scrollIntoView({ behavior: "smooth", block: "center" })
+          } else if (savedScrollY) {
+            window.scrollTo({
+              top: parseInt(savedScrollY, 10),
+              behavior: "smooth",
+            })
+          }
+
+          // Clean up so subsequent normal refreshes don't re-trigger scroll
+          sessionStorage.removeItem("portfolio_last_clicked_id")
+          sessionStorage.removeItem("portfolio_works_scroll_y")
+
+          const removeHighlightTimer = setTimeout(() => {
+            setHighlightedId(null)
+          }, 2000)
+
+          return () => clearTimeout(removeHighlightTimer)
+        }, 120)
+
+        return () => clearTimeout(timer)
+      }
+    } catch {
+      // Handle private browsing or restricted storage gracefully
+    }
+  }, [projects])
 
   const visibleProjects = projects.slice(0, visibleCount)
   const hasMore = visibleCount < projects.length
 
   const handleLoadMore = () => {
-    setVisibleCount((prev) => Math.min(prev + PAGE_SIZE, projects.length))
+    setVisibleCount((prev) => {
+      const next = Math.min(prev + PAGE_SIZE, projects.length)
+      try {
+        sessionStorage.setItem("portfolio_works_visible_count", String(next))
+      } catch {}
+      return next
+    })
   }
 
   return (
-    <section className="px-6 py-32 lg:px-8 lg:py-48">
+    <section id="works" className="scroll-mt-16 px-6 py-32 lg:px-8 lg:py-48">
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -57,12 +128,37 @@ export function WorksGridSection({ projects }: WorksGridSectionProps) {
           {visibleProjects.map((project, index) => (
             <motion.article
               key={project.id}
+              id={`work-${project.id}`}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: (index % PAGE_SIZE) * 0.05 }}
+              className={`scroll-mt-28 transition-all duration-700 ${
+                highlightedId === project.id
+                  ? "rounded-2xl bg-muted/40 p-2.5 -m-2.5 shadow-xl ring-2 ring-foreground/40"
+                  : ""
+              }`}
             >
-              <Link href={`/work/${project.id}`} className="group block">
+              <Link
+                href={`/work/${project.id}`}
+                onClick={() => {
+                  try {
+                    sessionStorage.setItem(
+                      "portfolio_works_visible_count",
+                      String(visibleCount)
+                    )
+                    sessionStorage.setItem(
+                      "portfolio_last_clicked_id",
+                      project.id
+                    )
+                    sessionStorage.setItem(
+                      "portfolio_works_scroll_y",
+                      String(window.scrollY)
+                    )
+                  } catch {}
+                }}
+                className="group block"
+              >
                 <div className="relative aspect-square overflow-hidden bg-muted">
                   <Image
                     src={project.heroImage.src}

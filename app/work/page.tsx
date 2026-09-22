@@ -9,7 +9,7 @@ export default function WorkPage() {
   return (
     <>
       <Navigation />
-      <main>
+      <main className="flex-1">
         <WorksGridSection projects={projects} />
       </main>
       <Footer />

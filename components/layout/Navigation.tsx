@@ -51,6 +51,13 @@ export function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const site = getSiteMeta();
 
+  const clearWorksScrollState = () => {
+    try {
+      sessionStorage.removeItem("portfolio_last_clicked_id");
+      sessionStorage.removeItem("portfolio_works_scroll_y");
+    } catch {}
+  };
+
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
     return pathname.startsWith(href);
@@ -59,7 +66,11 @@ export function Navigation() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="text-lg font-medium tracking-tight">
+        <Link
+          href="/"
+          onClick={clearWorksScrollState}
+          className="text-lg font-medium tracking-tight"
+        >
           {site.name}
         </Link>
 
@@ -68,6 +79,7 @@ export function Navigation() {
             <Link
               key={item.href}
               href={item.href}
+              onClick={clearWorksScrollState}
               className={cn(
                 "text-sm transition-colors hover:text-foreground",
                 isActive(item.href)
@@ -101,7 +113,10 @@ export function Navigation() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    onClick={() => setMobileOpen(false)}
+                    onClick={() => {
+                      setMobileOpen(false);
+                      clearWorksScrollState();
+                    }}
                     className={cn(
                       "text-lg transition-colors hover:text-foreground",
                       isActive(item.href)

@@ -32,6 +32,7 @@ export interface Project {
   visualSystem?: string;
   application?: string;
   order: number;
+  hidden?: boolean;
 }
 
 export interface AllProject {
@@ -55,6 +56,7 @@ export interface AllProject {
   visualSystem?: string;
   application?: string;
   order?: number;
+  hidden?: boolean;
 }
 
 export interface TeamMember {

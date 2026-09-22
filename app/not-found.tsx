@@ -7,7 +7,7 @@ export default function NotFoundPage() {
   return (
     <>
       <Navigation />
-      <main className="flex min-h-[60vh] flex-col items-center justify-center px-6 text-center">
+      <main className="flex flex-1 min-h-[60vh] flex-col items-center justify-center px-6 text-center">
         <h1 className="text-4xl font-medium tracking-tight">404</h1>
         <p className="mt-4 text-muted-foreground">
           Trang bạn tìm kiếm không tồn tại.

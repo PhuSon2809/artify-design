@@ -230,6 +230,7 @@ export function ProjectDetailSection({
                       }
                       width={image.width || 1400}
                       height={image.height || 1000}
+                      unoptimized={image.src.includes(".gif") || image.src.startsWith("http")}
                       className="mx-auto block h-full max-h-[75vh] w-auto max-w-full object-contain transition-transform duration-500 ease-out will-change-transform group-hover:scale-105"
                       sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 640px"
                       priority={index < 2}
@@ -267,6 +268,7 @@ export function ProjectDetailSection({
                     }
                     width={image.width || 1920}
                     height={image.height || 1080}
+                    unoptimized={image.src.includes(".gif") || image.src.startsWith("http")}
                     className="block h-auto w-full transition-opacity duration-300 group-hover:opacity-95"
                     sizes="(max-width: 1280px) 100vw, 1280px"
                     priority={index < 2}

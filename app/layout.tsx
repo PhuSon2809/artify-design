@@ -1,21 +1,21 @@
-import type { Metadata } from "next";
-import { Inter, Newsreader } from "next/font/google";
+import type { Metadata } from "next"
+import { Inter, Newsreader } from "next/font/google"
 
-import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
-import { cn } from "@/lib/utils";
+import "./globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
+import { cn } from "@/lib/utils"
 
 const inter = Inter({
   subsets: ["latin", "vietnamese"],
   variable: "--font-sans",
-});
+})
 
 const newsreader = Newsreader({
   subsets: ["latin", "vietnamese"],
   variable: "--font-serif",
   weight: ["400", "500", "600"],
   style: ["normal", "italic"],
-});
+})
 
 export const metadata: Metadata = {
   title: "Artify Design — Creative Team",
@@ -28,27 +28,31 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html
       lang="vi"
       suppressHydrationWarning
       className={cn(
-        "antialiased",
+        "scroll-smooth antialiased",
         inter.variable,
         newsreader.variable,
         "font-sans"
       )}
     >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className="flex min-h-screen min-h-dvh flex-col">
+        <ThemeProvider>
+          <div className="flex min-h-screen min-h-dvh flex-col">
+            {children}
+          </div>
+        </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
