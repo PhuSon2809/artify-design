@@ -122,6 +122,60 @@ export function ProjectDetailSection({
     return list
   }, [project.heroImage, project.supportingImages])
 
+  type ColumnBlock =
+    | {
+        type: "single"
+        image: (typeof galleryImages)[number]
+        originalIndex: number
+      }
+    | {
+        type: "gif-pair"
+        images: {
+          image: (typeof galleryImages)[number]
+          originalIndex: number
+        }[]
+      }
+
+  const columnBlocks = React.useMemo<ColumnBlock[]>(() => {
+    const blocks: ColumnBlock[] = []
+    let i = 0
+    while (i < galleryImages.length) {
+      const current = galleryImages[i]
+      const isGif = Boolean(current.src?.toLowerCase().includes(".gif"))
+
+      if (isGif) {
+        const next = galleryImages[i + 1]
+        const nextIsGif = Boolean(next?.src?.toLowerCase().includes(".gif"))
+
+        if (nextIsGif) {
+          blocks.push({
+            type: "gif-pair",
+            images: [
+              { image: current, originalIndex: i },
+              { image: next, originalIndex: i + 1 },
+            ],
+          })
+          i += 2
+        } else {
+          blocks.push({
+            type: "single",
+            image: current,
+            originalIndex: i,
+          })
+          i += 1
+        }
+      } else {
+        blocks.push({
+          type: "single",
+          image: current,
+          originalIndex: i,
+        })
+        i += 1
+      }
+    }
+    return blocks
+  }, [galleryImages])
+
   function openLightbox(index: number) {
     setLightboxIndex(index)
     setLightboxOpen(true)
@@ -163,17 +217,14 @@ export function ProjectDetailSection({
         </div>
       </section>
 
-      {/* Project Visuals Showcase: Switchable between Grid and Continuous Column */}
-      <section className="bg-background px-6 py-8 sm:py-12 lg:px-8">
-        <div className="mx-auto mb-6 flex max-w-7xl items-center justify-between">
-          <p className="text-xs tracking-widest text-muted-foreground uppercase">
-            Visuals ({galleryImages.length})
-          </p>
-
+      {/* Gallery Section */}
+      <section className="px-6 py-6 lg:px-8">
+        {/* Layout Toggle Controls */}
+        <div className="mx-auto mb-4 flex max-w-7xl items-center justify-end">
           <div
             className="inline-flex items-center rounded-sm border border-border bg-muted/40 p-1 text-xs"
             role="group"
-            aria-label="Layout view mode"
+            aria-label="Chế độ hiển thị thư viện ảnh"
           >
             <button
               type="button"
@@ -184,7 +235,7 @@ export function ProjectDetailSection({
                   : "text-muted-foreground hover:text-foreground"
               }`}
               aria-pressed={layoutMode === "grid"}
-              title="Grid layout (2 columns)"
+              title="Modern grid layout with spacing"
             >
               <LayoutGrid className="h-3.5 w-3.5" />
               <span className="hidden sm:inline">Grid</span>
@@ -246,41 +297,88 @@ export function ProjectDetailSection({
             ))}
           </div>
         ) : (
-          <div className="mx-auto flex max-w-7xl flex-col gap-0 overflow-hidden border border-border">
-            {galleryImages.map((image, index) => (
-              <motion.figure
-                key={`${image.src}-${index}`}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-20px" }}
-                transition={{ duration: 0.5 }}
-                className="relative m-0 block w-full overflow-hidden p-0 leading-none"
-              >
-                <LightboxTrigger
-                  onClick={() => openLightbox(index)}
-                  className="group relative m-0 block w-full cursor-zoom-in overflow-hidden border-0 bg-transparent p-0 text-left"
+          <div className="mx-auto flex max-w-7xl flex-col gap-0 overflow-hidden">
+            {columnBlocks.map((block) => {
+              if (block.type === "gif-pair") {
+                return (
+                  <div
+                    key={`gif-pair-${block.images[0].originalIndex}`}
+                    className="grid w-full grid-cols-1 md:grid-cols-2"
+                  >
+                    {block.images.map(({ image, originalIndex }, pairIdx) => (
+                      <motion.figure
+                        key={`${image.src}-${originalIndex}`}
+                        initial={{ opacity: 0, y: 16 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-20px" }}
+                        transition={{ duration: 0.5, delay: pairIdx * 0.05 }}
+                        className="relative m-0 flex w-full flex-col items-center justify-center overflow-hidden p-0 leading-none bg-background"
+                      >
+                        <LightboxTrigger
+                          onClick={() => openLightbox(originalIndex)}
+                          className="group relative m-0 block w-full cursor-zoom-in overflow-hidden border-0 bg-transparent p-0 text-left"
+                        >
+                          <Image
+                            src={image.src}
+                            alt={
+                              image.alt ||
+                              `${cleanTitle(project.title)} visual ${originalIndex + 1}`
+                            }
+                            width={image.width || 1200}
+                            height={image.height || 800}
+                            unoptimized={image.src.includes(".gif") || image.src.startsWith("http")}
+                            className="block h-auto w-full transition-opacity duration-300 group-hover:opacity-95"
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            priority={originalIndex < 2}
+                          />
+                          {image.caption && (
+                            <figcaption className="bg-background/90 p-3 text-center text-xs text-muted-foreground">
+                              {image.caption}
+                            </figcaption>
+                          )}
+                        </LightboxTrigger>
+                      </motion.figure>
+                    ))}
+                  </div>
+                )
+              }
+
+              const { image, originalIndex } = block
+              return (
+                <motion.figure
+                  key={`${image.src}-${originalIndex}`}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-20px" }}
+                  transition={{ duration: 0.5 }}
+                  className="relative m-0 block w-full overflow-hidden p-0 leading-none"
                 >
-                  <Image
-                    src={image.src}
-                    alt={
-                      image.alt ||
-                      `${cleanTitle(project.title)} visual ${index + 1}`
-                    }
-                    width={image.width || 1920}
-                    height={image.height || 1080}
-                    unoptimized={image.src.includes(".gif") || image.src.startsWith("http")}
-                    className="block h-auto w-full transition-opacity duration-300 group-hover:opacity-95"
-                    sizes="(max-width: 1280px) 100vw, 1280px"
-                    priority={index < 2}
-                  />
-                  {image.caption && (
-                    <figcaption className="border-b border-border bg-background/90 p-3 text-center text-xs text-muted-foreground">
-                      {image.caption}
-                    </figcaption>
-                  )}
-                </LightboxTrigger>
-              </motion.figure>
-            ))}
+                  <LightboxTrigger
+                    onClick={() => openLightbox(originalIndex)}
+                    className="group relative m-0 block w-full cursor-zoom-in overflow-hidden border-0 bg-transparent p-0 text-left"
+                  >
+                    <Image
+                      src={image.src}
+                      alt={
+                        image.alt ||
+                        `${cleanTitle(project.title)} visual ${originalIndex + 1}`
+                      }
+                      width={image.width || 1920}
+                      height={image.height || 1080}
+                      unoptimized={image.src.includes(".gif") || image.src.startsWith("http")}
+                      className="block h-auto w-full transition-opacity duration-300 group-hover:opacity-95"
+                      sizes="(max-width: 1280px) 100vw, 1280px"
+                      priority={originalIndex < 2}
+                    />
+                    {image.caption && (
+                      <figcaption className="bg-background/90 p-3 text-center text-xs text-muted-foreground">
+                        {image.caption}
+                      </figcaption>
+                    )}
+                  </LightboxTrigger>
+                </motion.figure>
+              )
+            })}
           </div>
         )}
       </section>
